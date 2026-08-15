@@ -30,8 +30,7 @@ class AutomationOrchestrator:
         # 2. Draft Generation
         try:
             print("[AutomationOrchestrator] Generating drafts for READY_FOR_OUTREACH opportunities...")
-            # Generate up to 10 drafts per tick to respect limits
-            await self.generator.generate_drafts(limit=10)
+            await self.generator.generate_batch()
         except Exception as e:
             print(f"[AutomationOrchestrator] Draft generation failed: {e}")
 
