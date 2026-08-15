@@ -8,59 +8,143 @@
   "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "tag:#community/Candidate_Discovery_&_Sourcing",
+      "query": "tag:#community/Project_Architecture_&_Implementation_Phases",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/Verification_&_Batch_Outreach",
+      "query": "tag:#community/Candidate_Schemas_&_Validation_Models",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/Gmail_Dispatch_&_Reply_Tracking",
+      "query": "tag:#community/Backend_Application_&_Config_Services",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/Database_Canonicalization_&_Matching",
+      "query": "tag:#community/AI_Dev_Jobs_Discovery_Provider",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/Contact_Info_Discovery",
+      "query": "tag:#community/Discovery_Base_Interfaces_&_Normalized_Models",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/Foundations_&_Knowledge_Graph",
+      "query": "tag:#community/The_Muse_Provider_&_Discovery_Orchestration",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/Oracle_VPS_Deployment",
+      "query": "tag:#community/Research_Service_&_Intelligence_Layer",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/Cron_Automation_&_Orchestration",
+      "query": "tag:#community/Project_Memory_&_Root_Documentation",
       "color": {
         "a": 1,
         "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/Adzuna_Discovery_Adapter",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/Free_Hire_Discovery_Adapter",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/Signalbase_Discovery_Adapter",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/Frontend_React_Entrypoint_&_UI",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/Playbook_Execution_&_Knowledge_Layer_Rules",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/Backend_Supabase_Client",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/Frontend_Supabase_Client",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/Global_Definition_of_Done",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/Anti-Hallucination_Rules",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
+      "query": "tag:#community/System_Core_Purpose_&_Goals",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/Frontend_Linting_Configuration",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/Vite_App_Build_Configuration",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
       }
     }
   ],
@@ -74,6 +158,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.2962962962962963,
+  "scale": 0.0877914951989025,
   "close": false
 }

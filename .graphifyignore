@@ -1,0 +1,21 @@
+# Compiled TypeScript build artifacts
+**/*.js
+**/*.d.ts
+**/*.map
+
+# Scratch & temporary test files
+scratch/
+**/scratch/
+
+# Config & AST noise
+tsconfig*.json
+package*.json
+.oxlintrc.json
+
+# Static assets
+*.svg
+*.png
+*.jpg
+frontend/public/
+frontend/src/assets/
+frontend/index.html

@@ -1,0 +1,17 @@
+---
+source_file: "backend/app/services/research.py"
+type: "code"
+community: "Project Architecture & Implementation Phases"
+location: "L1"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Project_Architecture__Implementation_Phases
+---
+
+# research.py
+
+## Connections
+- [[ResearchService]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

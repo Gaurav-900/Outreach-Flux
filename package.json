@@ -1,0 +1,26 @@
+{
+  "name": "outreach-flux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "build": "npm run build --prefix frontend && npm run build --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaurav-900/Outreach-Flux.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Gaurav-900/Outreach-Flux/issues"
+  },
+  "homepage": "https://github.com/Gaurav-900/Outreach-Flux#readme",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
