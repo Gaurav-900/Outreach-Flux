@@ -10,7 +10,6 @@ from app.providers.adzuna import AdzunaAdapter
 from app.providers.themuse import TheMuseAdapter
 from app.providers.aidevjobs import AIDevJobsAdapter
 from app.providers.freehire import FreeHireAdapter
-from app.providers.signalbase import SignalbaseAdapter
 from app.services.matching import MatchingService
 from app.services.research import ResearchService
 from app.services.contact import ContactService
@@ -19,8 +18,7 @@ providers: list[IDiscoveryProvider] = [
     AdzunaAdapter(),
     TheMuseAdapter(),
     AIDevJobsAdapter(),
-    FreeHireAdapter(),
-    SignalbaseAdapter()
+    FreeHireAdapter()
 ]
 
 class DiscoveryOrchestrator:
