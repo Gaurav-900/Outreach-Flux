@@ -1,16 +1,16 @@
 # Graph Report - Outreach-flux  (2026-08-15)
 
 ## Corpus Check
-- 29 files · ~10,834 words
+- 32 files · ~11,796 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 199 nodes · 351 edges · 20 communities (11 shown, 9 thin omitted)
-- Extraction: 88% EXTRACTED · 12% INFERRED · 0% AMBIGUOUS · INFERRED: 43 edges (avg confidence: 0.52)
+- 229 nodes · 407 edges · 20 communities (13 shown, 7 thin omitted)
+- Extraction: 88% EXTRACTED · 12% INFERRED · 0% AMBIGUOUS · INFERRED: 47 edges (avg confidence: 0.52)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `618ae0c8`
+- Built from commit: `fb3bad33`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -24,9 +24,9 @@
 - frontend/README.md
 - LLM Batch Email Generation
 - AI Job Outreach Project Memory
+- OpportunityContext
 - App.tsx
-- .is_available
-- .name
+- Q: how many .env files we have?
 - supabase.ts
 - README.md
 - Company Research System
@@ -41,7 +41,7 @@
 4. `NormalizedOpportunity` - 17 edges
 5. `IDiscoveryProvider` - 17 edges
 6. `AI Job Outreach Assistant — Phase Playbook` - 17 edges
-7. `get_candidate_profile()` - 12 edges
+7. `get_candidate_profile()` - 14 edges
 8. `FreeHireAdapter` - 12 edges
 9. `TheMuseAdapter` - 12 edges
 10. `Phase 2 — Multi-Provider Incremental Discovery` - 12 edges
@@ -61,18 +61,18 @@
 ## Import Cycles
 - None detected.
 
-## Communities (20 total, 9 thin omitted)
+## Communities (20 total, 7 thin omitted)
 
 ### Community 0 - "AI Job Outreach Assistant — Phase Playbook"
 Cohesion: 0.06
 Nodes (47): 3-Hour Discovery Scheduler, Adzuna API Adapter, AI Dev Jobs API Adapter, Controlled Background Automation, config/candidate.json, Company & Opportunity Research, Contact Discovery, Database Canonicalization (+39 more)
 
 ### Community 1 - "DiscoveryProfile"
-Cohesion: 0.17
-Nodes (13): DiscoveryProfile, AdzunaAdapter, AIDevJobsAdapter, IDiscoveryProvider, NormalizedCompany, NormalizedOpportunity, ProviderSearchResult, ABC (+5 more)
+Cohesion: 0.14
+Nodes (15): DiscoveryProfile, AdzunaAdapter, AIDevJobsAdapter, IDiscoveryProvider, NormalizedCompany, NormalizedOpportunity, ProviderSearchResult, ABC (+7 more)
 
 ### Community 2 - "get_candidate_profile"
-Cohesion: 0.12
+Cohesion: 0.11
 Nodes (17): Any, get_candidate_profile(), get_candidate_profile_endpoint(), health_check(), lifespan(), CandidateFile, MatchingService, MatchResult (+9 more)
 
 ### Community 3 - "NormalizedContact"
@@ -99,20 +99,28 @@ Nodes (7): Contact Discovery Priority Hierarchy, EVA Email Verification, Gmail A
 Cohesion: 0.50
 Nodes (4): Anti-Hallucination Rules, Canonical Pipeline Flow, AI Job Outreach Project Memory, Technology Stack Specification
 
+### Community 9 - "OpportunityContext"
+Cohesion: 0.16
+Nodes (13): _build_prompt(), DeepSeekAdapter, EmailBatchResponse, EmailDraft, GeminiAdapter, LLMProvider, OpportunityContext, ABC (+5 more)
+
+### Community 11 - "Q: how many .env files we have?"
+Cohesion: 0.50
+Nodes (3): Answer, Outcome, Q: how many .env files we have?
+
 ## Knowledge Gaps
-- **55 isolated node(s):** `supabase`, `Candidate Profile Model`, `Company Canonical Model`, `Adzuna Discovery Source`, `AI Dev Jobs Discovery Source` (+50 more)
+- **57 isolated node(s):** `supabase`, `Answer`, `Outcome`, `3-Hour Discovery Scheduler`, `Adzuna API Adapter` (+52 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `get_candidate_profile()` connect `get_candidate_profile` to `DiscoveryProfile`, `OpportunityContext`?**
+  _High betweenness centrality (0.142) - this node is a cross-community bridge._
 - **Why does `DiscoveryProfile` connect `DiscoveryProfile` to `get_candidate_profile`, `candidate.py`?**
-  _High betweenness centrality (0.088) - this node is a cross-community bridge._
-- **Why does `NormalizedContact` connect `NormalizedContact` to `DiscoveryProfile`?**
-  _High betweenness centrality (0.057) - this node is a cross-community bridge._
+  _High betweenness centrality (0.069) - this node is a cross-community bridge._
 - **Why does `ContactService` connect `NormalizedContact` to `DiscoveryProfile`, `get_candidate_profile`?**
-  _High betweenness centrality (0.048) - this node is a cross-community bridge._
+  _High betweenness centrality (0.057) - this node is a cross-community bridge._
 - **Are the 7 inferred relationships involving `DiscoveryProfile` (e.g. with `AdzunaAdapter` and `AIDevJobsAdapter`) actually correct?**
   _`DiscoveryProfile` has 7 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 5 inferred relationships involving `ProviderSearchResult` (e.g. with `AdzunaAdapter` and `AIDevJobsAdapter`) actually correct?**
