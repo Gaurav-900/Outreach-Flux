@@ -83,7 +83,7 @@ class GeminiAdapter(LLMProvider):
         # google-genai has client.aio
         try:
             response = await client.aio.models.generate_content(
-                model='gemini-2.5-flash',
+                model='gemini-3.7-flash',
                 contents=prompt,
                 config={
                     'response_mime_type': 'application/json',
@@ -120,7 +120,7 @@ class DeepSeekAdapter(LLMProvider):
         }
         
         payload = {
-            "model": "deepseek-chat",
+            "model": "deepseek-v4-flash",
             "messages": [
                 {"role": "system", "content": "You are a helpful AI assistant that outputs JSON."},
                 {"role": "user", "content": prompt}
