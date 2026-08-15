@@ -1,14 +1,14 @@
 ---
 source_file: "backend/app/core/supabase.py"
 type: "code"
-community: "Community 20"
+community: "Community 24"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_20
+  - community/Community_24
 ---
 
 # supabase.py
 
-#graphify/code #graphify/EXTRACTED #community/Community_20
+#graphify/code #graphify/EXTRACTED #community/Community_24

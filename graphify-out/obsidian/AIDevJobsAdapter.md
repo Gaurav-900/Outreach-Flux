@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/aidevjobs.py"
 type: "code"
-community: "Signalbase Discovery Adapter"
+community: "Frontend React Entrypoint & UI"
 location: "L7"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Signalbase_Discovery_Adapter
+  - community/Frontend_React_Entrypoint__UI
 ---
 
 # AIDevJobsAdapter
@@ -24,4 +24,4 @@ tags:
 - [[aidevjobs.py]] - `contains` [EXTRACTED]
 - [[orchestrator.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Signalbase_Discovery_Adapter
+#graphify/code #graphify/INFERRED #community/Frontend_React_Entrypoint__UI

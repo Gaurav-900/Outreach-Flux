@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[DeepSeek LLM Fallback Provider]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Gemini Batch LLM Email Generator]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Phase 4 — Contact Discovery]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
-- [[Phase 5 — Email Verification]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
-- [[Phase 6 — AI Outreach — Batch Generation]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
+- [[dot-search()_2]] - code - backend/app/providers/base.py
+- [[ABC]] - code
+- [[Execute a search against the provider.]] - rationale - backend/app/providers/base.py
+- [[IDiscoveryProvider]] - code - backend/app/providers/base.py
+- [[base.py]] - code - backend/app/providers/base.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,12 +22,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Backend Application & Config Services]]
-- 1 edge to [[_COMMUNITY_Adzuna Discovery Adapter]]
-- 1 edge to [[_COMMUNITY_Frontend Supabase Client]]
-- 1 edge to [[_COMMUNITY_The Muse Provider & Discovery Orchestration]]
+- 5 edges to [[_COMMUNITY_The Muse Provider & Discovery Orchestration]]
+- 4 edges to [[_COMMUNITY_Project Memory & Root Documentation]]
+- 3 edges to [[_COMMUNITY_Signalbase Discovery Adapter]]
+- 3 edges to [[_COMMUNITY_Frontend React Entrypoint & UI]]
+- 3 edges to [[_COMMUNITY_Playbook Execution & Knowledge Layer Rules]]
+- 1 edge to [[_COMMUNITY_System Core Purpose & Goals]]
+- 1 edge to [[_COMMUNITY_Frontend Linting Configuration]]
+- 1 edge to [[_COMMUNITY_Project Architecture & Implementation Phases]]
 
 ## Top bridge nodes
-- [[Phase 4 — Contact Discovery]] - degree 4, connects to 2 communities
-- [[Phase 5 — Email Verification]] - degree 4, connects to 2 communities
-- [[Phase 6 — AI Outreach — Batch Generation]] - degree 4, connects to 2 communities
+- [[IDiscoveryProvider]] - degree 18, connects to 8 communities
+- [[base.py]] - degree 6, connects to 4 communities
+- [[dot-search()_2]] - degree 4, connects to 2 communities

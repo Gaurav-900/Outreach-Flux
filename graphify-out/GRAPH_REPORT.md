@@ -1,10 +1,11 @@
 # Graph Report - .  (2026-08-15)
 
 ## Corpus Check
-- Corpus is ~9,999 words - fits in a single context window. You may not need a graph.
+- 2 files · ~10,023 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 140 nodes · 289 edges · 22 communities (13 shown, 9 thin omitted)
+- 147 nodes · 293 edges · 26 communities (14 shown, 12 thin omitted)
 - Extraction: 85% EXTRACTED · 15% INFERRED · 0% AMBIGUOUS · INFERRED: 43 edges (avg confidence: 0.51)
 - Token cost: 0 input · 0 output
 
@@ -29,6 +30,10 @@
 - System Core Purpose & Goals
 - Frontend Linting Configuration
 - Vite App Build Configuration
+- Community 20
+- Community 21
+- Community 22
+- Community 23
 
 ## God Nodes (most connected - your core abstractions)
 1. `DiscoveryProfile` - 29 edges
@@ -37,86 +42,90 @@
 4. `NormalizedOpportunity` - 18 edges
 5. `IDiscoveryProvider` - 18 edges
 6. `DiscoveryOrchestrator` - 14 edges
-7. `AI Job Outreach Assistant — Phase Playbook` - 14 edges
+7. `AI Job Outreach Phase Playbook` - 14 edges
 8. `FreeHireAdapter` - 13 edges
 9. `TheMuseAdapter` - 13 edges
 10. `get_candidate_profile()` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `AI Job Outreach Assistant — Phase Playbook` --references--> `AI Job Outreach Assistant — Project Memory`  [EXTRACTED]
+- `AI Job Outreach Phase Playbook` --references--> `AI Job Outreach Project Memory`  [EXTRACTED]
   AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md → AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- `Phase 2 — Multi-Provider Incremental Discovery` --implements--> `Discovery Architecture & 3-Hour Profile Rotation`  [EXTRACTED]
+- `Phase 3 — Database Canonicalization + Matching + Research` --canonicalizes--> `Company Canonical Model`  [EXTRACTED]
   AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md → AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- `Phase 3 — Database Canonicalization + Matching + Research` --implements--> `Database Canonicalization & Schema`  [EXTRACTED]
+- `Phase 4 — Contact Discovery` --uses_fallback--> `Tomba Enrichment Fallback`  [EXTRACTED]
   AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md → AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- `Phase 3 — Database Canonicalization + Matching + Research` --implements--> `Deterministic Candidate Matching Engine`  [EXTRACTED]
+- `Phase 6 — AI Outreach Batch Generation` --fallback_llm--> `DeepSeek LLM Provider Fallback`  [EXTRACTED]
   AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md → AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- `Phase 4 — Contact Discovery` --implements--> `Public Contact Discovery`  [EXTRACTED]
+- `Phase 6 — AI Outreach Batch Generation` --calls_llm--> `Gemini LLM Provider`  [EXTRACTED]
   AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md → AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
 
 ## Import Cycles
 - None detected.
 
-## Communities (22 total, 9 thin omitted)
+## Communities (26 total, 12 thin omitted)
 
 ### Community 0 - "Project Architecture & Implementation Phases"
-Cohesion: 0.12
-Nodes (17): Any, get_candidate_profile(), get_candidate_profile_endpoint(), health_check(), lifespan(), CandidateFile, MatchingService, MatchResult (+9 more)
+Cohesion: 0.19
+Nodes (11): get_candidate_profile(), get_candidate_profile_endpoint(), health_check(), lifespan(), DiscoveryOrchestrator, ResearchService, run_discovery_tick(), start_scheduler() (+3 more)
 
 ### Community 1 - "Candidate Schemas & Validation Models"
 Cohesion: 0.28
 Nodes (12): CandidateContact, CandidateEducation, CandidateInfo, CandidateLocation, DiscoveryPreferences, Experience, MatchingRules, OutreachPreferences (+4 more)
 
 ### Community 2 - "Backend Application & Config Services"
-Cohesion: 0.31
-Nodes (9): Global Definition of Done, AI Job Outreach Assistant — Phase Playbook, Graphify Memory Layer Rule, Phase 0 — Foundation, Phase 1 — Candidate JSON, Phase 2 — Multi-Provider Incremental Discovery, Phase 3 — Database Canonicalization + Matching + Research, config/candidate.json Candidate Model (+1 more)
+Cohesion: 0.22
+Nodes (11): Phase 0 — Foundation, Phase 1 — Candidate JSON, Phase 2 — Multi-Provider Incremental Discovery, config/candidate.json, DiscoveryProvider Architecture, 3-Hour Discovery Profile Rotation, Adzuna Discovery Source, AI Dev Jobs Discovery Source (+3 more)
+
+### Community 3 - "AI Dev Jobs Discovery Provider"
+Cohesion: 0.27
+Nodes (6): Any, CandidateFile, MatchingService, MatchResult, BaseModel, run_verification()
 
 ### Community 4 - "Discovery Base Interfaces & Normalized Models"
+Cohesion: 0.24
+Nodes (10): Phase 6 — AI Outreach Batch Generation, Phase 7 — Gmail + Sending Policy, Phase 8 — Tracking + Reply Classification, config/resume.pdf, DeepSeek LLM Provider Fallback, Gemini LLM Provider, Gmail API & Controlled Sending Policy, LLM Batch Email Generation (+2 more)
+
+### Community 6 - "Research Service & Intelligence Layer"
 Cohesion: 0.25
 Nodes (7): Oxlint, React, React Compiler, TypeScript, Vite, @vitejs/plugin-react, @vitejs/plugin-react-swc
 
-### Community 5 - "The Muse Provider & Discovery Orchestration"
-Cohesion: 0.33
-Nodes (7): Phase 10 — Oracle Deployment, Phase 7 — Gmail + Sending Policy, Phase 8 — Tracking + Reply Classification, Phase 9 — Automation, Gmail API & Google OAuth Integration, Oracle Cloud Always Free Deployment, Gmail Reply Detection & Classification
-
-### Community 6 - "Research Service & Intelligence Layer"
+### Community 7 - "Project Memory & Root Documentation"
 Cohesion: 0.43
 Nodes (3): ProviderSearchResult, BaseModel, FreeHireAdapter
 
-### Community 7 - "Project Memory & Root Documentation"
-Cohesion: 0.33
-Nodes (6): Adzuna API Provider, AI Dev Jobs Provider, Discovery Architecture & 3-Hour Profile Rotation, FreeHire API Provider, Funding Signals Provider, The Muse API Provider
-
 ### Community 8 - "Adzuna Discovery Adapter"
-Cohesion: 0.33
-Nodes (6): Anti-Hallucination Rules, Public Contact Discovery, AI Job Outreach Assistant — Project Memory, Graphify Knowledge Memory Layer, Supabase PostgreSQL Infrastructure, Tomba Contact Adapter
+Cohesion: 0.40
+Nodes (6): Global Definition of Done, AI Job Outreach Phase Playbook, Graphify Codebase Knowledge Layer, Phase 10 — Oracle Deployment, Phase 9 — Automation, Oracle Cloud Always Free VPS Infrastructure
 
-### Community 12 - "Playbook Execution & Knowledge Layer Rules"
+### Community 9 - "Free Hire Discovery Adapter"
+Cohesion: 0.47
+Nodes (6): Phase 3 — Database Canonicalization + Matching + Research, Candidate Profile Model, Company Canonical Model, Deterministic Candidate Matching, Opportunity Canonical Model, Supabase PostgreSQL Database
+
+### Community 13 - "Backend Supabase Client"
 Cohesion: 0.50
 Nodes (3): ABC, IDiscoveryProvider, Execute a search against the provider.
 
-### Community 13 - "Backend Supabase Client"
-Cohesion: 0.40
-Nodes (5): Phase 4 — Contact Discovery, Phase 5 — Email Verification, Phase 6 — AI Outreach — Batch Generation, DeepSeek LLM Fallback Provider, Gemini Batch LLM Email Generator
-
 ### Community 14 - "Frontend Supabase Client"
-Cohesion: 0.40
-Nodes (5): companies & company_sources Tables, contacts Table, Database Canonicalization & Schema, EVA Email Verification Provider, opportunities & opportunity_sources Tables
+Cohesion: 0.60
+Nodes (5): Phase 4 — Contact Discovery, Phase 5 — Email Verification, Contact Discovery Priority Hierarchy, EVA Email Verification, Tomba Enrichment Fallback
+
+### Community 15 - "Global Definition of Done"
+Cohesion: 0.50
+Nodes (4): Anti-Hallucination Rules, Canonical Pipeline Flow, AI Job Outreach Project Memory, Technology Stack Specification
 
 ## Knowledge Gaps
-- **23 isolated node(s):** `supabase`, `Outreach-Flux Project`, `React`, `TypeScript`, `Vite` (+18 more)
+- **27 isolated node(s):** `supabase`, `Outreach-Flux Project`, `React`, `TypeScript`, `Vite` (+22 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `DiscoveryProfile` connect `AI Dev Jobs Discovery Provider` to `Project Architecture & Implementation Phases`, `Candidate Schemas & Validation Models`, `Research Service & Intelligence Layer`, `Free Hire Discovery Adapter`, `Signalbase Discovery Adapter`, `Frontend React Entrypoint & UI`, `Playbook Execution & Knowledge Layer Rules`?**
-  _High betweenness centrality (0.132) - this node is a cross-community bridge._
-- **Why does `get_candidate_profile()` connect `Project Architecture & Implementation Phases` to `Free Hire Discovery Adapter`?**
-  _High betweenness centrality (0.063) - this node is a cross-community bridge._
-- **Why does `AI Job Outreach Assistant — Phase Playbook` connect `Backend Application & Config Services` to `Adzuna Discovery Adapter`, `Backend Supabase Client`, `The Muse Provider & Discovery Orchestration`?**
-  _High betweenness centrality (0.059) - this node is a cross-community bridge._
+- **Why does `DiscoveryProfile` connect `The Muse Provider & Discovery Orchestration` to `Candidate Schemas & Validation Models`, `AI Dev Jobs Discovery Provider`, `Project Memory & Root Documentation`, `Signalbase Discovery Adapter`, `Frontend React Entrypoint & UI`, `Playbook Execution & Knowledge Layer Rules`, `Backend Supabase Client`?**
+  _High betweenness centrality (0.120) - this node is a cross-community bridge._
+- **Why does `get_candidate_profile()` connect `Project Architecture & Implementation Phases` to `Signalbase Discovery Adapter`, `AI Dev Jobs Discovery Provider`?**
+  _High betweenness centrality (0.057) - this node is a cross-community bridge._
+- **Why does `AI Job Outreach Phase Playbook` connect `Adzuna Discovery Adapter` to `Backend Application & Config Services`, `Discovery Base Interfaces & Normalized Models`, `Free Hire Discovery Adapter`, `Frontend Supabase Client`, `Global Definition of Done`?**
+  _High betweenness centrality (0.053) - this node is a cross-community bridge._
 - **Are the 11 inferred relationships involving `DiscoveryProfile` (e.g. with `AdzunaAdapter` and `AIDevJobsAdapter`) actually correct?**
   _`DiscoveryProfile` has 11 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 6 inferred relationships involving `ProviderSearchResult` (e.g. with `AdzunaAdapter` and `AIDevJobsAdapter`) actually correct?**

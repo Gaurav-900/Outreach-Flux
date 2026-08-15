@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/base.py"
 type: "rationale"
-community: "System Core Purpose & Goals"
+community: "Frontend Linting Configuration"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/System_Core_Purpose__Goals
+  - community/Frontend_Linting_Configuration
 ---
 
 # The unique identifier for this provider.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-name()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/System_Core_Purpose__Goals
+#graphify/rationale #graphify/EXTRACTED #community/Frontend_Linting_Configuration

@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/base.py"
 type: "code"
-community: "Playbook Execution & Knowledge Layer Rules"
+community: "Backend Supabase Client"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playbook_Execution__Knowledge_Layer_Rules
+  - community/Backend_Supabase_Client
 ---
 
 # base.py
@@ -19,4 +19,4 @@ tags:
 - [[NormalizedOpportunity]] - `contains` [EXTRACTED]
 - [[ProviderSearchResult]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playbook_Execution__Knowledge_Layer_Rules
+#graphify/code #graphify/EXTRACTED #community/Backend_Supabase_Client

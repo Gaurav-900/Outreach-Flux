@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[supabase]] - code - frontend/src/lib/supabase.ts
-- [[supabase.ts]] - code - frontend/src/lib/supabase.ts
+- [[dot-name()_3]] - code - backend/app/providers/base.py
+- [[The unique identifier for this provider.]] - rationale - backend/app/providers/base.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,3 +17,9 @@ members: 2
 TABLE source_file, type FROM #community/Frontend_Linting_Configuration
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Backend Supabase Client]]
+
+## Top bridge nodes
+- [[dot-name()_3]] - degree 2, connects to 1 community

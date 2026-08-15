@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[vite.config.ts]] - code - frontend/vite.config.ts
+- [[Company Research System]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
 
 ## Live Query (requires Dataview plugin)
 

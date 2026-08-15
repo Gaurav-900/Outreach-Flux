@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+members: 8
 ---
 
 # The Muse Provider & Discovery Orchestration
 
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Gmail API & Google OAuth Integration]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Gmail Reply Detection & Classification]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Oracle Cloud Always Free Deployment]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Phase 10 — Oracle Deployment]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
-- [[Phase 7 — Gmail + Sending Policy]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
-- [[Phase 8 — Tracking + Reply Classification]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
-- [[Phase 9 — Automation]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
+- [[dot-is_available()_4]] - code - backend/app/providers/signalbase.py
+- [[dot-keywords()]] - code - backend/app/models/candidate.py
+- [[dot-name()]] - code - backend/app/models/candidate.py
+- [[dot-name()_5]] - code - backend/app/providers/signalbase.py
+- [[dot-search()_4]] - code - backend/app/providers/signalbase.py
+- [[DiscoveryProfile]] - code - backend/app/models/candidate.py
+- [[SignalbaseAdapter]] - code - backend/app/providers/signalbase.py
+- [[signalbase.py]] - code - backend/app/providers/signalbase.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,13 +25,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Backend Application & Config Services]]
-- 2 edges to [[_COMMUNITY_Adzuna Discovery Adapter]]
-- 1 edge to [[_COMMUNITY_Backend Supabase Client]]
+- 7 edges to [[_COMMUNITY_Frontend React Entrypoint & UI]]
+- 7 edges to [[_COMMUNITY_Playbook Execution & Knowledge Layer Rules]]
+- 7 edges to [[_COMMUNITY_Project Memory & Root Documentation]]
+- 5 edges to [[_COMMUNITY_Backend Supabase Client]]
+- 4 edges to [[_COMMUNITY_Signalbase Discovery Adapter]]
+- 4 edges to [[_COMMUNITY_AI Dev Jobs Discovery Provider]]
+- 2 edges to [[_COMMUNITY_Candidate Schemas & Validation Models]]
+- 1 edge to [[_COMMUNITY_Project Architecture & Implementation Phases]]
 
 ## Top bridge nodes
-- [[Phase 7 — Gmail + Sending Policy]] - degree 4, connects to 2 communities
-- [[Phase 8 — Tracking + Reply Classification]] - degree 4, connects to 1 community
-- [[Phase 10 — Oracle Deployment]] - degree 3, connects to 1 community
-- [[Phase 9 — Automation]] - degree 3, connects to 1 community
-- [[Gmail API & Google OAuth Integration]] - degree 3, connects to 1 community
+- [[DiscoveryProfile]] - degree 29, connects to 7 communities
+- [[SignalbaseAdapter]] - degree 11, connects to 6 communities
+- [[signalbase.py]] - degree 6, connects to 4 communities
+- [[dot-search()_4]] - degree 6, connects to 3 communities

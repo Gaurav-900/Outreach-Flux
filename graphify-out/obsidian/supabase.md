@@ -1,12 +1,12 @@
 ---
 source_file: "frontend/src/lib/supabase.ts"
 type: "code"
-community: "Frontend Linting Configuration"
+community: "Vite App Build Configuration"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Frontend_Linting_Configuration
+  - community/Vite_App_Build_Configuration
 ---
 
 # supabase
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[supabase.ts]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Frontend_Linting_Configuration
+#graphify/code #graphify/EXTRACTED #community/Vite_App_Build_Configuration

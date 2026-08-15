@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/services/matching.py"
 type: "code"
-community: "Project Architecture & Implementation Phases"
+community: "AI Dev Jobs Discovery Provider"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Architecture__Implementation_Phases
+  - community/AI_Dev_Jobs_Discovery_Provider
 ---
 
 # MatchResult
@@ -18,4 +18,4 @@ tags:
 - [[DiscoveryProfile]] - `uses` [INFERRED]
 - [[matching.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases
+#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider

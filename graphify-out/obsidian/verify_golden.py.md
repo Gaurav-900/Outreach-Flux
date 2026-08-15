@@ -1,12 +1,12 @@
 ---
 source_file: "backend/scripts/verify_golden.py"
 type: "code"
-community: "Project Architecture & Implementation Phases"
+community: "AI Dev Jobs Discovery Provider"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Architecture__Implementation_Phases
+  - community/AI_Dev_Jobs_Discovery_Provider
 ---
 
 # verify_golden.py
@@ -16,4 +16,4 @@ tags:
 - [[get_candidate_profile()]] - `imports` [EXTRACTED]
 - [[run_verification()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases
+#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider

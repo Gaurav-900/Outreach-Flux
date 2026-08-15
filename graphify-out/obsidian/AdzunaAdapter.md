@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/adzuna.py"
 type: "code"
-community: "Free Hire Discovery Adapter"
+community: "Signalbase Discovery Adapter"
 location: "L7"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Free_Hire_Discovery_Adapter
+  - community/Signalbase_Discovery_Adapter
 ---
 
 # AdzunaAdapter
@@ -24,4 +24,4 @@ tags:
 - [[adzuna.py]] - `contains` [EXTRACTED]
 - [[orchestrator.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Free_Hire_Discovery_Adapter
+#graphify/code #graphify/INFERRED #community/Signalbase_Discovery_Adapter

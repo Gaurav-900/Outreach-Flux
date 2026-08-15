@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/freehire.py"
 type: "code"
-community: "Research Service & Intelligence Layer"
+community: "Project Memory & Root Documentation"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Research_Service__Intelligence_Layer
+  - community/Project_Memory__Root_Documentation
 ---
 
 # FreeHireAdapter
@@ -26,4 +26,4 @@ tags:
 - [[run_tests()]] - `calls` [EXTRACTED]
 - [[test_regression.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Research_Service__Intelligence_Layer
+#graphify/code #graphify/EXTRACTED #community/Project_Memory__Root_Documentation

@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/base.py"
 type: "code"
-community: "Signalbase Discovery Adapter"
+community: "Frontend React Entrypoint & UI"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Signalbase_Discovery_Adapter
+  - community/Frontend_React_Entrypoint__UI
 ---
 
 # NormalizedCompany
@@ -31,4 +31,4 @@ tags:
 - [[signalbase.py]] - `imports` [EXTRACTED]
 - [[themuse.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Signalbase_Discovery_Adapter
+#graphify/code #graphify/EXTRACTED #community/Frontend_React_Entrypoint__UI

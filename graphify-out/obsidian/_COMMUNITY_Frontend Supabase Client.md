@@ -8,11 +8,11 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Database Canonicalization & Schema]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[EVA Email Verification Provider]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[companies & company_sources Tables]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[contacts Table]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[opportunities & opportunity_sources Tables]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Contact Discovery Priority Hierarchy]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[EVA Email Verification]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Phase 4 — Contact Discovery]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
+- [[Phase 5 — Email Verification]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
+- [[Tomba Enrichment Fallback]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,10 +22,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Backend Application & Config Services]]
-- 1 edge to [[_COMMUNITY_Backend Supabase Client]]
-- 1 edge to [[_COMMUNITY_Adzuna Discovery Adapter]]
+- 2 edges to [[_COMMUNITY_Adzuna Discovery Adapter]]
+- 2 edges to [[_COMMUNITY_Discovery Base Interfaces & Normalized Models]]
+- 1 edge to [[_COMMUNITY_Free Hire Discovery Adapter]]
 
 ## Top bridge nodes
-- [[Database Canonicalization & Schema]] - degree 5, connects to 2 communities
-- [[EVA Email Verification Provider]] - degree 2, connects to 1 community
+- [[Phase 4 — Contact Discovery]] - degree 5, connects to 2 communities
+- [[Phase 5 — Email Verification]] - degree 4, connects to 2 communities
+- [[EVA Email Verification]] - degree 3, connects to 1 community

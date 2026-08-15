@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/base.py"
 type: "rationale"
-community: "Playbook Execution & Knowledge Layer Rules"
+community: "Backend Supabase Client"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Playbook_Execution__Knowledge_Layer_Rules
+  - community/Backend_Supabase_Client
 ---
 
 # Execute a search against the provider.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-search()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Playbook_Execution__Knowledge_Layer_Rules
+#graphify/rationale #graphify/EXTRACTED #community/Backend_Supabase_Client

@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/services/orchestrator.py"
 type: "code"
-community: "Free Hire Discovery Adapter"
+community: "Signalbase Discovery Adapter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Free_Hire_Discovery_Adapter
+  - community/Signalbase_Discovery_Adapter
 ---
 
 # orchestrator.py
@@ -23,4 +23,4 @@ tags:
 - [[TheMuseAdapter]] - `imports` [EXTRACTED]
 - [[get_candidate_profile()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Free_Hire_Discovery_Adapter
+#graphify/code #graphify/EXTRACTED #community/Signalbase_Discovery_Adapter

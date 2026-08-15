@@ -30,8 +30,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Project Architecture & Implementation Phases]]
 - 2 edges to [[_COMMUNITY_AI Dev Jobs Discovery Provider]]
+- 2 edges to [[_COMMUNITY_The Muse Provider & Discovery Orchestration]]
 
 ## Top bridge nodes
 - [[candidate.py]] - degree 13, connects to 2 communities

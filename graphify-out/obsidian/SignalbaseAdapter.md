@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/signalbase.py"
 type: "code"
-community: "AI Dev Jobs Discovery Provider"
+community: "The Muse Provider & Discovery Orchestration"
 location: "L7"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AI_Dev_Jobs_Discovery_Provider
+  - community/The_Muse_Provider__Discovery_Orchestration
 ---
 
 # SignalbaseAdapter
@@ -24,4 +24,4 @@ tags:
 - [[orchestrator.py]] - `imports` [EXTRACTED]
 - [[signalbase.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AI_Dev_Jobs_Discovery_Provider
+#graphify/code #graphify/INFERRED #community/The_Muse_Provider__Discovery_Orchestration

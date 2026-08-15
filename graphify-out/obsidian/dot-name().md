@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/models/candidate.py"
 type: "code"
-community: "AI Dev Jobs Discovery Provider"
+community: "The Muse Provider & Discovery Orchestration"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AI_Dev_Jobs_Discovery_Provider
+  - community/The_Muse_Provider__Discovery_Orchestration
 ---
 
 # .name()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DiscoveryProfile]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider
+#graphify/code #graphify/EXTRACTED #community/The_Muse_Provider__Discovery_Orchestration

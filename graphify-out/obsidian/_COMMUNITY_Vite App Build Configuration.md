@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[Outreach-Flux Project]] - concept - README.md
-- [[README]] - document - README.md
+- [[supabase]] - code - frontend/src/lib/supabase.ts
+- [[supabase.ts]] - code - frontend/src/lib/supabase.ts
 
 ## Live Query (requires Dataview plugin)
 

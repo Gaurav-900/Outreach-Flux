@@ -11,8 +11,9 @@ tags:
 # Phase 2 — Multi-Provider Incremental Discovery
 
 ## Connections
-- [[AI Job Outreach Assistant — Phase Playbook]] - `defines_phase` [EXTRACTED]
-- [[Discovery Architecture & 3-Hour Profile Rotation]] - `implements` [EXTRACTED]
+- [[3-Hour Discovery Profile Rotation]] - `configures_schedule` [EXTRACTED]
+- [[AI Job Outreach Phase Playbook]] - `defines_phase` [EXTRACTED]
+- [[DiscoveryProvider Architecture]] - `implements` [EXTRACTED]
 - [[Phase 1 — Candidate JSON]] - `precedes` [EXTRACTED]
 - [[Phase 3 — Database Canonicalization + Matching + Research]] - `precedes` [EXTRACTED]
 

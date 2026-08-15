@@ -1,21 +1,24 @@
 ---
 type: community
-members: 8
+members: 11
 ---
 
 # AI Dev Jobs Discovery Provider
 
-**Members:** 8 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[dot-is_available()_4]] - code - backend/app/providers/signalbase.py
-- [[dot-keywords()]] - code - backend/app/models/candidate.py
-- [[dot-name()]] - code - backend/app/models/candidate.py
-- [[dot-name()_5]] - code - backend/app/providers/signalbase.py
-- [[dot-search()_4]] - code - backend/app/providers/signalbase.py
-- [[DiscoveryProfile]] - code - backend/app/models/candidate.py
-- [[SignalbaseAdapter]] - code - backend/app/providers/signalbase.py
-- [[signalbase.py]] - code - backend/app/providers/signalbase.py
+- [[dot-__init__()]] - code - backend/app/services/matching.py
+- [[dot-evaluate_opportunity()]] - code - backend/app/services/matching.py
+- [[Any]] - code
+- [[BaseModel_2]] - code
+- [[CandidateFile]] - code - backend/app/models/candidate.py
+- [[MatchResult]] - code - backend/app/services/matching.py
+- [[MatchingService]] - code - backend/app/services/matching.py
+- [[config.py]] - code - backend/app/core/config.py
+- [[matching.py]] - code - backend/app/services/matching.py
+- [[run_verification()]] - code - backend/scripts/verify_golden.py
+- [[verify_golden.py]] - code - backend/scripts/verify_golden.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,16 +28,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_Signalbase Discovery Adapter]]
-- 7 edges to [[_COMMUNITY_Frontend React Entrypoint & UI]]
-- 7 edges to [[_COMMUNITY_Research Service & Intelligence Layer]]
-- 5 edges to [[_COMMUNITY_Playbook Execution & Knowledge Layer Rules]]
-- 5 edges to [[_COMMUNITY_Project Architecture & Implementation Phases]]
-- 4 edges to [[_COMMUNITY_Free Hire Discovery Adapter]]
+- 6 edges to [[_COMMUNITY_Project Architecture & Implementation Phases]]
+- 4 edges to [[_COMMUNITY_The Muse Provider & Discovery Orchestration]]
 - 2 edges to [[_COMMUNITY_Candidate Schemas & Validation Models]]
+- 1 edge to [[_COMMUNITY_Signalbase Discovery Adapter]]
 
 ## Top bridge nodes
-- [[DiscoveryProfile]] - degree 29, connects to 7 communities
-- [[SignalbaseAdapter]] - degree 11, connects to 6 communities
-- [[signalbase.py]] - degree 6, connects to 4 communities
-- [[dot-search()_4]] - degree 6, connects to 3 communities
+- [[MatchingService]] - degree 10, connects to 3 communities
+- [[CandidateFile]] - degree 8, connects to 2 communities
+- [[MatchResult]] - degree 5, connects to 1 community
+- [[matching.py]] - degree 4, connects to 1 community
+- [[dot-evaluate_opportunity()]] - degree 4, connects to 1 community

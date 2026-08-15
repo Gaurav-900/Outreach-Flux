@@ -1,21 +1,23 @@
 ---
 type: community
-members: 8
+members: 10
 ---
 
 # Discovery Base Interfaces & Normalized Models
 
-**Members:** 8 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[@vitejsplugin-react]] - concept - frontend/README.md
-- [[@vitejsplugin-react-swc]] - concept - frontend/README.md
-- [[Oxlint]] - concept - frontend/README.md
-- [[React]] - concept - frontend/README.md
-- [[React Compiler]] - concept - frontend/README.md
-- [[TypeScript]] - concept - frontend/README.md
-- [[Vite]] - concept - frontend/README.md
-- [[frontendREADME]] - document - frontend/README.md
+- [[DeepSeek LLM Provider Fallback]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Gemini LLM Provider]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Gmail API & Controlled Sending Policy]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[LLM Batch Email Generation]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[LLM Usage Restriction Rationale]] - rationale - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Phase 6 — AI Outreach Batch Generation]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
+- [[Phase 7 — Gmail + Sending Policy]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
+- [[Phase 8 — Tracking + Reply Classification]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
+- [[Reply Detection & Classification]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[configresume.pdf]] - document - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +27,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Backend Application & Config Services]]
+- 4 edges to [[_COMMUNITY_Adzuna Discovery Adapter]]
+- 2 edges to [[_COMMUNITY_Frontend Supabase Client]]
 
 ## Top bridge nodes
-- [[frontendREADME]] - degree 8, connects to 1 community
+- [[Phase 6 — AI Outreach Batch Generation]] - degree 6, connects to 2 communities
+- [[Phase 7 — Gmail + Sending Policy]] - degree 5, connects to 1 community
+- [[Phase 8 — Tracking + Reply Classification]] - degree 4, connects to 1 community
+- [[LLM Batch Email Generation]] - degree 4, connects to 1 community

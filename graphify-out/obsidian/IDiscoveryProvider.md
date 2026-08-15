@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/base.py"
 type: "code"
-community: "Playbook Execution & Knowledge Layer Rules"
+community: "Backend Supabase Client"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playbook_Execution__Knowledge_Layer_Rules
+  - community/Backend_Supabase_Client
 ---
 
 # IDiscoveryProvider
@@ -31,4 +31,4 @@ tags:
 - [[signalbase.py]] - `imports` [EXTRACTED]
 - [[themuse.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playbook_Execution__Knowledge_Layer_Rules
+#graphify/code #graphify/EXTRACTED #community/Backend_Supabase_Client

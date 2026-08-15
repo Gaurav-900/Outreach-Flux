@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/aidevjobs.py"
 type: "code"
-community: "Signalbase Discovery Adapter"
+community: "Frontend React Entrypoint & UI"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Signalbase_Discovery_Adapter
+  - community/Frontend_React_Entrypoint__UI
 ---
 
 # aidevjobs.py
@@ -19,4 +19,4 @@ tags:
 - [[NormalizedOpportunity]] - `imports` [EXTRACTED]
 - [[ProviderSearchResult]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Signalbase_Discovery_Adapter
+#graphify/code #graphify/EXTRACTED #community/Frontend_React_Entrypoint__UI

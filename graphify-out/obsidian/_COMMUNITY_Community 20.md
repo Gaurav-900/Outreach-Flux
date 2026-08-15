@@ -1,14 +1,15 @@
 ---
 type: community
-members: 1
+members: 2
 ---
 
 # Community 20
 
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[supabase.py]] - code - backend/app/core/supabase.py
+- [[Outreach-Flux Project]] - concept - README.md
+- [[README]] - document - README.md
 
 ## Live Query (requires Dataview plugin)
 

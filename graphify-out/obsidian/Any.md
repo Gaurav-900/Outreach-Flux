@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Project Architecture & Implementation Phases"
+community: "AI Dev Jobs Discovery Provider"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Architecture__Implementation_Phases
+  - community/AI_Dev_Jobs_Discovery_Provider
 ---
 
 # Any
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-evaluate_opportunity()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases
+#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider

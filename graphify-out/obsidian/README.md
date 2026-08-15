@@ -1,11 +1,11 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Vite App Build Configuration"
+community: "Community 20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vite_App_Build_Configuration
+  - community/Community_20
 ---
 
 # README.md
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Outreach-Flux Project]] - `defines` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Vite_App_Build_Configuration
+#graphify/document #graphify/EXTRACTED #community/Community_20

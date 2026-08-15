@@ -9,10 +9,10 @@
       "source_file": "backend/app/core/config.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_app_core_config",
-      "community": 0,
-      "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "config.py"
+      "community": 3,
+      "community_name": "AI Dev Jobs Discovery Provider",
+      "norm_label": "config.py",
+      "id": "backend_app_core_config"
     },
     {
       "label": "get_candidate_profile()",
@@ -21,10 +21,10 @@
       "source_location": "L9",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_core_config_get_candidate_profile",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "get_candidate_profile()"
+      "norm_label": "get_candidate_profile()",
+      "id": "backend_app_core_config_get_candidate_profile"
     },
     {
       "label": "supabase.py",
@@ -32,10 +32,10 @@
       "source_file": "backend/app/core/supabase.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_app_core_supabase",
-      "community": 20,
-      "community_name": "Community 20",
-      "norm_label": "supabase.py"
+      "community": 24,
+      "community_name": "Community 24",
+      "norm_label": "supabase.py",
+      "id": "backend_app_core_supabase"
     },
     {
       "label": "main.py",
@@ -43,10 +43,10 @@
       "source_file": "backend/app/main.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_app_main",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "main.py"
+      "norm_label": "main.py",
+      "id": "backend_app_main"
     },
     {
       "label": "lifespan()",
@@ -55,10 +55,10 @@
       "source_location": "L7",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_main_lifespan",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "lifespan()"
+      "norm_label": "lifespan()",
+      "id": "backend_app_main_lifespan"
     },
     {
       "label": "FastAPI",
@@ -66,10 +66,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "fastapi",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "fastapi"
+      "norm_label": "fastapi",
+      "id": "fastapi"
     },
     {
       "label": "get",
@@ -77,10 +77,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "get",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "get"
+      "norm_label": "get",
+      "id": "get"
     },
     {
       "label": "health_check()",
@@ -89,10 +89,10 @@
       "source_location": "L25",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_main_health_check",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "health_check()"
+      "norm_label": "health_check()",
+      "id": "backend_app_main_health_check"
     },
     {
       "label": "get_candidate_profile_endpoint()",
@@ -101,10 +101,10 @@
       "source_location": "L29",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_main_get_candidate_profile_endpoint",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "get_candidate_profile_endpoint()"
+      "norm_label": "get_candidate_profile_endpoint()",
+      "id": "backend_app_main_get_candidate_profile_endpoint"
     },
     {
       "label": "candidate.py",
@@ -112,10 +112,10 @@
       "source_file": "backend/app/models/candidate.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_app_models_candidate",
       "community": 1,
       "community_name": "Candidate Schemas & Validation Models",
-      "norm_label": "candidate.py"
+      "norm_label": "candidate.py",
+      "id": "backend_app_models_candidate"
     },
     {
       "label": "CandidateContact",
@@ -125,10 +125,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_models_candidate_candidatecontact",
       "community": 1,
       "community_name": "Candidate Schemas & Validation Models",
-      "norm_label": "candidatecontact"
+      "norm_label": "candidatecontact",
+      "id": "backend_app_models_candidate_candidatecontact"
     },
     {
       "label": "BaseModel",
@@ -136,10 +136,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "backend_app_models_candidate_py_basemodel",
       "community": 1,
       "community_name": "Candidate Schemas & Validation Models",
-      "norm_label": "basemodel"
+      "norm_label": "basemodel",
+      "id": "backend_app_models_candidate_py_basemodel"
     },
     {
       "label": "CandidateLocation",
@@ -149,10 +149,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_models_candidate_candidatelocation",
       "community": 1,
       "community_name": "Candidate Schemas & Validation Models",
-      "norm_label": "candidatelocation"
+      "norm_label": "candidatelocation",
+      "id": "backend_app_models_candidate_candidatelocation"
     },
     {
       "label": "CandidateEducation",
@@ -162,10 +162,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_models_candidate_candidateeducation",
       "community": 1,
       "community_name": "Candidate Schemas & Validation Models",
-      "norm_label": "candidateeducation"
+      "norm_label": "candidateeducation",
+      "id": "backend_app_models_candidate_candidateeducation"
     },
     {
       "label": "CandidateInfo",
@@ -175,10 +175,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_models_candidate_candidateinfo",
       "community": 1,
       "community_name": "Candidate Schemas & Validation Models",
-      "norm_label": "candidateinfo"
+      "norm_label": "candidateinfo",
+      "id": "backend_app_models_candidate_candidateinfo"
     },
     {
       "label": "ProfessionalProfile",
@@ -188,10 +188,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_models_candidate_professionalprofile",
       "community": 1,
       "community_name": "Candidate Schemas & Validation Models",
-      "norm_label": "professionalprofile"
+      "norm_label": "professionalprofile",
+      "id": "backend_app_models_candidate_professionalprofile"
     },
     {
       "label": "Experience",
@@ -201,10 +201,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_models_candidate_experience",
       "community": 1,
       "community_name": "Candidate Schemas & Validation Models",
-      "norm_label": "experience"
+      "norm_label": "experience",
+      "id": "backend_app_models_candidate_experience"
     },
     {
       "label": "Project",
@@ -214,10 +214,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_models_candidate_project",
       "community": 1,
       "community_name": "Candidate Schemas & Validation Models",
-      "norm_label": "project"
+      "norm_label": "project",
+      "id": "backend_app_models_candidate_project"
     },
     {
       "label": "Skills",
@@ -227,10 +227,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_models_candidate_skills",
       "community": 1,
       "community_name": "Candidate Schemas & Validation Models",
-      "norm_label": "skills"
+      "norm_label": "skills",
+      "id": "backend_app_models_candidate_skills"
     },
     {
       "label": "DiscoveryPreferences",
@@ -240,10 +240,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_models_candidate_discoverypreferences",
       "community": 1,
       "community_name": "Candidate Schemas & Validation Models",
-      "norm_label": "discoverypreferences"
+      "norm_label": "discoverypreferences",
+      "id": "backend_app_models_candidate_discoverypreferences"
     },
     {
       "label": "DiscoveryProfile",
@@ -253,10 +253,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_models_candidate_discoveryprofile",
-      "community": 3,
-      "community_name": "AI Dev Jobs Discovery Provider",
-      "norm_label": "discoveryprofile"
+      "community": 5,
+      "community_name": "The Muse Provider & Discovery Orchestration",
+      "norm_label": "discoveryprofile",
+      "id": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "label": ".keywords()",
@@ -265,10 +265,10 @@
       "source_location": "L74",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_models_candidate_discoveryprofile_keywords",
-      "community": 3,
-      "community_name": "AI Dev Jobs Discovery Provider",
-      "norm_label": ".keywords()"
+      "community": 5,
+      "community_name": "The Muse Provider & Discovery Orchestration",
+      "norm_label": ".keywords()",
+      "id": "backend_app_models_candidate_discoveryprofile_keywords"
     },
     {
       "label": ".name()",
@@ -277,10 +277,10 @@
       "source_location": "L78",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_models_candidate_discoveryprofile_name",
-      "community": 3,
-      "community_name": "AI Dev Jobs Discovery Provider",
-      "norm_label": ".name()"
+      "community": 5,
+      "community_name": "The Muse Provider & Discovery Orchestration",
+      "norm_label": ".name()",
+      "id": "backend_app_models_candidate_discoveryprofile_name"
     },
     {
       "label": "MatchingRules",
@@ -290,10 +290,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_models_candidate_matchingrules",
       "community": 1,
       "community_name": "Candidate Schemas & Validation Models",
-      "norm_label": "matchingrules"
+      "norm_label": "matchingrules",
+      "id": "backend_app_models_candidate_matchingrules"
     },
     {
       "label": "OutreachPreferences",
@@ -303,10 +303,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_models_candidate_outreachpreferences",
       "community": 1,
       "community_name": "Candidate Schemas & Validation Models",
-      "norm_label": "outreachpreferences"
+      "norm_label": "outreachpreferences",
+      "id": "backend_app_models_candidate_outreachpreferences"
     },
     {
       "label": "CandidateFile",
@@ -316,10 +316,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_models_candidate_candidatefile",
-      "community": 0,
-      "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "candidatefile"
+      "community": 3,
+      "community_name": "AI Dev Jobs Discovery Provider",
+      "norm_label": "candidatefile",
+      "id": "backend_app_models_candidate_candidatefile"
     },
     {
       "label": "adzuna.py",
@@ -327,10 +327,10 @@
       "source_file": "backend/app/providers/adzuna.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_app_providers_adzuna",
-      "community": 9,
-      "community_name": "Free Hire Discovery Adapter",
-      "norm_label": "adzuna.py"
+      "community": 10,
+      "community_name": "Signalbase Discovery Adapter",
+      "norm_label": "adzuna.py",
+      "id": "backend_app_providers_adzuna"
     },
     {
       "label": "AdzunaAdapter",
@@ -340,10 +340,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_providers_adzuna_adzunaadapter",
-      "community": 9,
-      "community_name": "Free Hire Discovery Adapter",
-      "norm_label": "adzunaadapter"
+      "community": 10,
+      "community_name": "Signalbase Discovery Adapter",
+      "norm_label": "adzunaadapter",
+      "id": "backend_app_providers_adzuna_adzunaadapter"
     },
     {
       "label": ".name()",
@@ -352,10 +352,10 @@
       "source_location": "L9",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_adzuna_adzunaadapter_name",
-      "community": 9,
-      "community_name": "Free Hire Discovery Adapter",
-      "norm_label": ".name()"
+      "community": 10,
+      "community_name": "Signalbase Discovery Adapter",
+      "norm_label": ".name()",
+      "id": "backend_app_providers_adzuna_adzunaadapter_name"
     },
     {
       "label": ".is_available()",
@@ -364,10 +364,10 @@
       "source_location": "L12",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_adzuna_adzunaadapter_is_available",
-      "community": 9,
-      "community_name": "Free Hire Discovery Adapter",
-      "norm_label": ".is_available()"
+      "community": 10,
+      "community_name": "Signalbase Discovery Adapter",
+      "norm_label": ".is_available()",
+      "id": "backend_app_providers_adzuna_adzunaadapter_is_available"
     },
     {
       "label": ".search()",
@@ -376,10 +376,10 @@
       "source_location": "L15",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_adzuna_adzunaadapter_search",
-      "community": 9,
-      "community_name": "Free Hire Discovery Adapter",
-      "norm_label": ".search()"
+      "community": 10,
+      "community_name": "Signalbase Discovery Adapter",
+      "norm_label": ".search()",
+      "id": "backend_app_providers_adzuna_adzunaadapter_search"
     },
     {
       "label": "aidevjobs.py",
@@ -387,10 +387,10 @@
       "source_file": "backend/app/providers/aidevjobs.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_app_providers_aidevjobs",
-      "community": 10,
-      "community_name": "Signalbase Discovery Adapter",
-      "norm_label": "aidevjobs.py"
+      "community": 11,
+      "community_name": "Frontend React Entrypoint & UI",
+      "norm_label": "aidevjobs.py",
+      "id": "backend_app_providers_aidevjobs"
     },
     {
       "label": "AIDevJobsAdapter",
@@ -400,10 +400,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_providers_aidevjobs_aidevjobsadapter",
-      "community": 10,
-      "community_name": "Signalbase Discovery Adapter",
-      "norm_label": "aidevjobsadapter"
+      "community": 11,
+      "community_name": "Frontend React Entrypoint & UI",
+      "norm_label": "aidevjobsadapter",
+      "id": "backend_app_providers_aidevjobs_aidevjobsadapter"
     },
     {
       "label": ".name()",
@@ -412,10 +412,10 @@
       "source_location": "L9",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_aidevjobs_aidevjobsadapter_name",
-      "community": 10,
-      "community_name": "Signalbase Discovery Adapter",
-      "norm_label": ".name()"
+      "community": 11,
+      "community_name": "Frontend React Entrypoint & UI",
+      "norm_label": ".name()",
+      "id": "backend_app_providers_aidevjobs_aidevjobsadapter_name"
     },
     {
       "label": ".is_available()",
@@ -424,10 +424,10 @@
       "source_location": "L12",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_aidevjobs_aidevjobsadapter_is_available",
-      "community": 10,
-      "community_name": "Signalbase Discovery Adapter",
-      "norm_label": ".is_available()"
+      "community": 11,
+      "community_name": "Frontend React Entrypoint & UI",
+      "norm_label": ".is_available()",
+      "id": "backend_app_providers_aidevjobs_aidevjobsadapter_is_available"
     },
     {
       "label": ".search()",
@@ -436,10 +436,10 @@
       "source_location": "L15",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_aidevjobs_aidevjobsadapter_search",
-      "community": 10,
-      "community_name": "Signalbase Discovery Adapter",
-      "norm_label": ".search()"
+      "community": 11,
+      "community_name": "Frontend React Entrypoint & UI",
+      "norm_label": ".search()",
+      "id": "backend_app_providers_aidevjobs_aidevjobsadapter_search"
     },
     {
       "label": "base.py",
@@ -447,10 +447,10 @@
       "source_file": "backend/app/providers/base.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_app_providers_base",
-      "community": 12,
-      "community_name": "Playbook Execution & Knowledge Layer Rules",
-      "norm_label": "base.py"
+      "community": 13,
+      "community_name": "Backend Supabase Client",
+      "norm_label": "base.py",
+      "id": "backend_app_providers_base"
     },
     {
       "label": "NormalizedCompany",
@@ -460,10 +460,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_providers_base_normalizedcompany",
-      "community": 10,
-      "community_name": "Signalbase Discovery Adapter",
-      "norm_label": "normalizedcompany"
+      "community": 11,
+      "community_name": "Frontend React Entrypoint & UI",
+      "norm_label": "normalizedcompany",
+      "id": "backend_app_providers_base_normalizedcompany"
     },
     {
       "label": "BaseModel",
@@ -471,10 +471,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "backend_app_providers_base_py_basemodel",
-      "community": 6,
-      "community_name": "Research Service & Intelligence Layer",
-      "norm_label": "basemodel"
+      "community": 7,
+      "community_name": "Project Memory & Root Documentation",
+      "norm_label": "basemodel",
+      "id": "backend_app_providers_base_py_basemodel"
     },
     {
       "label": "NormalizedOpportunity",
@@ -484,10 +484,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_providers_base_normalizedopportunity",
-      "community": 11,
-      "community_name": "Frontend React Entrypoint & UI",
-      "norm_label": "normalizedopportunity"
+      "community": 12,
+      "community_name": "Playbook Execution & Knowledge Layer Rules",
+      "norm_label": "normalizedopportunity",
+      "id": "backend_app_providers_base_normalizedopportunity"
     },
     {
       "label": "ProviderSearchResult",
@@ -497,10 +497,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_providers_base_providersearchresult",
-      "community": 6,
-      "community_name": "Research Service & Intelligence Layer",
-      "norm_label": "providersearchresult"
+      "community": 7,
+      "community_name": "Project Memory & Root Documentation",
+      "norm_label": "providersearchresult",
+      "id": "backend_app_providers_base_providersearchresult"
     },
     {
       "label": "IDiscoveryProvider",
@@ -510,10 +510,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_providers_base_idiscoveryprovider",
-      "community": 12,
-      "community_name": "Playbook Execution & Knowledge Layer Rules",
-      "norm_label": "idiscoveryprovider"
+      "community": 13,
+      "community_name": "Backend Supabase Client",
+      "norm_label": "idiscoveryprovider",
+      "id": "backend_app_providers_base_idiscoveryprovider"
     },
     {
       "label": "ABC",
@@ -521,10 +521,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "abc",
-      "community": 12,
-      "community_name": "Playbook Execution & Knowledge Layer Rules",
-      "norm_label": "abc"
+      "community": 13,
+      "community_name": "Backend Supabase Client",
+      "norm_label": "abc",
+      "id": "abc"
     },
     {
       "label": ".name()",
@@ -533,10 +533,10 @@
       "source_location": "L33",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_base_idiscoveryprovider_name",
-      "community": 17,
-      "community_name": "System Core Purpose & Goals",
-      "norm_label": ".name()"
+      "community": 18,
+      "community_name": "Frontend Linting Configuration",
+      "norm_label": ".name()",
+      "id": "backend_app_providers_base_idiscoveryprovider_name"
     },
     {
       "label": ".is_available()",
@@ -545,10 +545,10 @@
       "source_location": "L38",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_base_idiscoveryprovider_is_available",
-      "community": 16,
-      "community_name": "Anti-Hallucination Rules",
-      "norm_label": ".is_available()"
+      "community": 17,
+      "community_name": "System Core Purpose & Goals",
+      "norm_label": ".is_available()",
+      "id": "backend_app_providers_base_idiscoveryprovider_is_available"
     },
     {
       "label": ".search()",
@@ -557,10 +557,10 @@
       "source_location": "L43",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_base_idiscoveryprovider_search",
-      "community": 12,
-      "community_name": "Playbook Execution & Knowledge Layer Rules",
-      "norm_label": ".search()"
+      "community": 13,
+      "community_name": "Backend Supabase Client",
+      "norm_label": ".search()",
+      "id": "backend_app_providers_base_idiscoveryprovider_search"
     },
     {
       "label": "The unique identifier for this provider.",
@@ -568,10 +568,10 @@
       "source_file": "backend/app/providers/base.py",
       "source_location": "L34",
       "_origin": "ast",
-      "id": "backend_app_providers_base_rationale_34",
-      "community": 17,
-      "community_name": "System Core Purpose & Goals",
-      "norm_label": "the unique identifier for this provider."
+      "community": 18,
+      "community_name": "Frontend Linting Configuration",
+      "norm_label": "the unique identifier for this provider.",
+      "id": "backend_app_providers_base_rationale_34"
     },
     {
       "label": "Determines if the provider is currently available (e.g., API keys are present).",
@@ -579,10 +579,10 @@
       "source_file": "backend/app/providers/base.py",
       "source_location": "L39",
       "_origin": "ast",
-      "id": "backend_app_providers_base_rationale_39",
-      "community": 16,
-      "community_name": "Anti-Hallucination Rules",
-      "norm_label": "determines if the provider is currently available (e.g., api keys are present)."
+      "community": 17,
+      "community_name": "System Core Purpose & Goals",
+      "norm_label": "determines if the provider is currently available (e.g., api keys are present).",
+      "id": "backend_app_providers_base_rationale_39"
     },
     {
       "label": "Execute a search against the provider.",
@@ -590,10 +590,10 @@
       "source_file": "backend/app/providers/base.py",
       "source_location": "L44",
       "_origin": "ast",
-      "id": "backend_app_providers_base_rationale_44",
-      "community": 12,
-      "community_name": "Playbook Execution & Knowledge Layer Rules",
-      "norm_label": "execute a search against the provider."
+      "community": 13,
+      "community_name": "Backend Supabase Client",
+      "norm_label": "execute a search against the provider.",
+      "id": "backend_app_providers_base_rationale_44"
     },
     {
       "label": "freehire.py",
@@ -601,10 +601,10 @@
       "source_file": "backend/app/providers/freehire.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_app_providers_freehire",
-      "community": 6,
-      "community_name": "Research Service & Intelligence Layer",
-      "norm_label": "freehire.py"
+      "community": 7,
+      "community_name": "Project Memory & Root Documentation",
+      "norm_label": "freehire.py",
+      "id": "backend_app_providers_freehire"
     },
     {
       "label": "FreeHireAdapter",
@@ -614,10 +614,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_providers_freehire_freehireadapter",
-      "community": 6,
-      "community_name": "Research Service & Intelligence Layer",
-      "norm_label": "freehireadapter"
+      "community": 7,
+      "community_name": "Project Memory & Root Documentation",
+      "norm_label": "freehireadapter",
+      "id": "backend_app_providers_freehire_freehireadapter"
     },
     {
       "label": ".name()",
@@ -626,10 +626,10 @@
       "source_location": "L8",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_freehire_freehireadapter_name",
-      "community": 6,
-      "community_name": "Research Service & Intelligence Layer",
-      "norm_label": ".name()"
+      "community": 7,
+      "community_name": "Project Memory & Root Documentation",
+      "norm_label": ".name()",
+      "id": "backend_app_providers_freehire_freehireadapter_name"
     },
     {
       "label": ".is_available()",
@@ -638,10 +638,10 @@
       "source_location": "L11",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_freehire_freehireadapter_is_available",
-      "community": 6,
-      "community_name": "Research Service & Intelligence Layer",
-      "norm_label": ".is_available()"
+      "community": 7,
+      "community_name": "Project Memory & Root Documentation",
+      "norm_label": ".is_available()",
+      "id": "backend_app_providers_freehire_freehireadapter_is_available"
     },
     {
       "label": ".search()",
@@ -650,10 +650,10 @@
       "source_location": "L14",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_freehire_freehireadapter_search",
-      "community": 6,
-      "community_name": "Research Service & Intelligence Layer",
-      "norm_label": ".search()"
+      "community": 7,
+      "community_name": "Project Memory & Root Documentation",
+      "norm_label": ".search()",
+      "id": "backend_app_providers_freehire_freehireadapter_search"
     },
     {
       "label": "signalbase.py",
@@ -661,10 +661,10 @@
       "source_file": "backend/app/providers/signalbase.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_app_providers_signalbase",
-      "community": 3,
-      "community_name": "AI Dev Jobs Discovery Provider",
-      "norm_label": "signalbase.py"
+      "community": 5,
+      "community_name": "The Muse Provider & Discovery Orchestration",
+      "norm_label": "signalbase.py",
+      "id": "backend_app_providers_signalbase"
     },
     {
       "label": "SignalbaseAdapter",
@@ -674,10 +674,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_providers_signalbase_signalbaseadapter",
-      "community": 3,
-      "community_name": "AI Dev Jobs Discovery Provider",
-      "norm_label": "signalbaseadapter"
+      "community": 5,
+      "community_name": "The Muse Provider & Discovery Orchestration",
+      "norm_label": "signalbaseadapter",
+      "id": "backend_app_providers_signalbase_signalbaseadapter"
     },
     {
       "label": ".name()",
@@ -686,10 +686,10 @@
       "source_location": "L9",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_signalbase_signalbaseadapter_name",
-      "community": 3,
-      "community_name": "AI Dev Jobs Discovery Provider",
-      "norm_label": ".name()"
+      "community": 5,
+      "community_name": "The Muse Provider & Discovery Orchestration",
+      "norm_label": ".name()",
+      "id": "backend_app_providers_signalbase_signalbaseadapter_name"
     },
     {
       "label": ".is_available()",
@@ -698,10 +698,10 @@
       "source_location": "L12",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_signalbase_signalbaseadapter_is_available",
-      "community": 3,
-      "community_name": "AI Dev Jobs Discovery Provider",
-      "norm_label": ".is_available()"
+      "community": 5,
+      "community_name": "The Muse Provider & Discovery Orchestration",
+      "norm_label": ".is_available()",
+      "id": "backend_app_providers_signalbase_signalbaseadapter_is_available"
     },
     {
       "label": ".search()",
@@ -710,10 +710,10 @@
       "source_location": "L15",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_signalbase_signalbaseadapter_search",
-      "community": 3,
-      "community_name": "AI Dev Jobs Discovery Provider",
-      "norm_label": ".search()"
+      "community": 5,
+      "community_name": "The Muse Provider & Discovery Orchestration",
+      "norm_label": ".search()",
+      "id": "backend_app_providers_signalbase_signalbaseadapter_search"
     },
     {
       "label": "themuse.py",
@@ -721,10 +721,10 @@
       "source_file": "backend/app/providers/themuse.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_app_providers_themuse",
-      "community": 11,
-      "community_name": "Frontend React Entrypoint & UI",
-      "norm_label": "themuse.py"
+      "community": 12,
+      "community_name": "Playbook Execution & Knowledge Layer Rules",
+      "norm_label": "themuse.py",
+      "id": "backend_app_providers_themuse"
     },
     {
       "label": "TheMuseAdapter",
@@ -734,10 +734,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_providers_themuse_themuseadapter",
-      "community": 11,
-      "community_name": "Frontend React Entrypoint & UI",
-      "norm_label": "themuseadapter"
+      "community": 12,
+      "community_name": "Playbook Execution & Knowledge Layer Rules",
+      "norm_label": "themuseadapter",
+      "id": "backend_app_providers_themuse_themuseadapter"
     },
     {
       "label": ".name()",
@@ -746,10 +746,10 @@
       "source_location": "L9",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_themuse_themuseadapter_name",
-      "community": 11,
-      "community_name": "Frontend React Entrypoint & UI",
-      "norm_label": ".name()"
+      "community": 12,
+      "community_name": "Playbook Execution & Knowledge Layer Rules",
+      "norm_label": ".name()",
+      "id": "backend_app_providers_themuse_themuseadapter_name"
     },
     {
       "label": ".is_available()",
@@ -758,10 +758,10 @@
       "source_location": "L12",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_themuse_themuseadapter_is_available",
-      "community": 11,
-      "community_name": "Frontend React Entrypoint & UI",
-      "norm_label": ".is_available()"
+      "community": 12,
+      "community_name": "Playbook Execution & Knowledge Layer Rules",
+      "norm_label": ".is_available()",
+      "id": "backend_app_providers_themuse_themuseadapter_is_available"
     },
     {
       "label": ".search()",
@@ -770,10 +770,10 @@
       "source_location": "L15",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_providers_themuse_themuseadapter_search",
-      "community": 11,
-      "community_name": "Frontend React Entrypoint & UI",
-      "norm_label": ".search()"
+      "community": 12,
+      "community_name": "Playbook Execution & Knowledge Layer Rules",
+      "norm_label": ".search()",
+      "id": "backend_app_providers_themuse_themuseadapter_search"
     },
     {
       "label": "matching.py",
@@ -781,10 +781,10 @@
       "source_file": "backend/app/services/matching.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_app_services_matching",
-      "community": 0,
-      "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "matching.py"
+      "community": 3,
+      "community_name": "AI Dev Jobs Discovery Provider",
+      "norm_label": "matching.py",
+      "id": "backend_app_services_matching"
     },
     {
       "label": "MatchResult",
@@ -794,10 +794,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_services_matching_matchresult",
-      "community": 0,
-      "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "matchresult"
+      "community": 3,
+      "community_name": "AI Dev Jobs Discovery Provider",
+      "norm_label": "matchresult",
+      "id": "backend_app_services_matching_matchresult"
     },
     {
       "label": "BaseModel",
@@ -805,10 +805,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "backend_app_services_matching_py_basemodel",
-      "community": 0,
-      "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "basemodel"
+      "community": 3,
+      "community_name": "AI Dev Jobs Discovery Provider",
+      "norm_label": "basemodel",
+      "id": "backend_app_services_matching_py_basemodel"
     },
     {
       "label": "MatchingService",
@@ -818,10 +818,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_services_matching_matchingservice",
-      "community": 0,
-      "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "matchingservice"
+      "community": 3,
+      "community_name": "AI Dev Jobs Discovery Provider",
+      "norm_label": "matchingservice",
+      "id": "backend_app_services_matching_matchingservice"
     },
     {
       "label": ".__init__()",
@@ -830,10 +830,10 @@
       "source_location": "L12",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_services_matching_matchingservice_init",
-      "community": 0,
-      "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": ".__init__()"
+      "community": 3,
+      "community_name": "AI Dev Jobs Discovery Provider",
+      "norm_label": ".__init__()",
+      "id": "backend_app_services_matching_matchingservice_init"
     },
     {
       "label": ".evaluate_opportunity()",
@@ -842,10 +842,10 @@
       "source_location": "L15",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_services_matching_matchingservice_evaluate_opportunity",
-      "community": 0,
-      "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": ".evaluate_opportunity()"
+      "community": 3,
+      "community_name": "AI Dev Jobs Discovery Provider",
+      "norm_label": ".evaluate_opportunity()",
+      "id": "backend_app_services_matching_matchingservice_evaluate_opportunity"
     },
     {
       "label": "Any",
@@ -853,10 +853,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "any",
-      "community": 0,
-      "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "any"
+      "community": 3,
+      "community_name": "AI Dev Jobs Discovery Provider",
+      "norm_label": "any",
+      "id": "any"
     },
     {
       "label": "orchestrator.py",
@@ -864,10 +864,10 @@
       "source_file": "backend/app/services/orchestrator.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_app_services_orchestrator",
-      "community": 9,
-      "community_name": "Free Hire Discovery Adapter",
-      "norm_label": "orchestrator.py"
+      "community": 10,
+      "community_name": "Signalbase Discovery Adapter",
+      "norm_label": "orchestrator.py",
+      "id": "backend_app_services_orchestrator"
     },
     {
       "label": "DiscoveryOrchestrator",
@@ -877,10 +877,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_services_orchestrator_discoveryorchestrator",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "discoveryorchestrator"
+      "norm_label": "discoveryorchestrator",
+      "id": "backend_app_services_orchestrator_discoveryorchestrator"
     },
     {
       "label": ".__init__()",
@@ -889,10 +889,10 @@
       "source_location": "L26",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_services_orchestrator_discoveryorchestrator_init",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": ".__init__()"
+      "norm_label": ".__init__()",
+      "id": "backend_app_services_orchestrator_discoveryorchestrator_init"
     },
     {
       "label": ".run_discovery_for_profile()",
@@ -901,10 +901,10 @@
       "source_location": "L31",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_services_orchestrator_discoveryorchestrator_run_discovery_for_profile",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": ".run_discovery_for_profile()"
+      "norm_label": ".run_discovery_for_profile()",
+      "id": "backend_app_services_orchestrator_discoveryorchestrator_run_discovery_for_profile"
     },
     {
       "label": ".process_opportunity()",
@@ -913,10 +913,10 @@
       "source_location": "L86",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_services_orchestrator_discoveryorchestrator_process_opportunity",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": ".process_opportunity()"
+      "norm_label": ".process_opportunity()",
+      "id": "backend_app_services_orchestrator_discoveryorchestrator_process_opportunity"
     },
     {
       "label": "research.py",
@@ -924,10 +924,10 @@
       "source_file": "backend/app/services/research.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_app_services_research",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "research.py"
+      "norm_label": "research.py",
+      "id": "backend_app_services_research"
     },
     {
       "label": "ResearchService",
@@ -937,10 +937,10 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "backend_app_services_research_researchservice",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "researchservice"
+      "norm_label": "researchservice",
+      "id": "backend_app_services_research_researchservice"
     },
     {
       "label": ".research_opportunity()",
@@ -949,10 +949,10 @@
       "source_location": "L7",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_services_research_researchservice_research_opportunity",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": ".research_opportunity()"
+      "norm_label": ".research_opportunity()",
+      "id": "backend_app_services_research_researchservice_research_opportunity"
     },
     {
       "label": "scheduler.py",
@@ -960,10 +960,10 @@
       "source_file": "backend/app/services/scheduler.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_app_services_scheduler",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "scheduler.py"
+      "norm_label": "scheduler.py",
+      "id": "backend_app_services_scheduler"
     },
     {
       "label": "run_discovery_tick()",
@@ -972,10 +972,10 @@
       "source_location": "L14",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_services_scheduler_run_discovery_tick",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "run_discovery_tick()"
+      "norm_label": "run_discovery_tick()",
+      "id": "backend_app_services_scheduler_run_discovery_tick"
     },
     {
       "label": "start_scheduler()",
@@ -984,10 +984,10 @@
       "source_location": "L70",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_app_services_scheduler_start_scheduler",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "start_scheduler()"
+      "norm_label": "start_scheduler()",
+      "id": "backend_app_services_scheduler_start_scheduler"
     },
     {
       "label": "test_regression.py",
@@ -995,10 +995,10 @@
       "source_file": "backend/scripts/test_regression.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_scripts_test_regression",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "test_regression.py"
+      "norm_label": "test_regression.py",
+      "id": "backend_scripts_test_regression"
     },
     {
       "label": "run_tests()",
@@ -1007,10 +1007,10 @@
       "source_location": "L15",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_scripts_test_regression_run_tests",
       "community": 0,
       "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "run_tests()"
+      "norm_label": "run_tests()",
+      "id": "backend_scripts_test_regression_run_tests"
     },
     {
       "label": "verify_golden.py",
@@ -1018,10 +1018,10 @@
       "source_file": "backend/scripts/verify_golden.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_scripts_verify_golden",
-      "community": 0,
-      "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "verify_golden.py"
+      "community": 3,
+      "community_name": "AI Dev Jobs Discovery Provider",
+      "norm_label": "verify_golden.py",
+      "id": "backend_scripts_verify_golden"
     },
     {
       "label": "run_verification()",
@@ -1030,10 +1030,10 @@
       "source_location": "L13",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_scripts_verify_golden_run_verification",
-      "community": 0,
-      "community_name": "Project Architecture & Implementation Phases",
-      "norm_label": "run_verification()"
+      "community": 3,
+      "community_name": "AI Dev Jobs Discovery Provider",
+      "norm_label": "run_verification()",
+      "id": "backend_scripts_verify_golden_run_verification"
     },
     {
       "label": "App.tsx",
@@ -1041,10 +1041,10 @@
       "source_file": "frontend/src/App.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "frontend_src_app",
-      "community": 15,
-      "community_name": "Global Definition of Done",
-      "norm_label": "app.tsx"
+      "community": 16,
+      "community_name": "Anti-Hallucination Rules",
+      "norm_label": "app.tsx",
+      "id": "frontend_src_app"
     },
     {
       "label": "App()",
@@ -1053,10 +1053,10 @@
       "source_location": "L4",
       "_callable": true,
       "_origin": "ast",
-      "id": "frontend_src_app_app",
-      "community": 15,
-      "community_name": "Global Definition of Done",
-      "norm_label": "app()"
+      "community": 16,
+      "community_name": "Anti-Hallucination Rules",
+      "norm_label": "app()",
+      "id": "frontend_src_app_app"
     },
     {
       "label": "supabase.ts",
@@ -1064,10 +1064,10 @@
       "source_file": "frontend/src/lib/supabase.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "frontend_src_lib_supabase",
-      "community": 18,
-      "community_name": "Frontend Linting Configuration",
-      "norm_label": "supabase.ts"
+      "community": 19,
+      "community_name": "Vite App Build Configuration",
+      "norm_label": "supabase.ts",
+      "id": "frontend_src_lib_supabase"
     },
     {
       "label": "supabase",
@@ -1075,10 +1075,10 @@
       "source_file": "frontend/src/lib/supabase.ts",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "frontend_src_lib_supabase_supabase",
-      "community": 18,
-      "community_name": "Frontend Linting Configuration",
-      "norm_label": "supabase"
+      "community": 19,
+      "community_name": "Vite App Build Configuration",
+      "norm_label": "supabase",
+      "id": "frontend_src_lib_supabase_supabase"
     },
     {
       "label": "main.tsx",
@@ -1086,10 +1086,10 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "frontend_src_main",
-      "community": 15,
-      "community_name": "Global Definition of Done",
-      "norm_label": "main.tsx"
+      "community": 16,
+      "community_name": "Anti-Hallucination Rules",
+      "norm_label": "main.tsx",
+      "id": "frontend_src_main"
     },
     {
       "label": "vite.config.ts",
@@ -1097,10 +1097,10 @@
       "source_file": "frontend/vite.config.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "frontend_vite_config",
-      "community": 21,
-      "community_name": "Community 21",
-      "norm_label": "vite.config.ts"
+      "community": 25,
+      "community_name": "Community 25",
+      "norm_label": "vite.config.ts",
+      "id": "frontend_vite_config"
     },
     {
       "label": "README.md",
@@ -1111,10 +1111,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_document",
-      "community": 19,
-      "community_name": "Vite App Build Configuration",
-      "norm_label": "readme.md"
+      "community": 20,
+      "community_name": "Community 20",
+      "norm_label": "readme.md",
+      "_origin": "semantic",
+      "id": "readme_document"
     },
     {
       "label": "Outreach-Flux Project",
@@ -1125,10 +1126,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_outreach_flux",
-      "community": 19,
-      "community_name": "Vite App Build Configuration",
-      "norm_label": "outreach-flux project"
+      "community": 20,
+      "community_name": "Community 20",
+      "norm_label": "outreach-flux project",
+      "_origin": "semantic",
+      "id": "readme_outreach_flux"
     },
     {
       "label": "frontend/README.md",
@@ -1139,10 +1141,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "frontend_readme_document",
-      "community": 4,
-      "community_name": "Discovery Base Interfaces & Normalized Models",
-      "norm_label": "frontend/readme.md"
+      "community": 6,
+      "community_name": "Research Service & Intelligence Layer",
+      "norm_label": "frontend/readme.md",
+      "_origin": "semantic",
+      "id": "frontend_readme_document"
     },
     {
       "label": "React",
@@ -1153,10 +1156,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "frontend_readme_react",
-      "community": 4,
-      "community_name": "Discovery Base Interfaces & Normalized Models",
-      "norm_label": "react"
+      "community": 6,
+      "community_name": "Research Service & Intelligence Layer",
+      "norm_label": "react",
+      "_origin": "semantic",
+      "id": "frontend_readme_react"
     },
     {
       "label": "TypeScript",
@@ -1167,10 +1171,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "frontend_readme_typescript",
-      "community": 4,
-      "community_name": "Discovery Base Interfaces & Normalized Models",
-      "norm_label": "typescript"
+      "community": 6,
+      "community_name": "Research Service & Intelligence Layer",
+      "norm_label": "typescript",
+      "_origin": "semantic",
+      "id": "frontend_readme_typescript"
     },
     {
       "label": "Vite",
@@ -1181,10 +1186,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "frontend_readme_vite",
-      "community": 4,
-      "community_name": "Discovery Base Interfaces & Normalized Models",
-      "norm_label": "vite"
+      "community": 6,
+      "community_name": "Research Service & Intelligence Layer",
+      "norm_label": "vite",
+      "_origin": "semantic",
+      "id": "frontend_readme_vite"
     },
     {
       "label": "Oxlint",
@@ -1195,10 +1201,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "frontend_readme_oxlint",
-      "community": 4,
-      "community_name": "Discovery Base Interfaces & Normalized Models",
-      "norm_label": "oxlint"
+      "community": 6,
+      "community_name": "Research Service & Intelligence Layer",
+      "norm_label": "oxlint",
+      "_origin": "semantic",
+      "id": "frontend_readme_oxlint"
     },
     {
       "label": "React Compiler",
@@ -1209,10 +1216,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "frontend_readme_react_compiler",
-      "community": 4,
-      "community_name": "Discovery Base Interfaces & Normalized Models",
-      "norm_label": "react compiler"
+      "community": 6,
+      "community_name": "Research Service & Intelligence Layer",
+      "norm_label": "react compiler",
+      "_origin": "semantic",
+      "id": "frontend_readme_react_compiler"
     },
     {
       "label": "@vitejs/plugin-react",
@@ -1223,10 +1231,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "frontend_readme_vite_plugin_react",
-      "community": 4,
-      "community_name": "Discovery Base Interfaces & Normalized Models",
-      "norm_label": "@vitejs/plugin-react"
+      "community": 6,
+      "community_name": "Research Service & Intelligence Layer",
+      "norm_label": "@vitejs/plugin-react",
+      "_origin": "semantic",
+      "id": "frontend_readme_vite_plugin_react"
     },
     {
       "label": "@vitejs/plugin-react-swc",
@@ -1237,13 +1246,14 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "frontend_readme_vite_plugin_react_swc",
-      "community": 4,
-      "community_name": "Discovery Base Interfaces & Normalized Models",
-      "norm_label": "@vitejs/plugin-react-swc"
+      "community": 6,
+      "community_name": "Research Service & Intelligence Layer",
+      "norm_label": "@vitejs/plugin-react-swc",
+      "_origin": "semantic",
+      "id": "frontend_readme_vite_plugin_react_swc"
     },
     {
-      "label": "AI Job Outreach Assistant \u2014 Phase Playbook",
+      "label": "AI Job Outreach Phase Playbook",
       "file_type": "document",
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
@@ -1251,24 +1261,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_phase_playbook_updated_document",
-      "community": 2,
-      "community_name": "Backend Application & Config Services",
-      "norm_label": "ai job outreach assistant \u2014 phase playbook"
-    },
-    {
-      "label": "Graphify Memory Layer Rule",
-      "file_type": "concept",
-      "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "ai_job_outreach_phase_playbook_updated_graphify_layer",
-      "community": 2,
-      "community_name": "Backend Application & Config Services",
-      "norm_label": "graphify memory layer rule"
+      "id": "ai_job_outreach_phase_playbook_updated_doc",
+      "community": 8,
+      "community_name": "Adzuna Discovery Adapter",
+      "norm_label": "ai job outreach phase playbook"
     },
     {
       "label": "Phase 0 \u2014 Foundation",
@@ -1279,7 +1275,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_phase_playbook_updated_phase0",
+      "id": "ai_job_outreach_phase_playbook_updated_phase_0",
       "community": 2,
       "community_name": "Backend Application & Config Services",
       "norm_label": "phase 0 \u2014 foundation"
@@ -1293,7 +1289,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_phase_playbook_updated_phase1",
+      "id": "ai_job_outreach_phase_playbook_updated_phase_1",
       "community": 2,
       "community_name": "Backend Application & Config Services",
       "norm_label": "phase 1 \u2014 candidate json"
@@ -1307,7 +1303,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_phase_playbook_updated_phase2",
+      "id": "ai_job_outreach_phase_playbook_updated_phase_2",
       "community": 2,
       "community_name": "Backend Application & Config Services",
       "norm_label": "phase 2 \u2014 multi-provider incremental discovery"
@@ -1321,9 +1317,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_phase_playbook_updated_phase3",
-      "community": 2,
-      "community_name": "Backend Application & Config Services",
+      "id": "ai_job_outreach_phase_playbook_updated_phase_3",
+      "community": 9,
+      "community_name": "Free Hire Discovery Adapter",
       "norm_label": "phase 3 \u2014 database canonicalization + matching + research"
     },
     {
@@ -1335,9 +1331,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_phase_playbook_updated_phase4",
-      "community": 13,
-      "community_name": "Backend Supabase Client",
+      "id": "ai_job_outreach_phase_playbook_updated_phase_4",
+      "community": 14,
+      "community_name": "Frontend Supabase Client",
       "norm_label": "phase 4 \u2014 contact discovery"
     },
     {
@@ -1349,13 +1345,13 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_phase_playbook_updated_phase5",
-      "community": 13,
-      "community_name": "Backend Supabase Client",
+      "id": "ai_job_outreach_phase_playbook_updated_phase_5",
+      "community": 14,
+      "community_name": "Frontend Supabase Client",
       "norm_label": "phase 5 \u2014 email verification"
     },
     {
-      "label": "Phase 6 \u2014 AI Outreach \u2014 Batch Generation",
+      "label": "Phase 6 \u2014 AI Outreach Batch Generation",
       "file_type": "concept",
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
@@ -1363,10 +1359,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_phase_playbook_updated_phase6",
-      "community": 13,
-      "community_name": "Backend Supabase Client",
-      "norm_label": "phase 6 \u2014 ai outreach \u2014 batch generation"
+      "id": "ai_job_outreach_phase_playbook_updated_phase_6",
+      "community": 4,
+      "community_name": "Discovery Base Interfaces & Normalized Models",
+      "norm_label": "phase 6 \u2014 ai outreach batch generation"
     },
     {
       "label": "Phase 7 \u2014 Gmail + Sending Policy",
@@ -1377,9 +1373,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_phase_playbook_updated_phase7",
-      "community": 5,
-      "community_name": "The Muse Provider & Discovery Orchestration",
+      "id": "ai_job_outreach_phase_playbook_updated_phase_7",
+      "community": 4,
+      "community_name": "Discovery Base Interfaces & Normalized Models",
       "norm_label": "phase 7 \u2014 gmail + sending policy"
     },
     {
@@ -1391,9 +1387,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_phase_playbook_updated_phase8",
-      "community": 5,
-      "community_name": "The Muse Provider & Discovery Orchestration",
+      "id": "ai_job_outreach_phase_playbook_updated_phase_8",
+      "community": 4,
+      "community_name": "Discovery Base Interfaces & Normalized Models",
       "norm_label": "phase 8 \u2014 tracking + reply classification"
     },
     {
@@ -1405,9 +1401,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_phase_playbook_updated_phase9",
-      "community": 5,
-      "community_name": "The Muse Provider & Discovery Orchestration",
+      "id": "ai_job_outreach_phase_playbook_updated_phase_9",
+      "community": 8,
+      "community_name": "Adzuna Discovery Adapter",
       "norm_label": "phase 9 \u2014 automation"
     },
     {
@@ -1419,9 +1415,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_phase_playbook_updated_phase10",
-      "community": 5,
-      "community_name": "The Muse Provider & Discovery Orchestration",
+      "id": "ai_job_outreach_phase_playbook_updated_phase_10",
+      "community": 8,
+      "community_name": "Adzuna Discovery Adapter",
       "norm_label": "phase 10 \u2014 oracle deployment"
     },
     {
@@ -1434,12 +1430,40 @@
       "author": null,
       "contributor": null,
       "id": "ai_job_outreach_phase_playbook_updated_definition_of_done",
-      "community": 2,
-      "community_name": "Backend Application & Config Services",
+      "community": 8,
+      "community_name": "Adzuna Discovery Adapter",
       "norm_label": "global definition of done"
     },
     {
-      "label": "AI Job Outreach Assistant \u2014 Project Memory",
+      "label": "config/resume.pdf",
+      "file_type": "document",
+      "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_job_outreach_phase_playbook_updated_resume_pdf",
+      "community": 4,
+      "community_name": "Discovery Base Interfaces & Normalized Models",
+      "norm_label": "config/resume.pdf"
+    },
+    {
+      "label": "Graphify Codebase Knowledge Layer",
+      "file_type": "concept",
+      "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_job_outreach_phase_playbook_updated_graphify",
+      "community": 8,
+      "community_name": "Adzuna Discovery Adapter",
+      "norm_label": "graphify codebase knowledge layer"
+    },
+    {
+      "label": "AI Job Outreach Project Memory",
       "file_type": "document",
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
@@ -1447,14 +1471,14 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_document",
-      "community": 8,
-      "community_name": "Adzuna Discovery Adapter",
-      "norm_label": "ai job outreach assistant \u2014 project memory"
+      "id": "ai_job_outreach_project_memory_updated_doc",
+      "community": 15,
+      "community_name": "Global Definition of Done",
+      "norm_label": "ai job outreach project memory"
     },
     {
-      "label": "config/candidate.json Candidate Model",
-      "file_type": "concept",
+      "label": "config/candidate.json",
+      "file_type": "document",
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "source_url": null,
@@ -1464,10 +1488,10 @@
       "id": "ai_job_outreach_project_memory_updated_candidate_json",
       "community": 2,
       "community_name": "Backend Application & Config Services",
-      "norm_label": "config/candidate.json candidate model"
+      "norm_label": "config/candidate.json"
     },
     {
-      "label": "Discovery Architecture & 3-Hour Profile Rotation",
+      "label": "Canonical Pipeline Flow",
       "file_type": "concept",
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
@@ -1475,13 +1499,13 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_discovery_architecture",
-      "community": 7,
-      "community_name": "Project Memory & Root Documentation",
-      "norm_label": "discovery architecture & 3-hour profile rotation"
+      "id": "ai_job_outreach_project_memory_updated_canonical_flow",
+      "community": 15,
+      "community_name": "Global Definition of Done",
+      "norm_label": "canonical pipeline flow"
     },
     {
-      "label": "FreeHire API Provider",
+      "label": "Candidate Profile Model",
       "file_type": "concept",
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
@@ -1489,13 +1513,13 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_freehire",
-      "community": 7,
-      "community_name": "Project Memory & Root Documentation",
-      "norm_label": "freehire api provider"
+      "id": "ai_job_outreach_project_memory_updated_candidate_model",
+      "community": 9,
+      "community_name": "Free Hire Discovery Adapter",
+      "norm_label": "candidate profile model"
     },
     {
-      "label": "Adzuna API Provider",
+      "label": "DiscoveryProvider Architecture",
       "file_type": "concept",
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
@@ -1503,125 +1527,13 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_adzuna",
-      "community": 7,
-      "community_name": "Project Memory & Root Documentation",
-      "norm_label": "adzuna api provider"
-    },
-    {
-      "label": "The Muse API Provider",
-      "file_type": "concept",
-      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_themuse",
-      "community": 7,
-      "community_name": "Project Memory & Root Documentation",
-      "norm_label": "the muse api provider"
-    },
-    {
-      "label": "AI Dev Jobs Provider",
-      "file_type": "concept",
-      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_aidevjobs",
-      "community": 7,
-      "community_name": "Project Memory & Root Documentation",
-      "norm_label": "ai dev jobs provider"
-    },
-    {
-      "label": "Funding Signals Provider",
-      "file_type": "concept",
-      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_fundingsignals",
-      "community": 7,
-      "community_name": "Project Memory & Root Documentation",
-      "norm_label": "funding signals provider"
-    },
-    {
-      "label": "Database Canonicalization & Schema",
-      "file_type": "concept",
-      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_database_canonicalization",
-      "community": 14,
-      "community_name": "Frontend Supabase Client",
-      "norm_label": "database canonicalization & schema"
-    },
-    {
-      "label": "companies & company_sources Tables",
-      "file_type": "concept",
-      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_companies_table",
-      "community": 14,
-      "community_name": "Frontend Supabase Client",
-      "norm_label": "companies & company_sources tables"
-    },
-    {
-      "label": "opportunities & opportunity_sources Tables",
-      "file_type": "concept",
-      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_opportunities_table",
-      "community": 14,
-      "community_name": "Frontend Supabase Client",
-      "norm_label": "opportunities & opportunity_sources tables"
-    },
-    {
-      "label": "contacts Table",
-      "file_type": "concept",
-      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_contacts_table",
-      "community": 14,
-      "community_name": "Frontend Supabase Client",
-      "norm_label": "contacts table"
-    },
-    {
-      "label": "Deterministic Candidate Matching Engine",
-      "file_type": "concept",
-      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_matching_engine",
+      "id": "ai_job_outreach_project_memory_updated_discovery_provider",
       "community": 2,
       "community_name": "Backend Application & Config Services",
-      "norm_label": "deterministic candidate matching engine"
+      "norm_label": "discoveryprovider architecture"
     },
     {
-      "label": "Public Contact Discovery",
+      "label": "3-Hour Discovery Profile Rotation",
       "file_type": "concept",
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
@@ -1629,13 +1541,13 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_contact_discovery",
-      "community": 8,
-      "community_name": "Adzuna Discovery Adapter",
-      "norm_label": "public contact discovery"
+      "id": "ai_job_outreach_project_memory_updated_profile_rotation",
+      "community": 2,
+      "community_name": "Backend Application & Config Services",
+      "norm_label": "3-hour discovery profile rotation"
     },
     {
-      "label": "Tomba Contact Adapter",
+      "label": "Company Canonical Model",
       "file_type": "concept",
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
@@ -1643,13 +1555,13 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_tomba",
-      "community": 8,
-      "community_name": "Adzuna Discovery Adapter",
-      "norm_label": "tomba contact adapter"
+      "id": "ai_job_outreach_project_memory_updated_company_model",
+      "community": 9,
+      "community_name": "Free Hire Discovery Adapter",
+      "norm_label": "company canonical model"
     },
     {
-      "label": "EVA Email Verification Provider",
+      "label": "Opportunity Canonical Model",
       "file_type": "concept",
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
@@ -1657,13 +1569,69 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_eva",
+      "id": "ai_job_outreach_project_memory_updated_opportunity_model",
+      "community": 9,
+      "community_name": "Free Hire Discovery Adapter",
+      "norm_label": "opportunity canonical model"
+    },
+    {
+      "label": "Opportunity Status Lifecycle",
+      "file_type": "concept",
+      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_job_outreach_project_memory_updated_opportunity_status_lifecycle",
+      "community": 23,
+      "community_name": "Community 23",
+      "norm_label": "opportunity status lifecycle"
+    },
+    {
+      "label": "Deterministic Candidate Matching",
+      "file_type": "concept",
+      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_job_outreach_project_memory_updated_deterministic_matching",
+      "community": 9,
+      "community_name": "Free Hire Discovery Adapter",
+      "norm_label": "deterministic candidate matching"
+    },
+    {
+      "label": "Company Research System",
+      "file_type": "concept",
+      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_job_outreach_project_memory_updated_company_research",
+      "community": 21,
+      "community_name": "Community 21",
+      "norm_label": "company research system"
+    },
+    {
+      "label": "Contact Discovery Priority Hierarchy",
+      "file_type": "concept",
+      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_job_outreach_project_memory_updated_contact_discovery_hierarchy",
       "community": 14,
       "community_name": "Frontend Supabase Client",
-      "norm_label": "eva email verification provider"
+      "norm_label": "contact discovery priority hierarchy"
     },
     {
-      "label": "Gemini Batch LLM Email Generator",
+      "label": "Tomba Enrichment Fallback",
       "file_type": "concept",
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
@@ -1671,13 +1639,13 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_gemini",
-      "community": 13,
-      "community_name": "Backend Supabase Client",
-      "norm_label": "gemini batch llm email generator"
+      "id": "ai_job_outreach_project_memory_updated_tomba_fallback",
+      "community": 14,
+      "community_name": "Frontend Supabase Client",
+      "norm_label": "tomba enrichment fallback"
     },
     {
-      "label": "DeepSeek LLM Fallback Provider",
+      "label": "EVA Email Verification",
       "file_type": "concept",
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
@@ -1685,13 +1653,13 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_deepseek",
-      "community": 13,
-      "community_name": "Backend Supabase Client",
-      "norm_label": "deepseek llm fallback provider"
+      "id": "ai_job_outreach_project_memory_updated_eva_verification",
+      "community": 14,
+      "community_name": "Frontend Supabase Client",
+      "norm_label": "eva email verification"
     },
     {
-      "label": "Gmail API & Google OAuth Integration",
+      "label": "LLM Batch Email Generation",
       "file_type": "concept",
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
@@ -1699,13 +1667,13 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_gmail_api",
-      "community": 5,
-      "community_name": "The Muse Provider & Discovery Orchestration",
-      "norm_label": "gmail api & google oauth integration"
+      "id": "ai_job_outreach_project_memory_updated_llm_email_generation",
+      "community": 4,
+      "community_name": "Discovery Base Interfaces & Normalized Models",
+      "norm_label": "llm batch email generation"
     },
     {
-      "label": "Gmail Reply Detection & Classification",
+      "label": "Gemini LLM Provider",
       "file_type": "concept",
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
@@ -1713,13 +1681,13 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_reply_tracking",
-      "community": 5,
-      "community_name": "The Muse Provider & Discovery Orchestration",
-      "norm_label": "gmail reply detection & classification"
+      "id": "ai_job_outreach_project_memory_updated_gemini_provider",
+      "community": 4,
+      "community_name": "Discovery Base Interfaces & Normalized Models",
+      "norm_label": "gemini llm provider"
     },
     {
-      "label": "Supabase PostgreSQL Infrastructure",
+      "label": "DeepSeek LLM Provider Fallback",
       "file_type": "concept",
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
@@ -1727,13 +1695,13 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_supabase",
-      "community": 8,
-      "community_name": "Adzuna Discovery Adapter",
-      "norm_label": "supabase postgresql infrastructure"
+      "id": "ai_job_outreach_project_memory_updated_deepseek_provider",
+      "community": 4,
+      "community_name": "Discovery Base Interfaces & Normalized Models",
+      "norm_label": "deepseek llm provider fallback"
     },
     {
-      "label": "Oracle Cloud Always Free Deployment",
+      "label": "Gmail API & Controlled Sending Policy",
       "file_type": "concept",
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
@@ -1741,13 +1709,13 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_oracle_vps",
-      "community": 5,
-      "community_name": "The Muse Provider & Discovery Orchestration",
-      "norm_label": "oracle cloud always free deployment"
+      "id": "ai_job_outreach_project_memory_updated_gmail_sending_policy",
+      "community": 4,
+      "community_name": "Discovery Base Interfaces & Normalized Models",
+      "norm_label": "gmail api & controlled sending policy"
     },
     {
-      "label": "Graphify Knowledge Memory Layer",
+      "label": "Reply Detection & Classification",
       "file_type": "concept",
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
@@ -1755,10 +1723,24 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_job_outreach_project_memory_updated_graphify",
-      "community": 8,
-      "community_name": "Adzuna Discovery Adapter",
-      "norm_label": "graphify knowledge memory layer"
+      "id": "ai_job_outreach_project_memory_updated_reply_classification",
+      "community": 4,
+      "community_name": "Discovery Base Interfaces & Normalized Models",
+      "norm_label": "reply detection & classification"
+    },
+    {
+      "label": "Technology Stack Specification",
+      "file_type": "concept",
+      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_job_outreach_project_memory_updated_tech_stack",
+      "community": 15,
+      "community_name": "Global Definition of Done",
+      "norm_label": "technology stack specification"
     },
     {
       "label": "Anti-Hallucination Rules",
@@ -1770,9 +1752,135 @@
       "author": null,
       "contributor": null,
       "id": "ai_job_outreach_project_memory_updated_anti_hallucination_rules",
+      "community": 15,
+      "community_name": "Global Definition of Done",
+      "norm_label": "anti-hallucination rules"
+    },
+    {
+      "label": "Oracle Cloud Always Free VPS Infrastructure",
+      "file_type": "concept",
+      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_job_outreach_project_memory_updated_oracle_vps_infrastructure",
       "community": 8,
       "community_name": "Adzuna Discovery Adapter",
-      "norm_label": "anti-hallucination rules"
+      "norm_label": "oracle cloud always free vps infrastructure"
+    },
+    {
+      "label": "Graphify Knowledge & Memory Layer",
+      "file_type": "concept",
+      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_job_outreach_project_memory_updated_graphify_knowledge_layer",
+      "community": 22,
+      "community_name": "Community 22",
+      "norm_label": "graphify knowledge & memory layer"
+    },
+    {
+      "label": "FreeHire Discovery Source",
+      "file_type": "concept",
+      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_job_outreach_project_memory_updated_provider_freehire",
+      "community": 2,
+      "community_name": "Backend Application & Config Services",
+      "norm_label": "freehire discovery source"
+    },
+    {
+      "label": "Adzuna Discovery Source",
+      "file_type": "concept",
+      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_job_outreach_project_memory_updated_provider_adzuna",
+      "community": 2,
+      "community_name": "Backend Application & Config Services",
+      "norm_label": "adzuna discovery source"
+    },
+    {
+      "label": "The Muse Discovery Source",
+      "file_type": "concept",
+      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_job_outreach_project_memory_updated_provider_the_muse",
+      "community": 2,
+      "community_name": "Backend Application & Config Services",
+      "norm_label": "the muse discovery source"
+    },
+    {
+      "label": "AI Dev Jobs Discovery Source",
+      "file_type": "concept",
+      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_job_outreach_project_memory_updated_provider_ai_dev_jobs",
+      "community": 2,
+      "community_name": "Backend Application & Config Services",
+      "norm_label": "ai dev jobs discovery source"
+    },
+    {
+      "label": "Funding Signals Discovery Source",
+      "file_type": "concept",
+      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_job_outreach_project_memory_updated_provider_funding_signals",
+      "community": 2,
+      "community_name": "Backend Application & Config Services",
+      "norm_label": "funding signals discovery source"
+    },
+    {
+      "label": "Supabase PostgreSQL Database",
+      "file_type": "concept",
+      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_job_outreach_project_memory_updated_supabase_postgres",
+      "community": 9,
+      "community_name": "Free Hire Discovery Adapter",
+      "norm_label": "supabase postgresql database"
+    },
+    {
+      "label": "LLM Usage Restriction Rationale",
+      "file_type": "rationale",
+      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_job_outreach_project_memory_updated_llm_usage_rationale",
+      "community": 4,
+      "community_name": "Discovery Base Interfaces & Normalized Models",
+      "norm_label": "llm usage restriction rationale"
     }
   ],
   "links": [
@@ -1783,9 +1891,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_core_config",
-      "target": "backend_app_core_config_get_candidate_profile",
-      "confidence_score": 1.0
+      "target": "backend_app_core_config_get_candidate_profile"
     },
     {
       "relation": "imports",
@@ -1795,9 +1903,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_core_config",
-      "target": "backend_app_models_candidate_candidatefile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_candidatefile"
     },
     {
       "relation": "references",
@@ -1807,9 +1915,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_core_config_get_candidate_profile",
-      "target": "backend_app_models_candidate_candidatefile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_candidatefile"
     },
     {
       "relation": "imports",
@@ -1819,9 +1927,9 @@
       "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_main",
-      "target": "backend_app_core_config_get_candidate_profile",
-      "confidence_score": 1.0
+      "target": "backend_app_core_config_get_candidate_profile"
     },
     {
       "relation": "calls",
@@ -1843,9 +1951,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_orchestrator",
-      "target": "backend_app_core_config_get_candidate_profile",
-      "confidence_score": 1.0
+      "target": "backend_app_core_config_get_candidate_profile"
     },
     {
       "relation": "calls",
@@ -1867,9 +1975,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_scheduler",
-      "target": "backend_app_core_config_get_candidate_profile",
-      "confidence_score": 1.0
+      "target": "backend_app_core_config_get_candidate_profile"
     },
     {
       "relation": "calls",
@@ -1879,9 +1987,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_scheduler_run_discovery_tick",
-      "target": "backend_app_core_config_get_candidate_profile",
-      "confidence_score": 1.0
+      "target": "backend_app_core_config_get_candidate_profile"
     },
     {
       "relation": "imports",
@@ -1891,9 +1999,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_scripts_test_regression",
-      "target": "backend_app_core_config_get_candidate_profile",
-      "confidence_score": 1.0
+      "target": "backend_app_core_config_get_candidate_profile"
     },
     {
       "relation": "calls",
@@ -1903,9 +2011,9 @@
       "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_scripts_test_regression_run_tests",
-      "target": "backend_app_core_config_get_candidate_profile",
-      "confidence_score": 1.0
+      "target": "backend_app_core_config_get_candidate_profile"
     },
     {
       "relation": "imports",
@@ -1915,9 +2023,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_scripts_verify_golden",
-      "target": "backend_app_core_config_get_candidate_profile",
-      "confidence_score": 1.0
+      "target": "backend_app_core_config_get_candidate_profile"
     },
     {
       "relation": "calls",
@@ -1927,9 +2035,9 @@
       "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_scripts_verify_golden_run_verification",
-      "target": "backend_app_core_config_get_candidate_profile",
-      "confidence_score": 1.0
+      "target": "backend_app_core_config_get_candidate_profile"
     },
     {
       "relation": "contains",
@@ -1938,9 +2046,9 @@
       "source_location": "L29",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_main",
-      "target": "backend_app_main_get_candidate_profile_endpoint",
-      "confidence_score": 1.0
+      "target": "backend_app_main_get_candidate_profile_endpoint"
     },
     {
       "relation": "contains",
@@ -1949,9 +2057,9 @@
       "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_main",
-      "target": "backend_app_main_health_check",
-      "confidence_score": 1.0
+      "target": "backend_app_main_health_check"
     },
     {
       "relation": "contains",
@@ -1960,9 +2068,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_main",
-      "target": "backend_app_main_lifespan",
-      "confidence_score": 1.0
+      "target": "backend_app_main_lifespan"
     },
     {
       "relation": "imports",
@@ -1972,9 +2080,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_main",
-      "target": "backend_app_services_scheduler_start_scheduler",
-      "confidence_score": 1.0
+      "target": "backend_app_services_scheduler_start_scheduler"
     },
     {
       "relation": "imports_from",
@@ -1984,9 +2092,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_main",
-      "target": "fastapi",
-      "confidence_score": 1.0
+      "target": "fastapi"
     },
     {
       "relation": "calls",
@@ -2008,9 +2116,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_main_lifespan",
-      "target": "fastapi",
-      "confidence_score": 1.0
+      "target": "fastapi"
     },
     {
       "relation": "references",
@@ -2020,9 +2128,9 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_main_get_candidate_profile_endpoint",
-      "target": "get",
-      "confidence_score": 1.0
+      "target": "get"
     },
     {
       "relation": "references",
@@ -2032,9 +2140,9 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_main_health_check",
-      "target": "get",
-      "confidence_score": 1.0
+      "target": "get"
     },
     {
       "relation": "contains",
@@ -2043,9 +2151,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate",
-      "target": "backend_app_models_candidate_candidatecontact",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_candidatecontact"
     },
     {
       "relation": "contains",
@@ -2054,9 +2162,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate",
-      "target": "backend_app_models_candidate_candidateeducation",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_candidateeducation"
     },
     {
       "relation": "contains",
@@ -2065,9 +2173,9 @@
       "source_location": "L93",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate",
-      "target": "backend_app_models_candidate_candidatefile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_candidatefile"
     },
     {
       "relation": "contains",
@@ -2076,9 +2184,9 @@
       "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate",
-      "target": "backend_app_models_candidate_candidateinfo",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_candidateinfo"
     },
     {
       "relation": "contains",
@@ -2087,9 +2195,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate",
-      "target": "backend_app_models_candidate_candidatelocation",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_candidatelocation"
     },
     {
       "relation": "contains",
@@ -2098,9 +2206,9 @@
       "source_location": "L58",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate",
-      "target": "backend_app_models_candidate_discoverypreferences",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoverypreferences"
     },
     {
       "relation": "contains",
@@ -2109,9 +2217,9 @@
       "source_location": "L67",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "contains",
@@ -2120,9 +2228,9 @@
       "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate",
-      "target": "backend_app_models_candidate_experience",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_experience"
     },
     {
       "relation": "contains",
@@ -2131,9 +2239,9 @@
       "source_location": "L81",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate",
-      "target": "backend_app_models_candidate_matchingrules",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_matchingrules"
     },
     {
       "relation": "contains",
@@ -2142,9 +2250,9 @@
       "source_location": "L86",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate",
-      "target": "backend_app_models_candidate_outreachpreferences",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_outreachpreferences"
     },
     {
       "relation": "contains",
@@ -2153,9 +2261,9 @@
       "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate",
-      "target": "backend_app_models_candidate_professionalprofile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_professionalprofile"
     },
     {
       "relation": "contains",
@@ -2164,9 +2272,9 @@
       "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate",
-      "target": "backend_app_models_candidate_project",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_project"
     },
     {
       "relation": "contains",
@@ -2175,9 +2283,9 @@
       "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate",
-      "target": "backend_app_models_candidate_skills",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_skills"
     },
     {
       "relation": "inherits",
@@ -2186,9 +2294,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate_candidatecontact",
-      "target": "backend_app_models_candidate_py_basemodel",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_py_basemodel"
     },
     {
       "relation": "inherits",
@@ -2197,9 +2305,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate_candidateeducation",
-      "target": "backend_app_models_candidate_py_basemodel",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_py_basemodel"
     },
     {
       "relation": "inherits",
@@ -2208,9 +2316,9 @@
       "source_location": "L93",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate_candidatefile",
-      "target": "backend_app_models_candidate_py_basemodel",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_py_basemodel"
     },
     {
       "relation": "inherits",
@@ -2219,9 +2327,9 @@
       "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate_candidateinfo",
-      "target": "backend_app_models_candidate_py_basemodel",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_py_basemodel"
     },
     {
       "relation": "inherits",
@@ -2230,9 +2338,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate_candidatelocation",
-      "target": "backend_app_models_candidate_py_basemodel",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_py_basemodel"
     },
     {
       "relation": "inherits",
@@ -2241,9 +2349,9 @@
       "source_location": "L58",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate_discoverypreferences",
-      "target": "backend_app_models_candidate_py_basemodel",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_py_basemodel"
     },
     {
       "relation": "inherits",
@@ -2252,9 +2360,9 @@
       "source_location": "L67",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate_discoveryprofile",
-      "target": "backend_app_models_candidate_py_basemodel",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_py_basemodel"
     },
     {
       "relation": "inherits",
@@ -2263,9 +2371,9 @@
       "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate_experience",
-      "target": "backend_app_models_candidate_py_basemodel",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_py_basemodel"
     },
     {
       "relation": "inherits",
@@ -2274,9 +2382,9 @@
       "source_location": "L81",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate_matchingrules",
-      "target": "backend_app_models_candidate_py_basemodel",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_py_basemodel"
     },
     {
       "relation": "inherits",
@@ -2285,9 +2393,9 @@
       "source_location": "L86",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate_outreachpreferences",
-      "target": "backend_app_models_candidate_py_basemodel",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_py_basemodel"
     },
     {
       "relation": "inherits",
@@ -2296,9 +2404,9 @@
       "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate_professionalprofile",
-      "target": "backend_app_models_candidate_py_basemodel",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_py_basemodel"
     },
     {
       "relation": "inherits",
@@ -2307,9 +2415,9 @@
       "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate_project",
-      "target": "backend_app_models_candidate_py_basemodel",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_py_basemodel"
     },
     {
       "relation": "inherits",
@@ -2318,9 +2426,9 @@
       "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate_skills",
-      "target": "backend_app_models_candidate_py_basemodel",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_py_basemodel"
     },
     {
       "relation": "method",
@@ -2329,9 +2437,9 @@
       "source_location": "L74",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate_discoveryprofile",
-      "target": "backend_app_models_candidate_discoveryprofile_keywords",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoveryprofile_keywords"
     },
     {
       "relation": "method",
@@ -2340,9 +2448,9 @@
       "source_location": "L78",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_models_candidate_discoveryprofile",
-      "target": "backend_app_models_candidate_discoveryprofile_name",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoveryprofile_name"
     },
     {
       "relation": "imports",
@@ -2352,9 +2460,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_adzuna",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "uses",
@@ -2363,9 +2471,9 @@
       "source_location": "L5",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_adzuna_adzunaadapter",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 0.5
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "references",
@@ -2375,9 +2483,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_adzuna_adzunaadapter_search",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "imports",
@@ -2387,9 +2495,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_aidevjobs",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "uses",
@@ -2398,9 +2506,9 @@
       "source_location": "L5",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_aidevjobs_aidevjobsadapter",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 0.5
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "references",
@@ -2410,9 +2518,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_aidevjobs_aidevjobsadapter_search",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "imports",
@@ -2422,9 +2530,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "uses",
@@ -2433,9 +2541,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_base_idiscoveryprovider",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 0.5
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "references",
@@ -2445,9 +2553,9 @@
       "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base_idiscoveryprovider_search",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "uses",
@@ -2456,9 +2564,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_base_normalizedcompany",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 0.5
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "uses",
@@ -2467,9 +2575,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_base_normalizedopportunity",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 0.5
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "uses",
@@ -2478,9 +2586,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_base_providersearchresult",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 0.5
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "imports",
@@ -2490,9 +2598,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_freehire",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "uses",
@@ -2501,9 +2609,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_freehire_freehireadapter",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 0.5
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "references",
@@ -2513,9 +2621,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_freehire_freehireadapter_search",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "imports",
@@ -2525,9 +2633,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_signalbase",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "uses",
@@ -2536,9 +2644,9 @@
       "source_location": "L5",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_signalbase_signalbaseadapter",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 0.5
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "references",
@@ -2548,9 +2656,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_signalbase_signalbaseadapter_search",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "imports",
@@ -2560,9 +2668,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_themuse",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "uses",
@@ -2571,9 +2679,9 @@
       "source_location": "L5",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_themuse_themuseadapter",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 0.5
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "references",
@@ -2583,9 +2691,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_themuse_themuseadapter_search",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "imports",
@@ -2595,9 +2703,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_matching",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "uses",
@@ -2606,9 +2714,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_services_matching_matchingservice",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 0.5
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "references",
@@ -2618,9 +2726,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_matching_matchingservice_evaluate_opportunity",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "uses",
@@ -2629,9 +2737,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_services_matching_matchresult",
-      "target": "backend_app_models_candidate_discoveryprofile",
-      "confidence_score": 0.5
+      "target": "backend_app_models_candidate_discoveryprofile"
     },
     {
       "relation": "imports",
@@ -2641,9 +2749,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_matching",
-      "target": "backend_app_models_candidate_candidatefile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_candidatefile"
     },
     {
       "relation": "uses",
@@ -2652,9 +2760,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_services_matching_matchingservice",
-      "target": "backend_app_models_candidate_candidatefile",
-      "confidence_score": 0.5
+      "target": "backend_app_models_candidate_candidatefile"
     },
     {
       "relation": "references",
@@ -2664,9 +2772,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_matching_matchingservice_init",
-      "target": "backend_app_models_candidate_candidatefile",
-      "confidence_score": 1.0
+      "target": "backend_app_models_candidate_candidatefile"
     },
     {
       "relation": "uses",
@@ -2675,9 +2783,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_services_matching_matchresult",
-      "target": "backend_app_models_candidate_candidatefile",
-      "confidence_score": 0.5
+      "target": "backend_app_models_candidate_candidatefile"
     },
     {
       "relation": "contains",
@@ -2686,9 +2794,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_adzuna",
-      "target": "backend_app_providers_adzuna_adzunaadapter",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_adzuna_adzunaadapter"
     },
     {
       "relation": "imports",
@@ -2698,9 +2806,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_adzuna",
-      "target": "backend_app_providers_base_idiscoveryprovider",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_idiscoveryprovider"
     },
     {
       "relation": "imports",
@@ -2710,9 +2818,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_adzuna",
-      "target": "backend_app_providers_base_normalizedcompany",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_normalizedcompany"
     },
     {
       "relation": "imports",
@@ -2722,9 +2830,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_adzuna",
-      "target": "backend_app_providers_base_normalizedopportunity",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_normalizedopportunity"
     },
     {
       "relation": "imports",
@@ -2734,9 +2842,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_adzuna",
-      "target": "backend_app_providers_base_providersearchresult",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_providersearchresult"
     },
     {
       "relation": "method",
@@ -2745,9 +2853,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_adzuna_adzunaadapter",
-      "target": "backend_app_providers_adzuna_adzunaadapter_is_available",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_adzuna_adzunaadapter_is_available"
     },
     {
       "relation": "method",
@@ -2756,9 +2864,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_adzuna_adzunaadapter",
-      "target": "backend_app_providers_adzuna_adzunaadapter_name",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_adzuna_adzunaadapter_name"
     },
     {
       "relation": "method",
@@ -2767,9 +2875,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_adzuna_adzunaadapter",
-      "target": "backend_app_providers_adzuna_adzunaadapter_search",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_adzuna_adzunaadapter_search"
     },
     {
       "relation": "uses",
@@ -2778,9 +2886,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_adzuna_adzunaadapter",
-      "target": "backend_app_providers_base_idiscoveryprovider",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_idiscoveryprovider"
     },
     {
       "relation": "uses",
@@ -2789,9 +2897,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_adzuna_adzunaadapter",
-      "target": "backend_app_providers_base_normalizedcompany",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_normalizedcompany"
     },
     {
       "relation": "uses",
@@ -2800,9 +2908,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_adzuna_adzunaadapter",
-      "target": "backend_app_providers_base_normalizedopportunity",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_normalizedopportunity"
     },
     {
       "relation": "uses",
@@ -2811,9 +2919,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_adzuna_adzunaadapter",
-      "target": "backend_app_providers_base_providersearchresult",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_providersearchresult"
     },
     {
       "relation": "imports",
@@ -2823,9 +2931,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_orchestrator",
-      "target": "backend_app_providers_adzuna_adzunaadapter",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_adzuna_adzunaadapter"
     },
     {
       "relation": "uses",
@@ -2834,9 +2942,9 @@
       "source_location": "L9",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_services_orchestrator_discoveryorchestrator",
-      "target": "backend_app_providers_adzuna_adzunaadapter",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_adzuna_adzunaadapter"
     },
     {
       "relation": "calls",
@@ -2846,9 +2954,9 @@
       "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_adzuna_adzunaadapter_search",
-      "target": "backend_app_providers_adzuna_adzunaadapter_is_available",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_adzuna_adzunaadapter_is_available"
     },
     {
       "relation": "calls",
@@ -2882,9 +2990,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_adzuna_adzunaadapter_search",
-      "target": "backend_app_providers_base_providersearchresult",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_providersearchresult"
     },
     {
       "relation": "contains",
@@ -2893,9 +3001,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_aidevjobs",
-      "target": "backend_app_providers_aidevjobs_aidevjobsadapter",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_aidevjobs_aidevjobsadapter"
     },
     {
       "relation": "imports",
@@ -2905,9 +3013,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_aidevjobs",
-      "target": "backend_app_providers_base_idiscoveryprovider",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_idiscoveryprovider"
     },
     {
       "relation": "imports",
@@ -2917,9 +3025,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_aidevjobs",
-      "target": "backend_app_providers_base_normalizedcompany",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_normalizedcompany"
     },
     {
       "relation": "imports",
@@ -2929,9 +3037,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_aidevjobs",
-      "target": "backend_app_providers_base_normalizedopportunity",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_normalizedopportunity"
     },
     {
       "relation": "imports",
@@ -2941,9 +3049,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_aidevjobs",
-      "target": "backend_app_providers_base_providersearchresult",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_providersearchresult"
     },
     {
       "relation": "method",
@@ -2952,9 +3060,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_aidevjobs_aidevjobsadapter",
-      "target": "backend_app_providers_aidevjobs_aidevjobsadapter_is_available",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_aidevjobs_aidevjobsadapter_is_available"
     },
     {
       "relation": "method",
@@ -2963,9 +3071,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_aidevjobs_aidevjobsadapter",
-      "target": "backend_app_providers_aidevjobs_aidevjobsadapter_name",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_aidevjobs_aidevjobsadapter_name"
     },
     {
       "relation": "method",
@@ -2974,9 +3082,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_aidevjobs_aidevjobsadapter",
-      "target": "backend_app_providers_aidevjobs_aidevjobsadapter_search",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_aidevjobs_aidevjobsadapter_search"
     },
     {
       "relation": "uses",
@@ -2985,9 +3093,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_aidevjobs_aidevjobsadapter",
-      "target": "backend_app_providers_base_idiscoveryprovider",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_idiscoveryprovider"
     },
     {
       "relation": "uses",
@@ -2996,9 +3104,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_aidevjobs_aidevjobsadapter",
-      "target": "backend_app_providers_base_normalizedcompany",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_normalizedcompany"
     },
     {
       "relation": "uses",
@@ -3007,9 +3115,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_aidevjobs_aidevjobsadapter",
-      "target": "backend_app_providers_base_normalizedopportunity",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_normalizedopportunity"
     },
     {
       "relation": "uses",
@@ -3018,9 +3126,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_aidevjobs_aidevjobsadapter",
-      "target": "backend_app_providers_base_providersearchresult",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_providersearchresult"
     },
     {
       "relation": "imports",
@@ -3030,9 +3138,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_orchestrator",
-      "target": "backend_app_providers_aidevjobs_aidevjobsadapter",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_aidevjobs_aidevjobsadapter"
     },
     {
       "relation": "uses",
@@ -3041,9 +3149,9 @@
       "source_location": "L11",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_services_orchestrator_discoveryorchestrator",
-      "target": "backend_app_providers_aidevjobs_aidevjobsadapter",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_aidevjobs_aidevjobsadapter"
     },
     {
       "relation": "calls",
@@ -3077,9 +3185,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_aidevjobs_aidevjobsadapter_search",
-      "target": "backend_app_providers_base_providersearchresult",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_providersearchresult"
     },
     {
       "relation": "imports_from",
@@ -3089,9 +3197,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base",
-      "target": "abc",
-      "confidence_score": 1.0
+      "target": "abc"
     },
     {
       "relation": "contains",
@@ -3100,9 +3208,9 @@
       "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base",
-      "target": "backend_app_providers_base_idiscoveryprovider",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_idiscoveryprovider"
     },
     {
       "relation": "contains",
@@ -3111,9 +3219,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base",
-      "target": "backend_app_providers_base_normalizedcompany",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_normalizedcompany"
     },
     {
       "relation": "contains",
@@ -3122,9 +3230,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base",
-      "target": "backend_app_providers_base_normalizedopportunity",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_normalizedopportunity"
     },
     {
       "relation": "contains",
@@ -3133,9 +3241,9 @@
       "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base",
-      "target": "backend_app_providers_base_providersearchresult",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_providersearchresult"
     },
     {
       "relation": "inherits",
@@ -3144,9 +3252,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base_normalizedcompany",
-      "target": "backend_app_providers_base_py_basemodel",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_py_basemodel"
     },
     {
       "relation": "imports",
@@ -3156,9 +3264,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_freehire",
-      "target": "backend_app_providers_base_normalizedcompany",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_normalizedcompany"
     },
     {
       "relation": "uses",
@@ -3167,9 +3275,9 @@
       "source_location": "L3",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_freehire_freehireadapter",
-      "target": "backend_app_providers_base_normalizedcompany",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_normalizedcompany"
     },
     {
       "relation": "calls",
@@ -3191,9 +3299,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_signalbase",
-      "target": "backend_app_providers_base_normalizedcompany",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_normalizedcompany"
     },
     {
       "relation": "uses",
@@ -3202,9 +3310,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_signalbase_signalbaseadapter",
-      "target": "backend_app_providers_base_normalizedcompany",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_normalizedcompany"
     },
     {
       "relation": "calls",
@@ -3226,9 +3334,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_themuse",
-      "target": "backend_app_providers_base_normalizedcompany",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_normalizedcompany"
     },
     {
       "relation": "uses",
@@ -3237,9 +3345,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_themuse_themuseadapter",
-      "target": "backend_app_providers_base_normalizedcompany",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_normalizedcompany"
     },
     {
       "relation": "calls",
@@ -3260,9 +3368,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base_normalizedopportunity",
-      "target": "backend_app_providers_base_py_basemodel",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_py_basemodel"
     },
     {
       "relation": "inherits",
@@ -3271,9 +3379,9 @@
       "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base_providersearchresult",
-      "target": "backend_app_providers_base_py_basemodel",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_py_basemodel"
     },
     {
       "relation": "imports",
@@ -3283,9 +3391,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_freehire",
-      "target": "backend_app_providers_base_normalizedopportunity",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_normalizedopportunity"
     },
     {
       "relation": "uses",
@@ -3294,9 +3402,9 @@
       "source_location": "L3",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_freehire_freehireadapter",
-      "target": "backend_app_providers_base_normalizedopportunity",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_normalizedopportunity"
     },
     {
       "relation": "calls",
@@ -3318,9 +3426,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_signalbase",
-      "target": "backend_app_providers_base_normalizedopportunity",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_normalizedopportunity"
     },
     {
       "relation": "uses",
@@ -3329,9 +3437,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_signalbase_signalbaseadapter",
-      "target": "backend_app_providers_base_normalizedopportunity",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_normalizedopportunity"
     },
     {
       "relation": "calls",
@@ -3353,9 +3461,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_themuse",
-      "target": "backend_app_providers_base_normalizedopportunity",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_normalizedopportunity"
     },
     {
       "relation": "uses",
@@ -3364,9 +3472,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_themuse_themuseadapter",
-      "target": "backend_app_providers_base_normalizedopportunity",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_normalizedopportunity"
     },
     {
       "relation": "calls",
@@ -3388,9 +3496,9 @@
       "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base_idiscoveryprovider_search",
-      "target": "backend_app_providers_base_providersearchresult",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_providersearchresult"
     },
     {
       "relation": "imports",
@@ -3400,9 +3508,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_freehire",
-      "target": "backend_app_providers_base_providersearchresult",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_providersearchresult"
     },
     {
       "relation": "uses",
@@ -3411,9 +3519,9 @@
       "source_location": "L3",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_freehire_freehireadapter",
-      "target": "backend_app_providers_base_providersearchresult",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_providersearchresult"
     },
     {
       "relation": "references",
@@ -3423,9 +3531,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_freehire_freehireadapter_search",
-      "target": "backend_app_providers_base_providersearchresult",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_providersearchresult"
     },
     {
       "relation": "imports",
@@ -3435,9 +3543,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_signalbase",
-      "target": "backend_app_providers_base_providersearchresult",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_providersearchresult"
     },
     {
       "relation": "uses",
@@ -3446,9 +3554,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_signalbase_signalbaseadapter",
-      "target": "backend_app_providers_base_providersearchresult",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_providersearchresult"
     },
     {
       "relation": "references",
@@ -3458,9 +3566,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_signalbase_signalbaseadapter_search",
-      "target": "backend_app_providers_base_providersearchresult",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_providersearchresult"
     },
     {
       "relation": "imports",
@@ -3470,9 +3578,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_themuse",
-      "target": "backend_app_providers_base_providersearchresult",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_providersearchresult"
     },
     {
       "relation": "uses",
@@ -3481,9 +3589,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_themuse_themuseadapter",
-      "target": "backend_app_providers_base_providersearchresult",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_providersearchresult"
     },
     {
       "relation": "references",
@@ -3493,9 +3601,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_themuse_themuseadapter_search",
-      "target": "backend_app_providers_base_providersearchresult",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_providersearchresult"
     },
     {
       "relation": "inherits",
@@ -3504,9 +3612,9 @@
       "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base_idiscoveryprovider",
-      "target": "abc",
-      "confidence_score": 1.0
+      "target": "abc"
     },
     {
       "relation": "method",
@@ -3515,9 +3623,9 @@
       "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base_idiscoveryprovider",
-      "target": "backend_app_providers_base_idiscoveryprovider_is_available",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_idiscoveryprovider_is_available"
     },
     {
       "relation": "method",
@@ -3526,9 +3634,9 @@
       "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base_idiscoveryprovider",
-      "target": "backend_app_providers_base_idiscoveryprovider_name",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_idiscoveryprovider_name"
     },
     {
       "relation": "method",
@@ -3537,9 +3645,9 @@
       "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base_idiscoveryprovider",
-      "target": "backend_app_providers_base_idiscoveryprovider_search",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_idiscoveryprovider_search"
     },
     {
       "relation": "imports",
@@ -3549,9 +3657,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_freehire",
-      "target": "backend_app_providers_base_idiscoveryprovider",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_idiscoveryprovider"
     },
     {
       "relation": "uses",
@@ -3560,9 +3668,9 @@
       "source_location": "L3",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_freehire_freehireadapter",
-      "target": "backend_app_providers_base_idiscoveryprovider",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_idiscoveryprovider"
     },
     {
       "relation": "imports",
@@ -3572,9 +3680,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_signalbase",
-      "target": "backend_app_providers_base_idiscoveryprovider",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_idiscoveryprovider"
     },
     {
       "relation": "uses",
@@ -3583,9 +3691,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_signalbase_signalbaseadapter",
-      "target": "backend_app_providers_base_idiscoveryprovider",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_idiscoveryprovider"
     },
     {
       "relation": "imports",
@@ -3595,9 +3703,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_themuse",
-      "target": "backend_app_providers_base_idiscoveryprovider",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_idiscoveryprovider"
     },
     {
       "relation": "uses",
@@ -3606,9 +3714,9 @@
       "source_location": "L4",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_providers_themuse_themuseadapter",
-      "target": "backend_app_providers_base_idiscoveryprovider",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_idiscoveryprovider"
     },
     {
       "relation": "imports",
@@ -3618,9 +3726,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_orchestrator",
-      "target": "backend_app_providers_base_idiscoveryprovider",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_idiscoveryprovider"
     },
     {
       "relation": "uses",
@@ -3629,9 +3737,9 @@
       "source_location": "L8",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_services_orchestrator_discoveryorchestrator",
-      "target": "backend_app_providers_base_idiscoveryprovider",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_base_idiscoveryprovider"
     },
     {
       "relation": "rationale_for",
@@ -3640,9 +3748,9 @@
       "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base_rationale_34",
-      "target": "backend_app_providers_base_idiscoveryprovider_name",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_idiscoveryprovider_name"
     },
     {
       "relation": "rationale_for",
@@ -3651,9 +3759,9 @@
       "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base_rationale_39",
-      "target": "backend_app_providers_base_idiscoveryprovider_is_available",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_idiscoveryprovider_is_available"
     },
     {
       "relation": "rationale_for",
@@ -3662,9 +3770,9 @@
       "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_base_rationale_44",
-      "target": "backend_app_providers_base_idiscoveryprovider_search",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_base_idiscoveryprovider_search"
     },
     {
       "relation": "contains",
@@ -3673,9 +3781,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_freehire",
-      "target": "backend_app_providers_freehire_freehireadapter",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_freehire_freehireadapter"
     },
     {
       "relation": "method",
@@ -3684,9 +3792,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_freehire_freehireadapter",
-      "target": "backend_app_providers_freehire_freehireadapter_is_available",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_freehire_freehireadapter_is_available"
     },
     {
       "relation": "method",
@@ -3695,9 +3803,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_freehire_freehireadapter",
-      "target": "backend_app_providers_freehire_freehireadapter_name",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_freehire_freehireadapter_name"
     },
     {
       "relation": "method",
@@ -3706,9 +3814,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_freehire_freehireadapter",
-      "target": "backend_app_providers_freehire_freehireadapter_search",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_freehire_freehireadapter_search"
     },
     {
       "relation": "imports",
@@ -3718,9 +3826,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_orchestrator",
-      "target": "backend_app_providers_freehire_freehireadapter",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_freehire_freehireadapter"
     },
     {
       "relation": "uses",
@@ -3729,9 +3837,9 @@
       "source_location": "L12",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_services_orchestrator_discoveryorchestrator",
-      "target": "backend_app_providers_freehire_freehireadapter",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_freehire_freehireadapter"
     },
     {
       "relation": "imports",
@@ -3741,9 +3849,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_scripts_test_regression",
-      "target": "backend_app_providers_freehire_freehireadapter",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_freehire_freehireadapter"
     },
     {
       "relation": "calls",
@@ -3753,9 +3861,9 @@
       "source_location": "L29",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_scripts_test_regression_run_tests",
-      "target": "backend_app_providers_freehire_freehireadapter",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_freehire_freehireadapter"
     },
     {
       "relation": "calls",
@@ -3765,9 +3873,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_freehire_freehireadapter_search",
-      "target": "backend_app_providers_freehire_freehireadapter_is_available",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_freehire_freehireadapter_is_available"
     },
     {
       "relation": "contains",
@@ -3776,9 +3884,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_signalbase",
-      "target": "backend_app_providers_signalbase_signalbaseadapter",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_signalbase_signalbaseadapter"
     },
     {
       "relation": "method",
@@ -3787,9 +3895,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_signalbase_signalbaseadapter",
-      "target": "backend_app_providers_signalbase_signalbaseadapter_is_available",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_signalbase_signalbaseadapter_is_available"
     },
     {
       "relation": "method",
@@ -3798,9 +3906,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_signalbase_signalbaseadapter",
-      "target": "backend_app_providers_signalbase_signalbaseadapter_name",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_signalbase_signalbaseadapter_name"
     },
     {
       "relation": "method",
@@ -3809,9 +3917,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_signalbase_signalbaseadapter",
-      "target": "backend_app_providers_signalbase_signalbaseadapter_search",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_signalbase_signalbaseadapter_search"
     },
     {
       "relation": "imports",
@@ -3821,9 +3929,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_orchestrator",
-      "target": "backend_app_providers_signalbase_signalbaseadapter",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_signalbase_signalbaseadapter"
     },
     {
       "relation": "uses",
@@ -3832,9 +3940,9 @@
       "source_location": "L13",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_services_orchestrator_discoveryorchestrator",
-      "target": "backend_app_providers_signalbase_signalbaseadapter",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_signalbase_signalbaseadapter"
     },
     {
       "relation": "calls",
@@ -3844,9 +3952,9 @@
       "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_signalbase_signalbaseadapter_search",
-      "target": "backend_app_providers_signalbase_signalbaseadapter_is_available",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_signalbase_signalbaseadapter_is_available"
     },
     {
       "relation": "contains",
@@ -3855,9 +3963,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_themuse",
-      "target": "backend_app_providers_themuse_themuseadapter",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_themuse_themuseadapter"
     },
     {
       "relation": "method",
@@ -3866,9 +3974,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_themuse_themuseadapter",
-      "target": "backend_app_providers_themuse_themuseadapter_is_available",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_themuse_themuseadapter_is_available"
     },
     {
       "relation": "method",
@@ -3877,9 +3985,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_themuse_themuseadapter",
-      "target": "backend_app_providers_themuse_themuseadapter_name",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_themuse_themuseadapter_name"
     },
     {
       "relation": "method",
@@ -3888,9 +3996,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_providers_themuse_themuseadapter",
-      "target": "backend_app_providers_themuse_themuseadapter_search",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_themuse_themuseadapter_search"
     },
     {
       "relation": "imports",
@@ -3900,9 +4008,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_orchestrator",
-      "target": "backend_app_providers_themuse_themuseadapter",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_themuse_themuseadapter"
     },
     {
       "relation": "uses",
@@ -3911,9 +4019,9 @@
       "source_location": "L10",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_services_orchestrator_discoveryorchestrator",
-      "target": "backend_app_providers_themuse_themuseadapter",
-      "confidence_score": 0.5
+      "target": "backend_app_providers_themuse_themuseadapter"
     },
     {
       "relation": "imports",
@@ -3923,9 +4031,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_scripts_test_regression",
-      "target": "backend_app_providers_themuse_themuseadapter",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_themuse_themuseadapter"
     },
     {
       "relation": "calls",
@@ -3935,9 +4043,9 @@
       "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_scripts_test_regression_run_tests",
-      "target": "backend_app_providers_themuse_themuseadapter",
-      "confidence_score": 1.0
+      "target": "backend_app_providers_themuse_themuseadapter"
     },
     {
       "relation": "contains",
@@ -3946,9 +4054,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_matching",
-      "target": "backend_app_services_matching_matchingservice",
-      "confidence_score": 1.0
+      "target": "backend_app_services_matching_matchingservice"
     },
     {
       "relation": "contains",
@@ -3957,9 +4065,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_matching",
-      "target": "backend_app_services_matching_matchresult",
-      "confidence_score": 1.0
+      "target": "backend_app_services_matching_matchresult"
     },
     {
       "relation": "references",
@@ -3969,9 +4077,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_matching_matchingservice_evaluate_opportunity",
-      "target": "backend_app_services_matching_matchresult",
-      "confidence_score": 1.0
+      "target": "backend_app_services_matching_matchresult"
     },
     {
       "relation": "inherits",
@@ -3980,9 +4088,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_matching_matchresult",
-      "target": "backend_app_services_matching_py_basemodel",
-      "confidence_score": 1.0
+      "target": "backend_app_services_matching_py_basemodel"
     },
     {
       "relation": "method",
@@ -3991,9 +4099,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_matching_matchingservice",
-      "target": "backend_app_services_matching_matchingservice_evaluate_opportunity",
-      "confidence_score": 1.0
+      "target": "backend_app_services_matching_matchingservice_evaluate_opportunity"
     },
     {
       "relation": "method",
@@ -4002,9 +4110,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_matching_matchingservice",
-      "target": "backend_app_services_matching_matchingservice_init",
-      "confidence_score": 1.0
+      "target": "backend_app_services_matching_matchingservice_init"
     },
     {
       "relation": "imports",
@@ -4014,9 +4122,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_orchestrator",
-      "target": "backend_app_services_matching_matchingservice",
-      "confidence_score": 1.0
+      "target": "backend_app_services_matching_matchingservice"
     },
     {
       "relation": "uses",
@@ -4025,9 +4133,9 @@
       "source_location": "L14",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_services_orchestrator_discoveryorchestrator",
-      "target": "backend_app_services_matching_matchingservice",
-      "confidence_score": 0.5
+      "target": "backend_app_services_matching_matchingservice"
     },
     {
       "relation": "calls",
@@ -4049,9 +4157,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_scripts_verify_golden",
-      "target": "backend_app_services_matching_matchingservice",
-      "confidence_score": 1.0
+      "target": "backend_app_services_matching_matchingservice"
     },
     {
       "relation": "calls",
@@ -4061,9 +4169,9 @@
       "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_scripts_verify_golden_run_verification",
-      "target": "backend_app_services_matching_matchingservice",
-      "confidence_score": 1.0
+      "target": "backend_app_services_matching_matchingservice"
     },
     {
       "relation": "references",
@@ -4073,9 +4181,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_matching_matchingservice_evaluate_opportunity",
-      "target": "any",
-      "confidence_score": 1.0
+      "target": "any"
     },
     {
       "relation": "contains",
@@ -4084,9 +4192,9 @@
       "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_orchestrator",
-      "target": "backend_app_services_orchestrator_discoveryorchestrator",
-      "confidence_score": 1.0
+      "target": "backend_app_services_orchestrator_discoveryorchestrator"
     },
     {
       "relation": "imports",
@@ -4096,9 +4204,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_orchestrator",
-      "target": "backend_app_services_research_researchservice",
-      "confidence_score": 1.0
+      "target": "backend_app_services_research_researchservice"
     },
     {
       "relation": "method",
@@ -4107,9 +4215,9 @@
       "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_orchestrator_discoveryorchestrator",
-      "target": "backend_app_services_orchestrator_discoveryorchestrator_init",
-      "confidence_score": 1.0
+      "target": "backend_app_services_orchestrator_discoveryorchestrator_init"
     },
     {
       "relation": "method",
@@ -4118,9 +4226,9 @@
       "source_location": "L86",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_orchestrator_discoveryorchestrator",
-      "target": "backend_app_services_orchestrator_discoveryorchestrator_process_opportunity",
-      "confidence_score": 1.0
+      "target": "backend_app_services_orchestrator_discoveryorchestrator_process_opportunity"
     },
     {
       "relation": "method",
@@ -4129,9 +4237,9 @@
       "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_orchestrator_discoveryorchestrator",
-      "target": "backend_app_services_orchestrator_discoveryorchestrator_run_discovery_for_profile",
-      "confidence_score": 1.0
+      "target": "backend_app_services_orchestrator_discoveryorchestrator_run_discovery_for_profile"
     },
     {
       "relation": "uses",
@@ -4140,9 +4248,9 @@
       "source_location": "L15",
       "weight": 0.8,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_services_orchestrator_discoveryorchestrator",
-      "target": "backend_app_services_research_researchservice",
-      "confidence_score": 0.5
+      "target": "backend_app_services_research_researchservice"
     },
     {
       "relation": "imports",
@@ -4152,9 +4260,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_scheduler",
-      "target": "backend_app_services_orchestrator_discoveryorchestrator",
-      "confidence_score": 1.0
+      "target": "backend_app_services_orchestrator_discoveryorchestrator"
     },
     {
       "relation": "imports",
@@ -4164,9 +4272,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_scripts_test_regression",
-      "target": "backend_app_services_orchestrator_discoveryorchestrator",
-      "confidence_score": 1.0
+      "target": "backend_app_services_orchestrator_discoveryorchestrator"
     },
     {
       "relation": "calls",
@@ -4188,9 +4296,9 @@
       "source_location": "L72",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_orchestrator_discoveryorchestrator_run_discovery_for_profile",
-      "target": "backend_app_services_orchestrator_discoveryorchestrator_process_opportunity",
-      "confidence_score": 1.0
+      "target": "backend_app_services_orchestrator_discoveryorchestrator_process_opportunity"
     },
     {
       "relation": "contains",
@@ -4199,9 +4307,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_research",
-      "target": "backend_app_services_research_researchservice",
-      "confidence_score": 1.0
+      "target": "backend_app_services_research_researchservice"
     },
     {
       "relation": "method",
@@ -4210,9 +4318,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_research_researchservice",
-      "target": "backend_app_services_research_researchservice_research_opportunity",
-      "confidence_score": 1.0
+      "target": "backend_app_services_research_researchservice_research_opportunity"
     },
     {
       "relation": "contains",
@@ -4221,9 +4329,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_scheduler",
-      "target": "backend_app_services_scheduler_run_discovery_tick",
-      "confidence_score": 1.0
+      "target": "backend_app_services_scheduler_run_discovery_tick"
     },
     {
       "relation": "contains",
@@ -4232,9 +4340,9 @@
       "source_location": "L70",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_app_services_scheduler",
-      "target": "backend_app_services_scheduler_start_scheduler",
-      "confidence_score": 1.0
+      "target": "backend_app_services_scheduler_start_scheduler"
     },
     {
       "relation": "indirect_call",
@@ -4244,9 +4352,9 @@
       "source_location": "L75",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 0.5,
       "source": "backend_app_services_scheduler_start_scheduler",
-      "target": "backend_app_services_scheduler_run_discovery_tick",
-      "confidence_score": 0.5
+      "target": "backend_app_services_scheduler_run_discovery_tick"
     },
     {
       "relation": "imports",
@@ -4256,9 +4364,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_scripts_test_regression",
-      "target": "backend_app_services_scheduler_run_discovery_tick",
-      "confidence_score": 1.0
+      "target": "backend_app_services_scheduler_run_discovery_tick"
     },
     {
       "relation": "calls",
@@ -4268,9 +4376,9 @@
       "source_location": "L56",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_scripts_test_regression_run_tests",
-      "target": "backend_app_services_scheduler_run_discovery_tick",
-      "confidence_score": 1.0
+      "target": "backend_app_services_scheduler_run_discovery_tick"
     },
     {
       "relation": "contains",
@@ -4279,9 +4387,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_scripts_test_regression",
-      "target": "backend_scripts_test_regression_run_tests",
-      "confidence_score": 1.0
+      "target": "backend_scripts_test_regression_run_tests"
     },
     {
       "relation": "contains",
@@ -4290,9 +4398,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_scripts_verify_golden",
-      "target": "backend_scripts_verify_golden_run_verification",
-      "confidence_score": 1.0
+      "target": "backend_scripts_verify_golden_run_verification"
     },
     {
       "relation": "contains",
@@ -4301,9 +4409,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_src_app",
-      "target": "frontend_src_app_app",
-      "confidence_score": 1.0
+      "target": "frontend_src_app_app"
     },
     {
       "relation": "imports_from",
@@ -4313,9 +4421,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_src_main",
-      "target": "frontend_src_app",
-      "confidence_score": 1.0
+      "target": "frontend_src_app"
     },
     {
       "relation": "imports",
@@ -4325,9 +4433,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_src_main",
-      "target": "frontend_src_app_app",
-      "confidence_score": 1.0
+      "target": "frontend_src_app_app"
     },
     {
       "relation": "contains",
@@ -4336,9 +4444,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_src_lib_supabase",
-      "target": "frontend_src_lib_supabase_supabase",
-      "confidence_score": 1.0
+      "target": "frontend_src_lib_supabase_supabase"
     },
     {
       "relation": "defines",
@@ -4347,18 +4455,9 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
+      "_origin": "semantic",
       "source": "readme_document",
       "target": "readme_outreach_flux"
-    },
-    {
-      "relation": "configures_frontend",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "frontend/README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "frontend_readme_document",
-      "target": "ai_job_outreach_phase_playbook_updated_phase0"
     },
     {
       "relation": "documents_tool",
@@ -4367,6 +4466,7 @@
       "source_file": "frontend/README.md",
       "source_location": null,
       "weight": 1.0,
+      "_origin": "semantic",
       "source": "frontend_readme_document",
       "target": "frontend_readme_oxlint"
     },
@@ -4377,6 +4477,7 @@
       "source_file": "frontend/README.md",
       "source_location": null,
       "weight": 1.0,
+      "_origin": "semantic",
       "source": "frontend_readme_document",
       "target": "frontend_readme_react"
     },
@@ -4387,6 +4488,7 @@
       "source_file": "frontend/README.md",
       "source_location": null,
       "weight": 1.0,
+      "_origin": "semantic",
       "source": "frontend_readme_document",
       "target": "frontend_readme_react_compiler"
     },
@@ -4397,6 +4499,7 @@
       "source_file": "frontend/README.md",
       "source_location": null,
       "weight": 1.0,
+      "_origin": "semantic",
       "source": "frontend_readme_document",
       "target": "frontend_readme_typescript"
     },
@@ -4407,6 +4510,7 @@
       "source_file": "frontend/README.md",
       "source_location": null,
       "weight": 1.0,
+      "_origin": "semantic",
       "source": "frontend_readme_document",
       "target": "frontend_readme_vite"
     },
@@ -4417,6 +4521,7 @@
       "source_file": "frontend/README.md",
       "source_location": null,
       "weight": 1.0,
+      "_origin": "semantic",
       "source": "frontend_readme_document",
       "target": "frontend_readme_vite_plugin_react"
     },
@@ -4427,6 +4532,7 @@
       "source_file": "frontend/README.md",
       "source_location": null,
       "weight": 1.0,
+      "_origin": "semantic",
       "source": "frontend_readme_document",
       "target": "frontend_readme_vite_plugin_react_swc"
     },
@@ -4437,18 +4543,18 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_document",
+      "source": "ai_job_outreach_phase_playbook_updated_doc",
       "target": "ai_job_outreach_phase_playbook_updated_definition_of_done"
     },
     {
-      "relation": "defines_rule",
+      "relation": "uses_tool",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_document",
-      "target": "ai_job_outreach_phase_playbook_updated_graphify_layer"
+      "source": "ai_job_outreach_phase_playbook_updated_doc",
+      "target": "ai_job_outreach_phase_playbook_updated_graphify"
     },
     {
       "relation": "defines_phase",
@@ -4457,8 +4563,8 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_document",
-      "target": "ai_job_outreach_phase_playbook_updated_phase0"
+      "source": "ai_job_outreach_phase_playbook_updated_doc",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_0"
     },
     {
       "relation": "defines_phase",
@@ -4467,8 +4573,8 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_document",
-      "target": "ai_job_outreach_phase_playbook_updated_phase1"
+      "source": "ai_job_outreach_phase_playbook_updated_doc",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_1"
     },
     {
       "relation": "defines_phase",
@@ -4477,8 +4583,8 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_document",
-      "target": "ai_job_outreach_phase_playbook_updated_phase10"
+      "source": "ai_job_outreach_phase_playbook_updated_doc",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_10"
     },
     {
       "relation": "defines_phase",
@@ -4487,8 +4593,8 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_document",
-      "target": "ai_job_outreach_phase_playbook_updated_phase2"
+      "source": "ai_job_outreach_phase_playbook_updated_doc",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_2"
     },
     {
       "relation": "defines_phase",
@@ -4497,8 +4603,8 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_document",
-      "target": "ai_job_outreach_phase_playbook_updated_phase3"
+      "source": "ai_job_outreach_phase_playbook_updated_doc",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_3"
     },
     {
       "relation": "defines_phase",
@@ -4507,8 +4613,8 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_document",
-      "target": "ai_job_outreach_phase_playbook_updated_phase4"
+      "source": "ai_job_outreach_phase_playbook_updated_doc",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_4"
     },
     {
       "relation": "defines_phase",
@@ -4517,8 +4623,8 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_document",
-      "target": "ai_job_outreach_phase_playbook_updated_phase5"
+      "source": "ai_job_outreach_phase_playbook_updated_doc",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_5"
     },
     {
       "relation": "defines_phase",
@@ -4527,8 +4633,8 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_document",
-      "target": "ai_job_outreach_phase_playbook_updated_phase6"
+      "source": "ai_job_outreach_phase_playbook_updated_doc",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_6"
     },
     {
       "relation": "defines_phase",
@@ -4537,8 +4643,8 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_document",
-      "target": "ai_job_outreach_phase_playbook_updated_phase7"
+      "source": "ai_job_outreach_phase_playbook_updated_doc",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_7"
     },
     {
       "relation": "defines_phase",
@@ -4547,8 +4653,8 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_document",
-      "target": "ai_job_outreach_phase_playbook_updated_phase8"
+      "source": "ai_job_outreach_phase_playbook_updated_doc",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_8"
     },
     {
       "relation": "defines_phase",
@@ -4557,8 +4663,8 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_document",
-      "target": "ai_job_outreach_phase_playbook_updated_phase9"
+      "source": "ai_job_outreach_phase_playbook_updated_doc",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_9"
     },
     {
       "relation": "references",
@@ -4567,8 +4673,8 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_document",
-      "target": "ai_job_outreach_project_memory_updated_document"
+      "source": "ai_job_outreach_phase_playbook_updated_doc",
+      "target": "ai_job_outreach_project_memory_updated_doc"
     },
     {
       "relation": "precedes",
@@ -4577,8 +4683,8 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase0",
-      "target": "ai_job_outreach_phase_playbook_updated_phase1"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_0",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_1"
     },
     {
       "relation": "precedes",
@@ -4587,17 +4693,17 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase1",
-      "target": "ai_job_outreach_phase_playbook_updated_phase2"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_1",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_2"
     },
     {
-      "relation": "implements",
+      "relation": "reads_candidate_file",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase1",
+      "source": "ai_job_outreach_phase_playbook_updated_phase_1",
       "target": "ai_job_outreach_project_memory_updated_candidate_json"
     },
     {
@@ -4607,8 +4713,8 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase2",
-      "target": "ai_job_outreach_phase_playbook_updated_phase3"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_2",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_3"
     },
     {
       "relation": "implements",
@@ -4617,8 +4723,18 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase2",
-      "target": "ai_job_outreach_project_memory_updated_discovery_architecture"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_2",
+      "target": "ai_job_outreach_project_memory_updated_discovery_provider"
+    },
+    {
+      "relation": "configures_schedule",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ai_job_outreach_phase_playbook_updated_phase_2",
+      "target": "ai_job_outreach_project_memory_updated_profile_rotation"
     },
     {
       "relation": "precedes",
@@ -4627,28 +4743,38 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase3",
-      "target": "ai_job_outreach_phase_playbook_updated_phase4"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_3",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_4"
     },
     {
-      "relation": "implements",
+      "relation": "canonicalizes",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase3",
-      "target": "ai_job_outreach_project_memory_updated_database_canonicalization"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_3",
+      "target": "ai_job_outreach_project_memory_updated_company_model"
     },
     {
-      "relation": "implements",
+      "relation": "executes_matching",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase3",
-      "target": "ai_job_outreach_project_memory_updated_matching_engine"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_3",
+      "target": "ai_job_outreach_project_memory_updated_deterministic_matching"
+    },
+    {
+      "relation": "canonicalizes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ai_job_outreach_phase_playbook_updated_phase_3",
+      "target": "ai_job_outreach_project_memory_updated_opportunity_model"
     },
     {
       "relation": "precedes",
@@ -4657,18 +4783,28 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase4",
-      "target": "ai_job_outreach_phase_playbook_updated_phase5"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_4",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_5"
     },
     {
-      "relation": "implements",
+      "relation": "searches_contacts",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase4",
-      "target": "ai_job_outreach_project_memory_updated_contact_discovery"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_4",
+      "target": "ai_job_outreach_project_memory_updated_contact_discovery_hierarchy"
+    },
+    {
+      "relation": "uses_fallback",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ai_job_outreach_phase_playbook_updated_phase_4",
+      "target": "ai_job_outreach_project_memory_updated_tomba_fallback"
     },
     {
       "relation": "precedes",
@@ -4677,18 +4813,18 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase5",
-      "target": "ai_job_outreach_phase_playbook_updated_phase6"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_5",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_6"
     },
     {
-      "relation": "implements",
+      "relation": "verifies_emails",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase5",
-      "target": "ai_job_outreach_project_memory_updated_eva"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_5",
+      "target": "ai_job_outreach_project_memory_updated_eva_verification"
     },
     {
       "relation": "precedes",
@@ -4697,18 +4833,38 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase6",
-      "target": "ai_job_outreach_phase_playbook_updated_phase7"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_6",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_7"
     },
     {
-      "relation": "implements",
+      "relation": "fallback_llm",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase6",
-      "target": "ai_job_outreach_project_memory_updated_gemini"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_6",
+      "target": "ai_job_outreach_project_memory_updated_deepseek_provider"
+    },
+    {
+      "relation": "calls_llm",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ai_job_outreach_phase_playbook_updated_phase_6",
+      "target": "ai_job_outreach_project_memory_updated_gemini_provider"
+    },
+    {
+      "relation": "generates_drafts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ai_job_outreach_phase_playbook_updated_phase_6",
+      "target": "ai_job_outreach_project_memory_updated_llm_email_generation"
     },
     {
       "relation": "precedes",
@@ -4717,18 +4873,28 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase7",
-      "target": "ai_job_outreach_phase_playbook_updated_phase8"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_7",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_8"
     },
     {
-      "relation": "implements",
+      "relation": "attaches_file",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase7",
-      "target": "ai_job_outreach_project_memory_updated_gmail_api"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_7",
+      "target": "ai_job_outreach_phase_playbook_updated_resume_pdf"
+    },
+    {
+      "relation": "sends_emails",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ai_job_outreach_phase_playbook_updated_phase_7",
+      "target": "ai_job_outreach_project_memory_updated_gmail_sending_policy"
     },
     {
       "relation": "precedes",
@@ -4737,18 +4903,18 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase8",
-      "target": "ai_job_outreach_phase_playbook_updated_phase9"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_8",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_9"
     },
     {
-      "relation": "implements",
+      "relation": "classifies_inbox",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase8",
-      "target": "ai_job_outreach_project_memory_updated_reply_tracking"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_8",
+      "target": "ai_job_outreach_project_memory_updated_reply_classification"
     },
     {
       "relation": "precedes",
@@ -4757,58 +4923,28 @@
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase9",
-      "target": "ai_job_outreach_phase_playbook_updated_phase10"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_9",
+      "target": "ai_job_outreach_phase_playbook_updated_phase_10"
     },
     {
-      "relation": "implements",
+      "relation": "deploys_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_phase_playbook_updated_phase10",
-      "target": "ai_job_outreach_project_memory_updated_oracle_vps"
+      "source": "ai_job_outreach_phase_playbook_updated_phase_10",
+      "target": "ai_job_outreach_project_memory_updated_oracle_vps_infrastructure"
     },
     {
-      "relation": "defines_rules",
+      "relation": "specifies_rules",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_document",
+      "source": "ai_job_outreach_project_memory_updated_doc",
       "target": "ai_job_outreach_project_memory_updated_anti_hallucination_rules"
-    },
-    {
-      "relation": "defines_concept",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_document",
-      "target": "ai_job_outreach_project_memory_updated_candidate_json"
-    },
-    {
-      "relation": "defines_concept",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_document",
-      "target": "ai_job_outreach_project_memory_updated_contact_discovery"
-    },
-    {
-      "relation": "defines_concept",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_document",
-      "target": "ai_job_outreach_project_memory_updated_database_canonicalization"
     },
     {
       "relation": "defines_architecture",
@@ -4817,180 +4953,200 @@
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_document",
-      "target": "ai_job_outreach_project_memory_updated_discovery_architecture"
+      "source": "ai_job_outreach_project_memory_updated_doc",
+      "target": "ai_job_outreach_project_memory_updated_canonical_flow"
     },
     {
-      "relation": "uses_email_provider",
+      "relation": "specifies_technology",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_document",
-      "target": "ai_job_outreach_project_memory_updated_gmail_api"
+      "source": "ai_job_outreach_project_memory_updated_doc",
+      "target": "ai_job_outreach_project_memory_updated_tech_stack"
     },
     {
-      "relation": "uses_memory_layer",
+      "relation": "provides_profiles",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_document",
-      "target": "ai_job_outreach_project_memory_updated_graphify"
+      "source": "ai_job_outreach_project_memory_updated_candidate_json",
+      "target": "ai_job_outreach_project_memory_updated_profile_rotation"
     },
     {
-      "relation": "defines_concept",
+      "relation": "reads_candidate_skills",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_document",
-      "target": "ai_job_outreach_project_memory_updated_matching_engine"
+      "source": "ai_job_outreach_project_memory_updated_deterministic_matching",
+      "target": "ai_job_outreach_project_memory_updated_candidate_model"
     },
     {
-      "relation": "uses_deployment_target",
+      "relation": "uses_source",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_document",
-      "target": "ai_job_outreach_project_memory_updated_oracle_vps"
+      "source": "ai_job_outreach_project_memory_updated_discovery_provider",
+      "target": "ai_job_outreach_project_memory_updated_provider_adzuna"
     },
     {
-      "relation": "uses_database",
+      "relation": "uses_source",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_document",
-      "target": "ai_job_outreach_project_memory_updated_supabase"
+      "source": "ai_job_outreach_project_memory_updated_discovery_provider",
+      "target": "ai_job_outreach_project_memory_updated_provider_ai_dev_jobs"
     },
     {
-      "relation": "includes_provider",
+      "relation": "uses_source",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_discovery_architecture",
-      "target": "ai_job_outreach_project_memory_updated_adzuna"
+      "source": "ai_job_outreach_project_memory_updated_discovery_provider",
+      "target": "ai_job_outreach_project_memory_updated_provider_freehire"
     },
     {
-      "relation": "includes_provider",
+      "relation": "uses_source",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_discovery_architecture",
-      "target": "ai_job_outreach_project_memory_updated_aidevjobs"
+      "source": "ai_job_outreach_project_memory_updated_discovery_provider",
+      "target": "ai_job_outreach_project_memory_updated_provider_funding_signals"
     },
     {
-      "relation": "includes_provider",
+      "relation": "uses_source",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_discovery_architecture",
-      "target": "ai_job_outreach_project_memory_updated_freehire"
+      "source": "ai_job_outreach_project_memory_updated_discovery_provider",
+      "target": "ai_job_outreach_project_memory_updated_provider_the_muse"
     },
     {
-      "relation": "includes_provider",
+      "relation": "persists_raw_results",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ai_job_outreach_project_memory_updated_discovery_provider",
+      "target": "ai_job_outreach_project_memory_updated_supabase_postgres"
+    },
+    {
+      "relation": "triggers_discovery",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_discovery_architecture",
-      "target": "ai_job_outreach_project_memory_updated_fundingsignals"
+      "source": "ai_job_outreach_project_memory_updated_profile_rotation",
+      "target": "ai_job_outreach_project_memory_updated_discovery_provider"
     },
     {
-      "relation": "includes_provider",
+      "relation": "stored_in",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_discovery_architecture",
-      "target": "ai_job_outreach_project_memory_updated_themuse"
+      "source": "ai_job_outreach_project_memory_updated_company_model",
+      "target": "ai_job_outreach_project_memory_updated_supabase_postgres"
     },
     {
-      "relation": "defines_schema",
+      "relation": "evaluates_opportunity",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_database_canonicalization",
-      "target": "ai_job_outreach_project_memory_updated_companies_table"
+      "source": "ai_job_outreach_project_memory_updated_deterministic_matching",
+      "target": "ai_job_outreach_project_memory_updated_opportunity_model"
     },
     {
-      "relation": "defines_schema",
+      "relation": "stored_in",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_database_canonicalization",
-      "target": "ai_job_outreach_project_memory_updated_contacts_table"
+      "source": "ai_job_outreach_project_memory_updated_opportunity_model",
+      "target": "ai_job_outreach_project_memory_updated_supabase_postgres"
     },
     {
-      "relation": "defines_schema",
+      "relation": "passes_contact_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_database_canonicalization",
-      "target": "ai_job_outreach_project_memory_updated_opportunities_table"
+      "source": "ai_job_outreach_project_memory_updated_contact_discovery_hierarchy",
+      "target": "ai_job_outreach_project_memory_updated_eva_verification"
     },
     {
-      "relation": "verifies_with",
+      "relation": "falls_back_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_contacts_table",
-      "target": "ai_job_outreach_project_memory_updated_eva"
+      "source": "ai_job_outreach_project_memory_updated_contact_discovery_hierarchy",
+      "target": "ai_job_outreach_project_memory_updated_tomba_fallback"
     },
     {
-      "relation": "uses_fallback",
+      "relation": "gates_ready_for_outreach",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_contact_discovery",
-      "target": "ai_job_outreach_project_memory_updated_tomba"
+      "source": "ai_job_outreach_project_memory_updated_eva_verification",
+      "target": "ai_job_outreach_project_memory_updated_llm_email_generation"
     },
     {
-      "relation": "has_fallback",
+      "relation": "provides_drafts",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_gemini",
-      "target": "ai_job_outreach_project_memory_updated_deepseek"
+      "source": "ai_job_outreach_project_memory_updated_llm_email_generation",
+      "target": "ai_job_outreach_project_memory_updated_gmail_sending_policy"
     },
     {
-      "relation": "tracks_replies",
+      "relation": "justifies_scope_restriction",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_job_outreach_project_memory_updated_gmail_api",
-      "target": "ai_job_outreach_project_memory_updated_reply_tracking"
+      "source": "ai_job_outreach_project_memory_updated_llm_usage_rationale",
+      "target": "ai_job_outreach_project_memory_updated_llm_email_generation"
+    },
+    {
+      "relation": "monitors_inbox",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ai_job_outreach_project_memory_updated_gmail_sending_policy",
+      "target": "ai_job_outreach_project_memory_updated_reply_classification"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "dbf9395e396ed812ae8d44cbc1623d4879cfa22a"
+  "built_at_commit": "591fa6d349c76124c20e799ea26c6c323109758e"
 }

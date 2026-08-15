@@ -1,22 +1,24 @@
 ---
 type: community
-members: 9
+members: 11
 ---
 
 # Backend Application & Config Services
 
-**Members:** 9 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[AI Job Outreach Assistant — Phase Playbook]] - document - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
-- [[Deterministic Candidate Matching Engine]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Global Definition of Done]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
-- [[Graphify Memory Layer Rule]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
+- [[3-Hour Discovery Profile Rotation]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[AI Dev Jobs Discovery Source]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Adzuna Discovery Source]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[DiscoveryProvider Architecture]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[FreeHire Discovery Source]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Funding Signals Discovery Source]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
 - [[Phase 0 — Foundation]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
 - [[Phase 1 — Candidate JSON]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
 - [[Phase 2 — Multi-Provider Incremental Discovery]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
-- [[Phase 3 — Database Canonicalization + Matching + Research]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
-- [[configcandidate.json Candidate Model]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[The Muse Discovery Source]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[configcandidate.json]] - document - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,16 +28,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_The Muse Provider & Discovery Orchestration]]
-- 4 edges to [[_COMMUNITY_Backend Supabase Client]]
 - 3 edges to [[_COMMUNITY_Adzuna Discovery Adapter]]
-- 1 edge to [[_COMMUNITY_Discovery Base Interfaces & Normalized Models]]
-- 1 edge to [[_COMMUNITY_Project Memory & Root Documentation]]
-- 1 edge to [[_COMMUNITY_Frontend Supabase Client]]
+- 2 edges to [[_COMMUNITY_Free Hire Discovery Adapter]]
 
 ## Top bridge nodes
-- [[AI Job Outreach Assistant — Phase Playbook]] - degree 14, connects to 3 communities
-- [[Phase 3 — Database Canonicalization + Matching + Research]] - degree 5, connects to 2 communities
-- [[Phase 2 — Multi-Provider Incremental Discovery]] - degree 4, connects to 1 community
-- [[Phase 0 — Foundation]] - degree 3, connects to 1 community
-- [[configcandidate.json Candidate Model]] - degree 2, connects to 1 community
+- [[Phase 2 — Multi-Provider Incremental Discovery]] - degree 5, connects to 2 communities
+- [[DiscoveryProvider Architecture]] - degree 8, connects to 1 community
+- [[Phase 1 — Candidate JSON]] - degree 4, connects to 1 community
+- [[Phase 0 — Foundation]] - degree 2, connects to 1 community

@@ -8,12 +8,12 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[dot-is_available()]] - code - backend/app/providers/adzuna.py
-- [[dot-name()_1]] - code - backend/app/providers/adzuna.py
-- [[dot-search()]] - code - backend/app/providers/adzuna.py
-- [[AdzunaAdapter]] - code - backend/app/providers/adzuna.py
-- [[adzuna.py]] - code - backend/app/providers/adzuna.py
-- [[orchestrator.py]] - code - backend/app/services/orchestrator.py
+- [[Candidate Profile Model]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Company Canonical Model]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Deterministic Candidate Matching]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Opportunity Canonical Model]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Phase 3 — Database Canonicalization + Matching + Research]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
+- [[Supabase PostgreSQL Database]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,15 +23,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Project Architecture & Implementation Phases]]
-- 4 edges to [[_COMMUNITY_AI Dev Jobs Discovery Provider]]
-- 4 edges to [[_COMMUNITY_Signalbase Discovery Adapter]]
-- 4 edges to [[_COMMUNITY_Frontend React Entrypoint & UI]]
-- 4 edges to [[_COMMUNITY_Research Service & Intelligence Layer]]
-- 3 edges to [[_COMMUNITY_Playbook Execution & Knowledge Layer Rules]]
+- 2 edges to [[_COMMUNITY_Backend Application & Config Services]]
+- 1 edge to [[_COMMUNITY_Adzuna Discovery Adapter]]
+- 1 edge to [[_COMMUNITY_Frontend Supabase Client]]
 
 ## Top bridge nodes
-- [[AdzunaAdapter]] - degree 11, connects to 6 communities
-- [[orchestrator.py]] - degree 10, connects to 6 communities
-- [[adzuna.py]] - degree 6, connects to 5 communities
-- [[dot-search()]] - degree 6, connects to 4 communities
+- [[Phase 3 — Database Canonicalization + Matching + Research]] - degree 6, connects to 3 communities
+- [[Supabase PostgreSQL Database]] - degree 3, connects to 1 community

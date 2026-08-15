@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Research Service & Intelligence Layer"
+community: "Project Memory & Root Documentation"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Research_Service__Intelligence_Layer
+  - community/Project_Memory__Root_Documentation
 ---
 
 # BaseModel
@@ -15,4 +15,4 @@ tags:
 - [[NormalizedOpportunity]] - `inherits` [EXTRACTED]
 - [[ProviderSearchResult]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Research_Service__Intelligence_Layer
+#graphify/code #graphify/EXTRACTED #community/Project_Memory__Root_Documentation

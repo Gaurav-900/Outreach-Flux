@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/signalbase.py"
 type: "code"
-community: "AI Dev Jobs Discovery Provider"
+community: "The Muse Provider & Discovery Orchestration"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AI_Dev_Jobs_Discovery_Provider
+  - community/The_Muse_Provider__Discovery_Orchestration
 ---
 
 # .search()
@@ -19,4 +19,4 @@ tags:
 - [[ProviderSearchResult]] - `references` [EXTRACTED]
 - [[SignalbaseAdapter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider
+#graphify/code #graphify/EXTRACTED #community/The_Muse_Provider__Discovery_Orchestration

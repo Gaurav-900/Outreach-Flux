@@ -11,9 +11,9 @@ tags:
 # Phase 1 — Candidate JSON
 
 ## Connections
-- [[AI Job Outreach Assistant — Phase Playbook]] - `defines_phase` [EXTRACTED]
+- [[AI Job Outreach Phase Playbook]] - `defines_phase` [EXTRACTED]
 - [[Phase 0 — Foundation]] - `precedes` [EXTRACTED]
 - [[Phase 2 — Multi-Provider Incremental Discovery]] - `precedes` [EXTRACTED]
-- [[configcandidate.json Candidate Model]] - `implements` [EXTRACTED]
+- [[configcandidate.json]] - `reads_candidate_file` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/Backend_Application__Config_Services

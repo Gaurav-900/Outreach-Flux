@@ -1,12 +1,12 @@
 ---
 source_file: "frontend/src/App.tsx"
 type: "code"
-community: "Global Definition of Done"
+community: "Anti-Hallucination Rules"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Global_Definition_of_Done
+  - community/Anti-Hallucination_Rules
 ---
 
 # App()
@@ -15,4 +15,4 @@ tags:
 - [[App.tsx]] - `contains` [EXTRACTED]
 - [[main.tsx]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Global_Definition_of_Done
+#graphify/code #graphify/EXTRACTED #community/Anti-Hallucination_Rules

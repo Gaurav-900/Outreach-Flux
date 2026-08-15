@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/models/candidate.py"
 type: "code"
-community: "Project Architecture & Implementation Phases"
+community: "AI Dev Jobs Discovery Provider"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Architecture__Implementation_Phases
+  - community/AI_Dev_Jobs_Discovery_Provider
 ---
 
 # CandidateFile
@@ -21,4 +21,4 @@ tags:
 - [[get_candidate_profile()]] - `references` [EXTRACTED]
 - [[matching.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases
+#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider

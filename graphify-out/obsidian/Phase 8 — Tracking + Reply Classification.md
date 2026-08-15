@@ -1,19 +1,19 @@
 ---
 source_file: "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md"
 type: "concept"
-community: "The Muse Provider & Discovery Orchestration"
+community: "Discovery Base Interfaces & Normalized Models"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/The_Muse_Provider__Discovery_Orchestration
+  - community/Discovery_Base_Interfaces__Normalized_Models
 ---
 
 # Phase 8 — Tracking + Reply Classification
 
 ## Connections
-- [[AI Job Outreach Assistant — Phase Playbook]] - `defines_phase` [EXTRACTED]
-- [[Gmail Reply Detection & Classification]] - `implements` [EXTRACTED]
+- [[AI Job Outreach Phase Playbook]] - `defines_phase` [EXTRACTED]
 - [[Phase 7 — Gmail + Sending Policy]] - `precedes` [EXTRACTED]
 - [[Phase 9 — Automation]] - `precedes` [EXTRACTED]
+- [[Reply Detection & Classification]] - `classifies_inbox` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/The_Muse_Provider__Discovery_Orchestration
+#graphify/concept #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models
