@@ -1,20 +1,22 @@
 ---
 source_file: "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md"
 type: "concept"
-community: "Discovery Base Interfaces & Normalized Models"
+community: "Project Architecture & Implementation Phases"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Discovery_Base_Interfaces__Normalized_Models
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # Phase 7 — Gmail + Sending Policy
 
 ## Connections
-- [[AI Job Outreach Phase Playbook]] - `defines_phase` [EXTRACTED]
-- [[Gmail API & Controlled Sending Policy]] - `sends_emails` [EXTRACTED]
-- [[Phase 6 — AI Outreach Batch Generation]] - `precedes` [EXTRACTED]
-- [[Phase 8 — Tracking + Reply Classification]] - `precedes` [EXTRACTED]
-- [[configresume.pdf]] - `attaches_file` [EXTRACTED]
+- [[AI Job Outreach Assistant — Phase Playbook]] - `defines` [EXTRACTED]
+- [[Gmail OAuth & Sending API]] - `includes` [EXTRACTED]
+- [[LLM Scope Rationale (Phase 6 Only)]] - `restricts_llm_usage` [EXTRACTED]
+- [[Phase 6 — AI Outreach — Batch Generation]] - `depends_on` [EXTRACTED]
+- [[Phase 8 — Tracking + Reply Classification]] - `depends_on` [EXTRACTED]
+- [[Sending Policy & Safety Limits]] - `includes` [EXTRACTED]
+- [[configresume.pdf]] - `uses_data_file` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models
+#graphify/concept #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

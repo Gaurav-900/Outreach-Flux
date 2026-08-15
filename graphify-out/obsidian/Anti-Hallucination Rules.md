@@ -1,11 +1,11 @@
 ---
 source_file: "AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md"
 type: "concept"
-community: "Global Definition of Done"
+community: "Adzuna Discovery Adapter"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Global_Definition_of_Done
+  - community/Adzuna_Discovery_Adapter
 ---
 
 # Anti-Hallucination Rules
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AI Job Outreach Project Memory]] - `specifies_rules` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Global_Definition_of_Done
+#graphify/concept #graphify/EXTRACTED #community/Adzuna_Discovery_Adapter

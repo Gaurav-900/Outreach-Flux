@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/adzuna.py"
 type: "code"
-community: "Signalbase Discovery Adapter"
+community: "Candidate Schemas & Validation Models"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Signalbase_Discovery_Adapter
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # .search()
@@ -19,4 +19,4 @@ tags:
 - [[NormalizedOpportunity]] - `calls` [EXTRACTED]
 - [[ProviderSearchResult]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Signalbase_Discovery_Adapter
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

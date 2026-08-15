@@ -1,20 +1,22 @@
 ---
-source_file: "backend/app/providers/base.py"
+source_file: "backend/app/providers/freehire.py"
 type: "code"
-community: "Backend Supabase Client"
-location: "L43"
+community: "Candidate Schemas & Validation Models"
+location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Supabase_Client
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # .search()
 
 ## Connections
+- [[dot-is_available()_2]] - `calls` [EXTRACTED]
 - [[DiscoveryProfile]] - `references` [EXTRACTED]
-- [[Execute a search against the provider.]] - `rationale_for` [EXTRACTED]
-- [[IDiscoveryProvider]] - `method` [EXTRACTED]
+- [[FreeHireAdapter]] - `method` [EXTRACTED]
+- [[NormalizedCompany]] - `calls` [EXTRACTED]
+- [[NormalizedOpportunity]] - `calls` [EXTRACTED]
 - [[ProviderSearchResult]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Supabase_Client
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

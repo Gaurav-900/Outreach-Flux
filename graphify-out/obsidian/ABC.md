@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "Backend Supabase Client"
+community: "AI Dev Jobs Discovery Provider"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Supabase_Client
+  - community/AI_Dev_Jobs_Discovery_Provider
 ---
 
 # ABC
 
 ## Connections
-- [[IDiscoveryProvider]] - `inherits` [EXTRACTED]
-- [[base.py]] - `imports_from` [EXTRACTED]
+- [[ContactProvider]] - `inherits` [EXTRACTED]
+- [[providerscontact.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Supabase_Client
+#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider

@@ -1,24 +1,41 @@
 ---
 type: community
-members: 11
+members: 28
 ---
 
 # Backend Application & Config Services
 
-**Members:** 11 nodes
+**Members:** 28 nodes
 
 ## Members
-- [[3-Hour Discovery Profile Rotation]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[AI Dev Jobs Discovery Source]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Adzuna Discovery Source]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[DiscoveryProvider Architecture]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[FreeHire Discovery Source]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Funding Signals Discovery Source]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Phase 0 — Foundation]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
-- [[Phase 1 — Candidate JSON]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
-- [[Phase 2 — Multi-Provider Incremental Discovery]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
-- [[The Muse Discovery Source]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[configcandidate.json]] - document - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[dot-__init__()]] - code - backend/app/services/matching.py
+- [[dot-__init__()_2]] - code - backend/app/services/orchestrator.py
+- [[dot-evaluate_opportunity()]] - code - backend/app/services/matching.py
+- [[dot-process_opportunity()]] - code - backend/app/services/orchestrator.py
+- [[dot-run_discovery_for_profile()]] - code - backend/app/services/orchestrator.py
+- [[Any]] - code
+- [[BaseModel]] - code
+- [[CandidateFile]] - code - backend/app/models/candidate.py
+- [[DiscoveryOrchestrator]] - code - backend/app/services/orchestrator.py
+- [[FastAPI]] - code
+- [[MatchResult]] - code - backend/app/services/matching.py
+- [[MatchingService]] - code - backend/app/services/matching.py
+- [[config.py]] - code - backend/app/core/config.py
+- [[get]] - code
+- [[get_candidate_profile()]] - code - backend/app/core/config.py
+- [[get_candidate_profile_endpoint()]] - code - backend/app/main.py
+- [[health_check()]] - code - backend/app/main.py
+- [[lifespan()]] - code - backend/app/main.py
+- [[main.py]] - code - backend/app/main.py
+- [[matching.py]] - code - backend/app/services/matching.py
+- [[orchestrator.py]] - code - backend/app/services/orchestrator.py
+- [[run_discovery_tick()]] - code - backend/app/services/scheduler.py
+- [[run_tests()]] - code - backend/scripts/test_regression.py
+- [[run_verification()]] - code - backend/scripts/verify_golden.py
+- [[scheduler.py]] - code - backend/app/services/scheduler.py
+- [[start_scheduler()]] - code - backend/app/services/scheduler.py
+- [[test_regression.py]] - code - backend/scripts/test_regression.py
+- [[verify_golden.py]] - code - backend/scripts/verify_golden.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,11 +45,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Adzuna Discovery Adapter]]
-- 2 edges to [[_COMMUNITY_Free Hire Discovery Adapter]]
+- 9 edges to [[_COMMUNITY_Candidate Schemas & Validation Models]]
+- 2 edges to [[_COMMUNITY_The Muse Provider & Discovery Orchestration]]
+- 2 edges to [[_COMMUNITY_AI Dev Jobs Discovery Provider]]
 
 ## Top bridge nodes
-- [[Phase 2 — Multi-Provider Incremental Discovery]] - degree 5, connects to 2 communities
-- [[DiscoveryProvider Architecture]] - degree 8, connects to 1 community
-- [[Phase 1 — Candidate JSON]] - degree 4, connects to 1 community
-- [[Phase 0 — Foundation]] - degree 2, connects to 1 community
+- [[orchestrator.py]] - degree 3, connects to 2 communities
+- [[CandidateFile]] - degree 7, connects to 1 community
+- [[MatchingService]] - degree 7, connects to 1 community
+- [[DiscoveryOrchestrator]] - degree 7, connects to 1 community
+- [[test_regression.py]] - degree 6, connects to 1 community

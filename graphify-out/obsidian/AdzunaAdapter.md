@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/adzuna.py"
 type: "code"
-community: "Signalbase Discovery Adapter"
+community: "Candidate Schemas & Validation Models"
 location: "L7"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Signalbase_Discovery_Adapter
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # AdzunaAdapter
@@ -15,13 +15,11 @@ tags:
 - [[dot-is_available()]] - `method` [EXTRACTED]
 - [[dot-name()_1]] - `method` [EXTRACTED]
 - [[dot-search()]] - `method` [EXTRACTED]
-- [[DiscoveryOrchestrator]] - `uses` [INFERRED]
 - [[DiscoveryProfile]] - `uses` [INFERRED]
 - [[IDiscoveryProvider]] - `uses` [INFERRED]
 - [[NormalizedCompany]] - `uses` [INFERRED]
 - [[NormalizedOpportunity]] - `uses` [INFERRED]
 - [[ProviderSearchResult]] - `uses` [INFERRED]
 - [[adzuna.py]] - `contains` [EXTRACTED]
-- [[orchestrator.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Signalbase_Discovery_Adapter
+#graphify/code #graphify/INFERRED #community/Candidate_Schemas__Validation_Models

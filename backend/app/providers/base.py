@@ -23,6 +23,15 @@ class NormalizedOpportunity(BaseModel):
     application_url: Optional[str] = None
     published_at: Optional[str] = None
 
+class NormalizedContact(BaseModel):
+    name: Optional[str] = None
+    role: Optional[str] = None
+    email: str
+    phone: Optional[str] = None
+    source_url: Optional[str] = None
+    discovery_method: str
+
+
 class ProviderSearchResult(BaseModel):
     opportunities: List[NormalizedOpportunity]
     nextCursor: Optional[str] = None

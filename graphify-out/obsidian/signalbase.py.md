@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/signalbase.py"
 type: "code"
-community: "The Muse Provider & Discovery Orchestration"
+community: "Candidate Schemas & Validation Models"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/The_Muse_Provider__Discovery_Orchestration
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # signalbase.py
@@ -19,4 +19,4 @@ tags:
 - [[ProviderSearchResult]] - `imports` [EXTRACTED]
 - [[SignalbaseAdapter]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/The_Muse_Provider__Discovery_Orchestration
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

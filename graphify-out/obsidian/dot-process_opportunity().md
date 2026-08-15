@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/services/orchestrator.py"
 type: "code"
-community: "Project Architecture & Implementation Phases"
-location: "L86"
+community: "Backend Application & Config Services"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Architecture__Implementation_Phases
+  - community/Backend_Application__Config_Services
 ---
 
 # .process_opportunity()
@@ -15,4 +15,4 @@ tags:
 - [[dot-run_discovery_for_profile()]] - `calls` [EXTRACTED]
 - [[DiscoveryOrchestrator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases
+#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services

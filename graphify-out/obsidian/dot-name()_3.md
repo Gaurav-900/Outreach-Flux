@@ -1,18 +1,17 @@
 ---
-source_file: "backend/app/providers/base.py"
+source_file: "backend/app/providers/freehire.py"
 type: "code"
-community: "Frontend Linting Configuration"
-location: "L33"
+community: "Candidate Schemas & Validation Models"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Frontend_Linting_Configuration
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # .name()
 
 ## Connections
-- [[IDiscoveryProvider]] - `method` [EXTRACTED]
-- [[The unique identifier for this provider.]] - `rationale_for` [EXTRACTED]
+- [[FreeHireAdapter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Frontend_Linting_Configuration
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

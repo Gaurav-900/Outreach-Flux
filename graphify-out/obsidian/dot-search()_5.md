@@ -1,21 +1,20 @@
 ---
-source_file: "backend/app/providers/themuse.py"
+source_file: "backend/app/providers/base.py"
 type: "code"
-community: "Playbook Execution & Knowledge Layer Rules"
-location: "L15"
+community: "Candidate Schemas & Validation Models"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playbook_Execution__Knowledge_Layer_Rules
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # .search()
 
 ## Connections
-- [[DiscoveryProfile]] - `references` [EXTRACTED]
-- [[NormalizedCompany]] - `calls` [EXTRACTED]
-- [[NormalizedOpportunity]] - `calls` [EXTRACTED]
+- [[DiscoveryProfile_1]] - `references` [EXTRACTED]
+- [[Execute a search against the provider.]] - `rationale_for` [EXTRACTED]
+- [[IDiscoveryProvider]] - `method` [EXTRACTED]
 - [[ProviderSearchResult]] - `references` [EXTRACTED]
-- [[TheMuseAdapter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playbook_Execution__Knowledge_Layer_Rules
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

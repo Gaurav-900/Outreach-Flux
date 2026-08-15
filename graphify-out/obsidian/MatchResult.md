@@ -1,21 +1,19 @@
 ---
 source_file: "backend/app/services/matching.py"
 type: "code"
-community: "AI Dev Jobs Discovery Provider"
+community: "Backend Application & Config Services"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AI_Dev_Jobs_Discovery_Provider
+  - community/Backend_Application__Config_Services
 ---
 
 # MatchResult
 
 ## Connections
 - [[dot-evaluate_opportunity()]] - `references` [EXTRACTED]
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
-- [[CandidateFile]] - `uses` [INFERRED]
-- [[DiscoveryProfile]] - `uses` [INFERRED]
+- [[BaseModel]] - `inherits` [EXTRACTED]
 - [[matching.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider
+#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services

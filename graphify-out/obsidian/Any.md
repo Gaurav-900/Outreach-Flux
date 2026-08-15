@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "AI Dev Jobs Discovery Provider"
+community: "Backend Application & Config Services"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AI_Dev_Jobs_Discovery_Provider
+  - community/Backend_Application__Config_Services
 ---
 
 # Any
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-evaluate_opportunity()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider
+#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services

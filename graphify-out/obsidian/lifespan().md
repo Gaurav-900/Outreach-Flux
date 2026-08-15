@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/main.py"
 type: "code"
-community: "Project Architecture & Implementation Phases"
+community: "Backend Application & Config Services"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Architecture__Implementation_Phases
+  - community/Backend_Application__Config_Services
 ---
 
 # lifespan()
@@ -16,4 +16,4 @@ tags:
 - [[main.py]] - `contains` [EXTRACTED]
 - [[start_scheduler()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases
+#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services

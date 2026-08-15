@@ -1,17 +1,17 @@
 ---
-source_file: "backend/app/providers/freehire.py"
+source_file: "backend/app/providers/signalbase.py"
 type: "code"
-community: "Project Memory & Root Documentation"
-location: "L8"
+community: "Candidate Schemas & Validation Models"
+location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Memory__Root_Documentation
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # .name()
 
 ## Connections
-- [[FreeHireAdapter]] - `method` [EXTRACTED]
+- [[SignalbaseAdapter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Memory__Root_Documentation
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

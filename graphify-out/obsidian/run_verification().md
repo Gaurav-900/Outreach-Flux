@@ -1,19 +1,19 @@
 ---
 source_file: "backend/scripts/verify_golden.py"
 type: "code"
-community: "AI Dev Jobs Discovery Provider"
+community: "Backend Application & Config Services"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AI_Dev_Jobs_Discovery_Provider
+  - community/Backend_Application__Config_Services
 ---
 
 # run_verification()
 
 ## Connections
-- [[MatchingService]] - `calls` [EXTRACTED]
+- [[MatchingService]] - `uses` [INFERRED]
 - [[get_candidate_profile()]] - `calls` [EXTRACTED]
 - [[verify_golden.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider
+#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services

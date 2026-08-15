@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/services/scheduler.py"
 type: "code"
-community: "Project Architecture & Implementation Phases"
+community: "Backend Application & Config Services"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Architecture__Implementation_Phases
+  - community/Backend_Application__Config_Services
 ---
 
 # scheduler.py
@@ -17,4 +17,4 @@ tags:
 - [[run_discovery_tick()]] - `contains` [EXTRACTED]
 - [[start_scheduler()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases
+#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services

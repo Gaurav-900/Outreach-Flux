@@ -1,12 +1,12 @@
 ---
 source_file: "backend/scripts/test_regression.py"
 type: "code"
-community: "Project Architecture & Implementation Phases"
+community: "Backend Application & Config Services"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Architecture__Implementation_Phases
+  - community/Backend_Application__Config_Services
 ---
 
 # test_regression.py
@@ -19,4 +19,4 @@ tags:
 - [[run_discovery_tick()]] - `imports` [EXTRACTED]
 - [[run_tests()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases
+#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services

@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/aidevjobs.py"
 type: "code"
-community: "Frontend React Entrypoint & UI"
+community: "Candidate Schemas & Validation Models"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Frontend_React_Entrypoint__UI
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # .search()
@@ -18,4 +18,4 @@ tags:
 - [[NormalizedOpportunity]] - `calls` [EXTRACTED]
 - [[ProviderSearchResult]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Frontend_React_Entrypoint__UI
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

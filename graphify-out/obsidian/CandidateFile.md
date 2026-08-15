@@ -1,24 +1,23 @@
 ---
 source_file: "backend/app/models/candidate.py"
 type: "code"
-community: "AI Dev Jobs Discovery Provider"
+community: "Backend Application & Config Services"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AI_Dev_Jobs_Discovery_Provider
+  - community/Backend_Application__Config_Services
 ---
 
 # CandidateFile
 
 ## Connections
 - [[dot-__init__()]] - `references` [EXTRACTED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[MatchResult]] - `uses` [INFERRED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[MatchingService]] - `uses` [INFERRED]
 - [[candidate.py]] - `contains` [EXTRACTED]
 - [[config.py]] - `imports` [EXTRACTED]
-- [[get_candidate_profile()]] - `references` [EXTRACTED]
+- [[get_candidate_profile()]] - `uses` [INFERRED]
 - [[matching.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider
+#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services

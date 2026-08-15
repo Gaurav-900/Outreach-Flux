@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/services/scheduler.py"
 type: "code"
-community: "Project Architecture & Implementation Phases"
+community: "Backend Application & Config Services"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Architecture__Implementation_Phases
+  - community/Backend_Application__Config_Services
 ---
 
 # run_discovery_tick()
@@ -18,4 +18,4 @@ tags:
 - [[start_scheduler()]] - `indirect_call` [INFERRED]
 - [[test_regression.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases
+#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services

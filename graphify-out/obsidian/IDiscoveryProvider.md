@@ -1,25 +1,24 @@
 ---
 source_file: "backend/app/providers/base.py"
 type: "code"
-community: "Backend Supabase Client"
-location: "L30"
+community: "Candidate Schemas & Validation Models"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Supabase_Client
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # IDiscoveryProvider
 
 ## Connections
-- [[dot-is_available()_2]] - `method` [EXTRACTED]
-- [[dot-name()_3]] - `method` [EXTRACTED]
-- [[dot-search()_2]] - `method` [EXTRACTED]
-- [[ABC]] - `inherits` [EXTRACTED]
+- [[dot-is_available()_5]] - `method` [EXTRACTED]
+- [[dot-name()_6]] - `method` [EXTRACTED]
+- [[dot-search()_5]] - `method` [EXTRACTED]
+- [[ABC_1]] - `inherits` [EXTRACTED]
 - [[AIDevJobsAdapter]] - `uses` [INFERRED]
 - [[AdzunaAdapter]] - `uses` [INFERRED]
 - [[DiscoveryOrchestrator]] - `uses` [INFERRED]
-- [[DiscoveryProfile]] - `uses` [INFERRED]
 - [[FreeHireAdapter]] - `uses` [INFERRED]
 - [[SignalbaseAdapter]] - `uses` [INFERRED]
 - [[TheMuseAdapter]] - `uses` [INFERRED]
@@ -31,4 +30,4 @@ tags:
 - [[signalbase.py]] - `imports` [EXTRACTED]
 - [[themuse.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Supabase_Client
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

@@ -1,15 +1,14 @@
 ---
 type: community
-members: 2
+members: 1
 ---
 
 # Frontend Linting Configuration
 
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[dot-name()_3]] - code - backend/app/providers/base.py
-- [[The unique identifier for this provider.]] - rationale - backend/app/providers/base.py
+- [[Oracle Cloud Always Free VPS Infrastructure]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,9 +16,3 @@ members: 2
 TABLE source_file, type FROM #community/Frontend_Linting_Configuration
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Backend Supabase Client]]
-
-## Top bridge nodes
-- [[dot-name()_3]] - degree 2, connects to 1 community

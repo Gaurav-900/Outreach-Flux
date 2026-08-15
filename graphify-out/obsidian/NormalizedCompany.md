@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/base.py"
 type: "code"
-community: "Frontend React Entrypoint & UI"
+community: "Candidate Schemas & Validation Models"
 location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Frontend_React_Entrypoint__UI
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # NormalizedCompany
@@ -14,13 +14,12 @@ tags:
 ## Connections
 - [[dot-search()]] - `calls` [EXTRACTED]
 - [[dot-search()_1]] - `calls` [EXTRACTED]
+- [[dot-search()_2]] - `calls` [EXTRACTED]
 - [[dot-search()_3]] - `calls` [EXTRACTED]
 - [[dot-search()_4]] - `calls` [EXTRACTED]
-- [[dot-search()_5]] - `calls` [EXTRACTED]
 - [[AIDevJobsAdapter]] - `uses` [INFERRED]
 - [[AdzunaAdapter]] - `uses` [INFERRED]
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
-- [[DiscoveryProfile]] - `uses` [INFERRED]
+- [[BaseModel_3]] - `inherits` [EXTRACTED]
 - [[FreeHireAdapter]] - `uses` [INFERRED]
 - [[SignalbaseAdapter]] - `uses` [INFERRED]
 - [[TheMuseAdapter]] - `uses` [INFERRED]
@@ -31,4 +30,4 @@ tags:
 - [[signalbase.py]] - `imports` [EXTRACTED]
 - [[themuse.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Frontend_React_Entrypoint__UI
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

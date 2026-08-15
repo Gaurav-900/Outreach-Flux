@@ -1,18 +1,19 @@
 ---
 source_file: "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md"
 type: "concept"
-community: "Adzuna Discovery Adapter"
+community: "Project Architecture & Implementation Phases"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Adzuna_Discovery_Adapter
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # Phase 9 — Automation
 
 ## Connections
-- [[AI Job Outreach Phase Playbook]] - `defines_phase` [EXTRACTED]
-- [[Phase 10 — Oracle Deployment]] - `precedes` [EXTRACTED]
-- [[Phase 8 — Tracking + Reply Classification]] - `precedes` [EXTRACTED]
+- [[AI Job Outreach Assistant — Phase Playbook]] - `defines` [EXTRACTED]
+- [[Controlled Background Automation]] - `includes` [EXTRACTED]
+- [[Phase 10 — Oracle Deployment]] - `depends_on` [INFERRED]
+- [[Phase 8 — Tracking + Reply Classification]] - `depends_on` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Adzuna_Discovery_Adapter
+#graphify/concept #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

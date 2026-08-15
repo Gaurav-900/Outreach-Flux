@@ -1,16 +1,14 @@
 ---
 type: community
-members: 3
+members: 1
 ---
 
 # Anti-Hallucination Rules
 
-**Members:** 3 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[App()]] - code - frontend/src/App.tsx
-- [[App.tsx]] - code - frontend/src/App.tsx
-- [[main.tsx]] - code - frontend/src/main.tsx
+- [[Graphify Knowledge & Memory Layer]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
 
 ## Live Query (requires Dataview plugin)
 

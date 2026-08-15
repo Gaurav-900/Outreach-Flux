@@ -1,23 +1,26 @@
 ---
 type: community
-members: 10
+members: 13
 ---
 
 # Discovery Base Interfaces & Normalized Models
 
-**Members:** 10 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[DeepSeek LLM Provider Fallback]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Gemini LLM Provider]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Gmail API & Controlled Sending Policy]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[LLM Batch Email Generation]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[LLM Usage Restriction Rationale]] - rationale - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Phase 6 — AI Outreach Batch Generation]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
-- [[Phase 7 — Gmail + Sending Policy]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
-- [[Phase 8 — Tracking + Reply Classification]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
-- [[Reply Detection & Classification]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[configresume.pdf]] - document - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
+- [[3-Hour Discovery Profile Rotation]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[AI Dev Jobs Discovery Source]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Adzuna Discovery Source]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Candidate Profile Model]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Company Canonical Model]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Deterministic Candidate Matching]] - concept - AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md
+- [[DiscoveryProvider Architecture]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[FreeHire Discovery Source]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Funding Signals Discovery Source]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Opportunity Canonical Model]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[Supabase PostgreSQL Database]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[The Muse Discovery Source]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[configcandidate.json]] - document - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,11 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Adzuna Discovery Adapter]]
-- 2 edges to [[_COMMUNITY_Frontend Supabase Client]]
+- 1 edge to [[_COMMUNITY_Project Architecture & Implementation Phases]]
 
 ## Top bridge nodes
-- [[Phase 6 — AI Outreach Batch Generation]] - degree 6, connects to 2 communities
-- [[Phase 7 — Gmail + Sending Policy]] - degree 5, connects to 1 community
-- [[Phase 8 — Tracking + Reply Classification]] - degree 4, connects to 1 community
-- [[LLM Batch Email Generation]] - degree 4, connects to 1 community
+- [[Deterministic Candidate Matching]] - degree 3, connects to 1 community

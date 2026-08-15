@@ -1,17 +1,18 @@
 ---
-source_file: "backend/app/providers/themuse.py"
+source_file: "backend/app/providers/base.py"
 type: "code"
-community: "Playbook Execution & Knowledge Layer Rules"
-location: "L12"
+community: "Frontend React Entrypoint & UI"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playbook_Execution__Knowledge_Layer_Rules
+  - community/Frontend_React_Entrypoint__UI
 ---
 
 # .is_available()
 
 ## Connections
-- [[TheMuseAdapter]] - `method` [EXTRACTED]
+- [[Determines if the provider is currently available (e.g., API keys are present).]] - `rationale_for` [EXTRACTED]
+- [[IDiscoveryProvider]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playbook_Execution__Knowledge_Layer_Rules
+#graphify/code #graphify/EXTRACTED #community/Frontend_React_Entrypoint__UI

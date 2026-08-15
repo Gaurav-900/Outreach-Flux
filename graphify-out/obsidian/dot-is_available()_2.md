@@ -1,18 +1,18 @@
 ---
-source_file: "backend/app/providers/base.py"
+source_file: "backend/app/providers/freehire.py"
 type: "code"
-community: "System Core Purpose & Goals"
-location: "L38"
+community: "Candidate Schemas & Validation Models"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/System_Core_Purpose__Goals
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # .is_available()
 
 ## Connections
-- [[Determines if the provider is currently available (e.g., API keys are present).]] - `rationale_for` [EXTRACTED]
-- [[IDiscoveryProvider]] - `method` [EXTRACTED]
+- [[dot-search()_2]] - `calls` [EXTRACTED]
+- [[FreeHireAdapter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/System_Core_Purpose__Goals
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

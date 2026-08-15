@@ -13,6 +13,7 @@ from app.providers.freehire import FreeHireAdapter
 from app.providers.signalbase import SignalbaseAdapter
 from app.services.matching import MatchingService
 from app.services.research import ResearchService
+from app.services.contact import ContactService
 
 providers: list[IDiscoveryProvider] = [
     AdzunaAdapter(),
@@ -27,6 +28,7 @@ class DiscoveryOrchestrator:
         self.candidate_profile = get_candidate_profile()
         self.matching_service = MatchingService(self.candidate_profile)
         self.research_service = ResearchService()
+        self.contact_service = ContactService()
 
     async def run_discovery_for_profile(self, profile_index: int):
         profiles = self.candidate_profile.discovery_profiles
@@ -187,3 +189,5 @@ class DiscoveryOrchestrator:
                     if target_url:
                         # Fire and forget research task in asyncio
                         asyncio.create_task(self.research_service.research_opportunity(company_id, target_url))
+                        # Fire and forget contact discovery task in asyncio
+                        asyncio.create_task(self.contact_service.discover_contacts(company_id, target_url))

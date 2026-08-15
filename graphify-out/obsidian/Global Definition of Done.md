@@ -1,16 +1,16 @@
 ---
 source_file: "AI_JOB_OUTREACH_PHASE_PLAYBOOK_UPDATED.md"
 type: "concept"
-community: "Adzuna Discovery Adapter"
+community: "Project Architecture & Implementation Phases"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Adzuna_Discovery_Adapter
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # Global Definition of Done
 
 ## Connections
-- [[AI Job Outreach Phase Playbook]] - `defines_criteria` [EXTRACTED]
+- [[AI Job Outreach Assistant — Phase Playbook]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Adzuna_Discovery_Adapter
+#graphify/concept #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

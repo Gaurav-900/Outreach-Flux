@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/themuse.py"
 type: "code"
-community: "Playbook Execution & Knowledge Layer Rules"
+community: "Candidate Schemas & Validation Models"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playbook_Execution__Knowledge_Layer_Rules
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # themuse.py
@@ -19,4 +19,4 @@ tags:
 - [[ProviderSearchResult]] - `imports` [EXTRACTED]
 - [[TheMuseAdapter]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playbook_Execution__Knowledge_Layer_Rules
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

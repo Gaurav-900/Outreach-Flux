@@ -1,15 +1,14 @@
 ---
 type: community
-members: 2
+members: 1
 ---
 
 # System Core Purpose & Goals
 
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[dot-is_available()_2]] - code - backend/app/providers/base.py
-- [[Determines if the provider is currently available (e.g., API keys are present).]] - rationale - backend/app/providers/base.py
+- [[Opportunity Status Lifecycle]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,9 +16,3 @@ members: 2
 TABLE source_file, type FROM #community/System_Core_Purpose__Goals
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Backend Supabase Client]]
-
-## Top bridge nodes
-- [[dot-is_available()_2]] - degree 2, connects to 1 community

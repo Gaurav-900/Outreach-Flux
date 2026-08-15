@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/services/research.py"
 type: "code"
-community: "Project Architecture & Implementation Phases"
+community: "Free Hire Discovery Adapter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Architecture__Implementation_Phases
+  - community/Free_Hire_Discovery_Adapter
 ---
 
 # research.py
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ResearchService]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases
+#graphify/code #graphify/EXTRACTED #community/Free_Hire_Discovery_Adapter

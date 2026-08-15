@@ -1,11 +1,11 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 20"
+community: "Frontend Supabase Client"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_20
+  - community/Frontend_Supabase_Client
 ---
 
 # README.md
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Outreach-Flux Project]] - `defines` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_20
+#graphify/document #graphify/EXTRACTED #community/Frontend_Supabase_Client

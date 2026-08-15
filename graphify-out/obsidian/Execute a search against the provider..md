@@ -1,17 +1,17 @@
 ---
 source_file: "backend/app/providers/base.py"
 type: "rationale"
-community: "Backend Supabase Client"
-location: "L44"
+community: "Candidate Schemas & Validation Models"
+location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Backend_Supabase_Client
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # Execute a search against the provider.
 
 ## Connections
-- [[dot-search()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-search()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Backend_Supabase_Client
+#graphify/rationale #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models
