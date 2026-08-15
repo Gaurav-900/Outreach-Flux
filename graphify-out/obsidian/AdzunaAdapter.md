@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/adzuna.py"
 type: "code"
-community: "Candidate Schemas & Validation Models"
+community: "Project Architecture & Implementation Phases"
 location: "L7"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Candidate_Schemas__Validation_Models
+  - graphify/EXTRACTED
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # AdzunaAdapter
@@ -21,5 +21,6 @@ tags:
 - [[NormalizedOpportunity]] - `uses` [INFERRED]
 - [[ProviderSearchResult]] - `uses` [INFERRED]
 - [[adzuna.py]] - `contains` [EXTRACTED]
+- [[orchestrator.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Candidate_Schemas__Validation_Models
+#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

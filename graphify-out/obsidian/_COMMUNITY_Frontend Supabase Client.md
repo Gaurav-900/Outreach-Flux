@@ -1,15 +1,14 @@
 ---
 type: community
-members: 2
+members: 1
 ---
 
 # Frontend Supabase Client
 
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[Outreach-Flux Project]] - concept - README.md
-- [[README]] - document - README.md
+- [[Any]] - code
 
 ## Live Query (requires Dataview plugin)
 

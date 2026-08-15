@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "AI Dev Jobs Discovery Provider"
+community: "Project Architecture & Implementation Phases"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AI_Dev_Jobs_Discovery_Provider
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # ABC
 
 ## Connections
-- [[ContactProvider]] - `inherits` [EXTRACTED]
-- [[providerscontact.py]] - `imports_from` [EXTRACTED]
+- [[IDiscoveryProvider]] - `inherits` [EXTRACTED]
+- [[base.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider
+#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

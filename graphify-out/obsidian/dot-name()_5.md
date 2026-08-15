@@ -1,17 +1,17 @@
 ---
-source_file: "backend/app/providers/themuse.py"
+source_file: "backend/app/providers/signalbase.py"
 type: "code"
-community: "Candidate Schemas & Validation Models"
+community: "Project Architecture & Implementation Phases"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Candidate_Schemas__Validation_Models
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # .name()
 
 ## Connections
-- [[TheMuseAdapter]] - `method` [EXTRACTED]
+- [[SignalbaseAdapter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models
+#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[dot-is_available()_5]] - code - backend/app/providers/base.py
-- [[Determines if the provider is currently available (e.g., API keys are present).]] - rationale - backend/app/providers/base.py
+- [[dot-name()_3]] - code - backend/app/providers/base.py
+- [[The unique identifier for this provider.]] - rationale - backend/app/providers/base.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Candidate Schemas & Validation Models]]
+- 1 edge to [[_COMMUNITY_Project Architecture & Implementation Phases]]
 
 ## Top bridge nodes
-- [[dot-is_available()_5]] - degree 2, connects to 1 community
+- [[dot-name()_3]] - degree 2, connects to 1 community

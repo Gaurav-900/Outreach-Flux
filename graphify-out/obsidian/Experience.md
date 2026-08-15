@@ -1,18 +1,18 @@
 ---
 source_file: "backend/app/models/candidate.py"
 type: "code"
-community: "The Muse Provider & Discovery Orchestration"
+community: "Research Service & Intelligence Layer"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/The_Muse_Provider__Discovery_Orchestration
+  - community/Research_Service__Intelligence_Layer
 ---
 
 # Experience
 
 ## Connections
-- [[BaseModel_1]] - `inherits` [EXTRACTED]
+- [[BaseModel_3]] - `inherits` [EXTRACTED]
 - [[candidate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/The_Muse_Provider__Discovery_Orchestration
+#graphify/code #graphify/EXTRACTED #community/Research_Service__Intelligence_Layer

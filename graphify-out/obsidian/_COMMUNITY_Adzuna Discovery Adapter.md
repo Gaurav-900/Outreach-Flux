@@ -1,17 +1,18 @@
 ---
 type: community
-members: 4
+members: 5
 ---
 
 # Adzuna Discovery Adapter
 
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[AI Job Outreach Project Memory]] - document - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Anti-Hallucination Rules]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Canonical Pipeline Flow]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Technology Stack Specification]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[App()]] - code - frontend/src/App.tsx
+- [[App.tsx]] - code - frontend/src/App.tsx
+- [[main.tsx]] - code - frontend/src/main.tsx
+- [[supabase]] - code - frontend/src/lib/supabase.ts
+- [[supabase.ts]] - code - frontend/src/lib/supabase.ts
 
 ## Live Query (requires Dataview plugin)
 

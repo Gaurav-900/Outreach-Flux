@@ -1,11 +1,11 @@
 ---
 source_file: "frontend/README.md"
 type: "concept"
-community: "Research Service & Intelligence Layer"
+community: "Project Memory & Root Documentation"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Research_Service__Intelligence_Layer
+  - community/Project_Memory__Root_Documentation
 ---
 
 # React Compiler
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[frontendREADME]] - `documents_tool` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Research_Service__Intelligence_Layer
+#graphify/concept #graphify/EXTRACTED #community/Project_Memory__Root_Documentation

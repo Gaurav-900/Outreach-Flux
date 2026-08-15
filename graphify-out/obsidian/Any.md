@@ -1,16 +1,13 @@
 ---
 source_file: ""
 type: "code"
-community: "Backend Application & Config Services"
+community: "Frontend Supabase Client"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Frontend_Supabase_Client
 ---
 
 # Any
 
-## Connections
-- [[dot-evaluate_opportunity()]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Frontend_Supabase_Client

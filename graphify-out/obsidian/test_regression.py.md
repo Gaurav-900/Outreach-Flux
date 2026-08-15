@@ -1,12 +1,12 @@
 ---
 source_file: "backend/scripts/test_regression.py"
 type: "code"
-community: "Backend Application & Config Services"
+community: "Discovery Base Interfaces & Normalized Models"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Discovery_Base_Interfaces__Normalized_Models
 ---
 
 # test_regression.py
@@ -19,4 +19,4 @@ tags:
 - [[run_discovery_tick()]] - `imports` [EXTRACTED]
 - [[run_tests()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models

@@ -1,41 +1,39 @@
 ---
 type: community
-members: 28
+members: 26
 ---
 
 # Backend Application & Config Services
 
-**Members:** 28 nodes
+**Members:** 26 nodes
 
 ## Members
-- [[dot-__init__()]] - code - backend/app/services/matching.py
-- [[dot-__init__()_2]] - code - backend/app/services/orchestrator.py
-- [[dot-evaluate_opportunity()]] - code - backend/app/services/matching.py
-- [[dot-process_opportunity()]] - code - backend/app/services/orchestrator.py
-- [[dot-run_discovery_for_profile()]] - code - backend/app/services/orchestrator.py
-- [[Any]] - code
-- [[BaseModel]] - code
-- [[CandidateFile]] - code - backend/app/models/candidate.py
-- [[DiscoveryOrchestrator]] - code - backend/app/services/orchestrator.py
-- [[FastAPI]] - code
-- [[MatchResult]] - code - backend/app/services/matching.py
-- [[MatchingService]] - code - backend/app/services/matching.py
-- [[config.py]] - code - backend/app/core/config.py
-- [[get]] - code
-- [[get_candidate_profile()]] - code - backend/app/core/config.py
-- [[get_candidate_profile_endpoint()]] - code - backend/app/main.py
-- [[health_check()]] - code - backend/app/main.py
-- [[lifespan()]] - code - backend/app/main.py
-- [[main.py]] - code - backend/app/main.py
-- [[matching.py]] - code - backend/app/services/matching.py
-- [[orchestrator.py]] - code - backend/app/services/orchestrator.py
-- [[run_discovery_tick()]] - code - backend/app/services/scheduler.py
-- [[run_tests()]] - code - backend/scripts/test_regression.py
-- [[run_verification()]] - code - backend/scripts/verify_golden.py
-- [[scheduler.py]] - code - backend/app/services/scheduler.py
-- [[start_scheduler()]] - code - backend/app/services/scheduler.py
-- [[test_regression.py]] - code - backend/scripts/test_regression.py
-- [[verify_golden.py]] - code - backend/scripts/verify_golden.py
+- [[dot-__init__()_2]] - code - backend/app/services/outreach_generator.py
+- [[dot-generate_batch()]] - code - backend/app/services/outreach_generator.py
+- [[dot-generate_drafts()]] - code - backend/app/providers/llm.py
+- [[dot-generate_drafts()_1]] - code - backend/app/providers/llm.py
+- [[dot-generate_drafts()_2]] - code - backend/app/providers/llm.py
+- [[dot-is_available()_6]] - code - backend/app/providers/llm.py
+- [[dot-is_available()_7]] - code - backend/app/providers/llm.py
+- [[dot-is_available()_8]] - code - backend/app/providers/llm.py
+- [[dot-name()_7]] - code - backend/app/providers/llm.py
+- [[dot-name()_8]] - code - backend/app/providers/llm.py
+- [[dot-name()_9]] - code - backend/app/providers/llm.py
+- [[ABC_1]] - code
+- [[BaseModel_2]] - code
+- [[DeepSeekAdapter]] - code - backend/app/providers/llm.py
+- [[Determines if the provider is currently available.]] - rationale - backend/app/providers/llm.py
+- [[EmailBatchResponse]] - code - backend/app/providers/llm.py
+- [[EmailDraft]] - code - backend/app/providers/llm.py
+- [[GeminiAdapter]] - code - backend/app/providers/llm.py
+- [[Generate personalized email drafts for a batch of opportunities.]] - rationale - backend/app/providers/llm.py
+- [[LLMProvider]] - code - backend/app/providers/llm.py
+- [[OpportunityContext]] - code - backend/app/providers/llm.py
+- [[OutreachGeneratorService]] - code - backend/app/services/outreach_generator.py
+- [[The unique identifier for this provider._1]] - rationale - backend/app/providers/llm.py
+- [[_build_prompt()]] - code - backend/app/providers/llm.py
+- [[llm.py]] - code - backend/app/providers/llm.py
+- [[outreach_generator.py]] - code - backend/app/services/outreach_generator.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,13 +43,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Candidate Schemas & Validation Models]]
-- 2 edges to [[_COMMUNITY_The Muse Provider & Discovery Orchestration]]
-- 2 edges to [[_COMMUNITY_AI Dev Jobs Discovery Provider]]
+- 2 edges to [[_COMMUNITY_Discovery Base Interfaces & Normalized Models]]
 
 ## Top bridge nodes
-- [[orchestrator.py]] - degree 3, connects to 2 communities
-- [[CandidateFile]] - degree 7, connects to 1 community
-- [[MatchingService]] - degree 7, connects to 1 community
-- [[DiscoveryOrchestrator]] - degree 7, connects to 1 community
-- [[test_regression.py]] - degree 6, connects to 1 community
+- [[outreach_generator.py]] - degree 6, connects to 1 community
+- [[dot-generate_batch()]] - degree 3, connects to 1 community

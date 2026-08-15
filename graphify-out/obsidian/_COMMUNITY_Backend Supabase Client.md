@@ -1,15 +1,14 @@
 ---
 type: community
-members: 2
+members: 1
 ---
 
 # Backend Supabase Client
 
-**Members:** 2 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[supabase]] - code - frontend/src/lib/supabase.ts
-- [[supabase.ts]] - code - frontend/src/lib/supabase.ts
+- [[supabase.py]] - code - backend/app/core/supabase.py
 
 ## Live Query (requires Dataview plugin)
 

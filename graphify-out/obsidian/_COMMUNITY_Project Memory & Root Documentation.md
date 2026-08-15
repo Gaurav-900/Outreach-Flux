@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+members: 8
 ---
 
 # Project Memory & Root Documentation
 
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Contact Discovery Priority Hierarchy]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[EVA Email Verification]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Gmail API & Controlled Sending Policy]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[LLM Batch Email Generation]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[LLM Usage Restriction Rationale]] - rationale - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Reply Detection & Classification]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
-- [[Tomba Enrichment Fallback]] - concept - AI_JOB_OUTREACH_PROJECT_MEMORY_UPDATED.md
+- [[@vitejsplugin-react]] - concept - frontend/README.md
+- [[@vitejsplugin-react-swc]] - concept - frontend/README.md
+- [[Oxlint]] - concept - frontend/README.md
+- [[React]] - concept - frontend/README.md
+- [[React Compiler]] - concept - frontend/README.md
+- [[TypeScript]] - concept - frontend/README.md
+- [[Vite]] - concept - frontend/README.md
+- [[frontendREADME]] - document - frontend/README.md
 
 ## Live Query (requires Dataview plugin)
 

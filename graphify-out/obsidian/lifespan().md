@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/main.py"
 type: "code"
-community: "Backend Application & Config Services"
-location: "L7"
+community: "Candidate Schemas & Validation Models"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # lifespan()
@@ -16,4 +16,4 @@ tags:
 - [[main.py]] - `contains` [EXTRACTED]
 - [[start_scheduler()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

@@ -1,28 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "The Muse Provider & Discovery Orchestration"
+community: "Discovery Base Interfaces & Normalized Models"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/The_Muse_Provider__Discovery_Orchestration
+  - community/Discovery_Base_Interfaces__Normalized_Models
 ---
 
 # BaseModel
 
 ## Connections
-- [[CandidateContact]] - `inherits` [EXTRACTED]
-- [[CandidateEducation]] - `inherits` [EXTRACTED]
-- [[CandidateFile]] - `inherits` [EXTRACTED]
-- [[CandidateInfo]] - `inherits` [EXTRACTED]
-- [[CandidateLocation]] - `inherits` [EXTRACTED]
-- [[DiscoveryPreferences]] - `inherits` [EXTRACTED]
-- [[DiscoveryProfile]] - `inherits` [EXTRACTED]
-- [[Experience]] - `inherits` [EXTRACTED]
-- [[MatchingRules]] - `inherits` [EXTRACTED]
-- [[OutreachPreferences]] - `inherits` [EXTRACTED]
-- [[ProfessionalProfile]] - `inherits` [EXTRACTED]
-- [[Project]] - `inherits` [EXTRACTED]
-- [[Skills]] - `inherits` [EXTRACTED]
+- [[MatchResult]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/The_Muse_Provider__Discovery_Orchestration
+#graphify/code #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models

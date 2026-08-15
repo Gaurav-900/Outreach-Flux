@@ -12,6 +12,6 @@ tags:
 # Determines if the provider is currently available (e.g., API keys are present).
 
 ## Connections
-- [[dot-is_available()_6]] - `rationale_for` [EXTRACTED]
+- [[dot-is_available()_9]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider

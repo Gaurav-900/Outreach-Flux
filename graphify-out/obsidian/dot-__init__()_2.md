@@ -1,8 +1,8 @@
 ---
-source_file: "backend/app/services/orchestrator.py"
+source_file: "backend/app/services/outreach_generator.py"
 type: "code"
 community: "Backend Application & Config Services"
-location: "L27"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,8 @@ tags:
 # .__init__()
 
 ## Connections
-- [[ContactService]] - `calls` [EXTRACTED]
-- [[DiscoveryOrchestrator]] - `method` [EXTRACTED]
+- [[DeepSeekAdapter]] - `calls` [EXTRACTED]
+- [[GeminiAdapter]] - `calls` [EXTRACTED]
+- [[OutreachGeneratorService]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services

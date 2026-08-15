@@ -1,11 +1,11 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Frontend Supabase Client"
+community: "Playbook Execution & Knowledge Layer Rules"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Frontend_Supabase_Client
+  - community/Playbook_Execution__Knowledge_Layer_Rules
 ---
 
 # README.md
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Outreach-Flux Project]] - `defines` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Frontend_Supabase_Client
+#graphify/document #graphify/EXTRACTED #community/Playbook_Execution__Knowledge_Layer_Rules

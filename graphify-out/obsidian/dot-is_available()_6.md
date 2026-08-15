@@ -1,18 +1,19 @@
 ---
-source_file: "backend/app/providers/contact.py"
+source_file: "backend/app/providers/llm.py"
 type: "code"
-community: "AI Dev Jobs Discovery Provider"
-location: "L13"
+community: "Backend Application & Config Services"
+location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AI_Dev_Jobs_Discovery_Provider
+  - community/Backend_Application__Config_Services
 ---
 
 # .is_available()
 
 ## Connections
-- [[ContactProvider]] - `method` [EXTRACTED]
-- [[Determines if the provider is currently available (e.g., API keys are present)._1]] - `rationale_for` [EXTRACTED]
+- [[dot-generate_drafts()]] - `calls` [EXTRACTED]
+- [[dot-generate_drafts()_1]] - `calls` [EXTRACTED]
+- [[DeepSeekAdapter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider
+#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services

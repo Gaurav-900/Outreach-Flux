@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/services/scheduler.py"
 type: "code"
-community: "Backend Application & Config Services"
-location: "L70"
+community: "Candidate Schemas & Validation Models"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # start_scheduler()
@@ -17,4 +17,4 @@ tags:
 - [[run_discovery_tick()]] - `indirect_call` [INFERRED]
 - [[scheduler.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

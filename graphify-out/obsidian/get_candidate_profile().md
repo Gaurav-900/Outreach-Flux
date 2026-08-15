@@ -1,26 +1,26 @@
 ---
 source_file: "backend/app/core/config.py"
 type: "code"
-community: "Backend Application & Config Services"
+community: "Discovery Base Interfaces & Normalized Models"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Discovery_Base_Interfaces__Normalized_Models
 ---
 
 # get_candidate_profile()
 
 ## Connections
+- [[dot-__init__()_1]] - `calls` [EXTRACTED]
+- [[dot-generate_batch()]] - `calls` [EXTRACTED]
 - [[CandidateFile]] - `uses` [INFERRED]
 - [[config.py]] - `contains` [EXTRACTED]
-- [[get_candidate_profile_endpoint()]] - `calls` [EXTRACTED]
-- [[main.py]] - `imports` [EXTRACTED]
-- [[run_discovery_tick()]] - `calls` [EXTRACTED]
+- [[orchestrator.py]] - `imports` [EXTRACTED]
+- [[outreach_generator.py]] - `imports` [EXTRACTED]
 - [[run_tests()]] - `calls` [EXTRACTED]
 - [[run_verification()]] - `calls` [EXTRACTED]
-- [[scheduler.py]] - `imports` [EXTRACTED]
 - [[test_regression.py]] - `imports` [EXTRACTED]
 - [[verify_golden.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models

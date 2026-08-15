@@ -12,7 +12,7 @@ tags:
 # .find_contacts()
 
 ## Connections
-- [[dot-is_available()_7]] - `calls` [EXTRACTED]
+- [[dot-is_available()_10]] - `calls` [EXTRACTED]
 - [[NormalizedContact]] - `references` [EXTRACTED]
 - [[TombaAdapter]] - `method` [EXTRACTED]
 

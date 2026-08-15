@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Backend Application & Config Services"
+community: "Candidate Schemas & Validation Models"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # FastAPI
@@ -14,4 +14,4 @@ tags:
 - [[lifespan()]] - `references` [EXTRACTED]
 - [[main.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

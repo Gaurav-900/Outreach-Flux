@@ -1,17 +1,18 @@
 ---
-source_file: "backend/app/providers/freehire.py"
+source_file: "backend/app/providers/base.py"
 type: "code"
-community: "Candidate Schemas & Validation Models"
-location: "L8"
+community: "Frontend React Entrypoint & UI"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Candidate_Schemas__Validation_Models
+  - community/Frontend_React_Entrypoint__UI
 ---
 
 # .name()
 
 ## Connections
-- [[FreeHireAdapter]] - `method` [EXTRACTED]
+- [[IDiscoveryProvider]] - `method` [EXTRACTED]
+- [[The unique identifier for this provider.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models
+#graphify/code #graphify/EXTRACTED #community/Frontend_React_Entrypoint__UI

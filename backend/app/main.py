@@ -1,7 +1,8 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from app.services.scheduler import start_scheduler
+from app.services.reply_tracker import ReplyTrackerService
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -24,6 +25,15 @@ from app.core.config import get_candidate_profile
 @app.get("/api/health")
 async def health_check():
     return {"status": "ok", "message": "Backend is healthy (Python)"}
+
+@app.post("/api/replies/sync")
+async def sync_replies():
+    try:
+        tracker = ReplyTrackerService()
+        result = tracker.check_for_replies()
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/api/candidate-profile")
 async def get_candidate_profile_endpoint():

@@ -12,10 +12,10 @@ tags:
 # TombaAdapter
 
 ## Connections
-- [[dot-__init__()_1]] - `calls` [EXTRACTED]
+- [[dot-__init__()_3]] - `calls` [EXTRACTED]
 - [[dot-find_contacts()_1]] - `method` [EXTRACTED]
-- [[dot-is_available()_7]] - `method` [EXTRACTED]
-- [[dot-name()_8]] - `method` [EXTRACTED]
+- [[dot-is_available()_10]] - `method` [EXTRACTED]
+- [[dot-name()_11]] - `method` [EXTRACTED]
 - [[ContactProvider]] - `uses` [INFERRED]
 - [[ContactService]] - `uses` [INFERRED]
 - [[NormalizedContact]] - `uses` [INFERRED]

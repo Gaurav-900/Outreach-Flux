@@ -1,18 +1,17 @@
 ---
-source_file: "backend/app/providers/tomba.py"
+source_file: "backend/app/providers/llm.py"
 type: "code"
-community: "AI Dev Jobs Discovery Provider"
-location: "L12"
+community: "Backend Application & Config Services"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AI_Dev_Jobs_Discovery_Provider
+  - community/Backend_Application__Config_Services
 ---
 
 # .is_available()
 
 ## Connections
-- [[dot-find_contacts()_1]] - `calls` [EXTRACTED]
-- [[TombaAdapter]] - `method` [EXTRACTED]
+- [[GeminiAdapter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider
+#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services

@@ -1,16 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "Backend Application & Config Services"
+community: "Project Architecture & Implementation Phases"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # BaseModel
 
 ## Connections
-- [[MatchResult]] - `inherits` [EXTRACTED]
+- [[NormalizedCompany]] - `inherits` [EXTRACTED]
+- [[NormalizedContact]] - `inherits` [EXTRACTED]
+- [[NormalizedOpportunity]] - `inherits` [EXTRACTED]
+- [[ProviderSearchResult]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

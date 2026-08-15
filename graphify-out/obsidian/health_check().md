@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/main.py"
 type: "code"
-community: "Backend Application & Config Services"
-location: "L25"
+community: "Candidate Schemas & Validation Models"
+location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # health_check()
@@ -15,4 +15,4 @@ tags:
 - [[get]] - `references` [EXTRACTED]
 - [[main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

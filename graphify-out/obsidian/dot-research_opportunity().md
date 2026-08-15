@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/services/research.py"
 type: "code"
-community: "Free Hire Discovery Adapter"
+community: "Discovery Base Interfaces & Normalized Models"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Free_Hire_Discovery_Adapter
+  - community/Discovery_Base_Interfaces__Normalized_Models
 ---
 
 # .research_opportunity()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ResearchService]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Free_Hire_Discovery_Adapter
+#graphify/code #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models

@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/services/matching.py"
 type: "code"
-community: "Backend Application & Config Services"
+community: "Discovery Base Interfaces & Normalized Models"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Discovery_Base_Interfaces__Normalized_Models
 ---
 
 # .__init__()
@@ -15,4 +15,4 @@ tags:
 - [[CandidateFile]] - `references` [EXTRACTED]
 - [[MatchingService]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models

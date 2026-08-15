@@ -12,7 +12,7 @@ tags:
 # providers/contact.py
 
 ## Connections
-- [[ABC]] - `imports_from` [EXTRACTED]
+- [[ABC_2]] - `imports_from` [EXTRACTED]
 - [[ContactProvider]] - `contains` [EXTRACTED]
 - [[NormalizedContact]] - `imports` [EXTRACTED]
 

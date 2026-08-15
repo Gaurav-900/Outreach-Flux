@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c7c5b0eff98552f3",
@@ -182,5 +183,32 @@
     }
   },
   "active": "f7e49cdb29dabc8b",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "_COMMUNITY_Community 23.md",
+    "_COMMUNITY_Community 22.md",
+    "frontend .env.md",
+    "backend .env.md",
+    "root .env.md",
+    "Three .env files configuration.md",
+    "Query how many .env files we have.md",
+    "dot-_mark_failed().md",
+    "dot-process_queue().md",
+    "dot-_get_today_send_count().md",
+    "dot-_get_gmail_service().md",
+    "dot-__init__()_5.md",
+    "SendingOrchestrator.md",
+    "sending_policy.py.md",
+    "dot-generate_batch().md",
+    "dot-__init__()_4.md",
+    "OutreachGeneratorService.md",
+    "outreach_generator.py.md",
+    "Sends an email via Gmail API and returns the sent message info containing id….md",
+    "dot-send_email().md",
+    "dot-_verify_resume().md",
+    "dot-_authenticate().md",
+    "dot-__init__()_3.md",
+    "GmailService.md",
+    "gmail.py.md",
+    "Generate personalized email drafts for a batch of opportunities..md"
+  ]
 }

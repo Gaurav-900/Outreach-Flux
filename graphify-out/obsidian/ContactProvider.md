@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-find_contacts()]] - `method` [EXTRACTED]
-- [[dot-is_available()_6]] - `method` [EXTRACTED]
-- [[dot-name()_7]] - `method` [EXTRACTED]
-- [[ABC]] - `inherits` [EXTRACTED]
+- [[dot-is_available()_9]] - `method` [EXTRACTED]
+- [[dot-name()_10]] - `method` [EXTRACTED]
+- [[ABC_2]] - `inherits` [EXTRACTED]
 - [[NormalizedContact]] - `uses` [INFERRED]
 - [[TombaAdapter]] - `uses` [INFERRED]
 - [[providerscontact.py]] - `contains` [EXTRACTED]

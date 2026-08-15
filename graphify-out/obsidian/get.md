@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Backend Application & Config Services"
+community: "Candidate Schemas & Validation Models"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # get
@@ -14,4 +14,4 @@ tags:
 - [[get_candidate_profile_endpoint()]] - `references` [EXTRACTED]
 - [[health_check()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

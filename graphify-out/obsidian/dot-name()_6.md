@@ -1,18 +1,17 @@
 ---
-source_file: "backend/app/providers/base.py"
+source_file: "backend/app/providers/themuse.py"
 type: "code"
-community: "Playbook Execution & Knowledge Layer Rules"
-location: "L42"
+community: "Project Architecture & Implementation Phases"
+location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Playbook_Execution__Knowledge_Layer_Rules
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # .name()
 
 ## Connections
-- [[IDiscoveryProvider]] - `method` [EXTRACTED]
-- [[The unique identifier for this provider.]] - `rationale_for` [EXTRACTED]
+- [[TheMuseAdapter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Playbook_Execution__Knowledge_Layer_Rules
+#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

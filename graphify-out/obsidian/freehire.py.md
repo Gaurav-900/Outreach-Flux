@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/freehire.py"
 type: "code"
-community: "Candidate Schemas & Validation Models"
+community: "Project Architecture & Implementation Phases"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Candidate_Schemas__Validation_Models
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # freehire.py
@@ -19,4 +19,4 @@ tags:
 - [[NormalizedOpportunity]] - `imports` [EXTRACTED]
 - [[ProviderSearchResult]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models
+#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

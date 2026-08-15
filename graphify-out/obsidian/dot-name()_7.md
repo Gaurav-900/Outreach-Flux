@@ -1,18 +1,17 @@
 ---
-source_file: "backend/app/providers/contact.py"
+source_file: "backend/app/providers/llm.py"
 type: "code"
-community: "AI Dev Jobs Discovery Provider"
-location: "L8"
+community: "Backend Application & Config Services"
+location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AI_Dev_Jobs_Discovery_Provider
+  - community/Backend_Application__Config_Services
 ---
 
 # .name()
 
 ## Connections
-- [[ContactProvider]] - `method` [EXTRACTED]
-- [[The unique identifier for this provider._1]] - `rationale_for` [EXTRACTED]
+- [[DeepSeekAdapter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider
+#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services

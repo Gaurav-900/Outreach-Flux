@@ -1,0 +1,17 @@
+---
+source_file: "graphify-out/memory/query_20260815_154958_how_many__env_files_we_have.md"
+type: "document"
+community: "Signalbase Discovery Adapter"
+location: "L1"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Signalbase_Discovery_Adapter
+---
+
+# query_20260815_154958_how_many__env_files_we_have.md
+
+## Connections
+- [[Q how many .env files we have]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Signalbase_Discovery_Adapter

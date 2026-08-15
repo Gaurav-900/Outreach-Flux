@@ -1,11 +1,11 @@
 ---
 source_file: "frontend/README.md"
 type: "document"
-community: "Research Service & Intelligence Layer"
+community: "Project Memory & Root Documentation"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Research_Service__Intelligence_Layer
+  - community/Project_Memory__Root_Documentation
 ---
 
 # frontend/README.md
@@ -19,4 +19,4 @@ tags:
 - [[TypeScript]] - `documents_technology` [EXTRACTED]
 - [[Vite]] - `documents_technology` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Research_Service__Intelligence_Layer
+#graphify/document #graphify/EXTRACTED #community/Project_Memory__Root_Documentation

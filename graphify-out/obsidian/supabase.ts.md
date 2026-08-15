@@ -1,17 +1,18 @@
 ---
 source_file: "frontend/src/lib/supabase.ts"
 type: "code"
-community: "Backend Supabase Client"
+community: "Adzuna Discovery Adapter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Supabase_Client
+  - community/Adzuna_Discovery_Adapter
 ---
 
 # supabase.ts
 
 ## Connections
+- [[App.tsx]] - `imports_from` [EXTRACTED]
 - [[supabase]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Supabase_Client
+#graphify/code #graphify/EXTRACTED #community/Adzuna_Discovery_Adapter

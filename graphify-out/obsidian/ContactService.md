@@ -12,8 +12,8 @@ tags:
 # ContactService
 
 ## Connections
-- [[dot-__init__()_1]] - `method` [EXTRACTED]
-- [[dot-__init__()_2]] - `calls` [EXTRACTED]
+- [[dot-__init__()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_1]] - `calls` [EXTRACTED]
 - [[dot-_extract_domain()]] - `method` [EXTRACTED]
 - [[dot-_extract_public_contacts()]] - `method` [EXTRACTED]
 - [[dot-_is_valid_email()]] - `method` [EXTRACTED]

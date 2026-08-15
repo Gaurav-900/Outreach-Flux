@@ -1,12 +1,12 @@
 ---
 source_file: "backend/scripts/verify_golden.py"
 type: "code"
-community: "Backend Application & Config Services"
+community: "Discovery Base Interfaces & Normalized Models"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Discovery_Base_Interfaces__Normalized_Models
 ---
 
 # verify_golden.py
@@ -16,4 +16,4 @@ tags:
 - [[get_candidate_profile()]] - `imports` [EXTRACTED]
 - [[run_verification()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models
