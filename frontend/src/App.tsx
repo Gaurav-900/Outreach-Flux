@@ -133,21 +133,32 @@ function App() {
   });
 
   useEffect(() => {
+    // Check active session immediately
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session)
       setAuthLoading(false)
       if (session) {
         fetchDashboardData()
       }
+    }).catch((err) => {
+      console.error('Failed to get session:', err)
+      setAuthLoading(false)
     })
 
+    // Listen for auth changes (login, logout, token refresh)
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
-      setSession(session)
-      if (session) {
+    } = supabase.auth.onAuthStateChange((event, newSession) => {
+      console.log('Auth event:', event)
+      setSession(newSession)
+      
+      // If we are no longer loading and we have a session, fetch data
+      if (newSession && event === 'SIGNED_IN') {
         fetchDashboardData()
       }
+      
+      // Ensure loading screen goes away if we receive an event
+      setAuthLoading(false)
     })
 
     return () => subscription.unsubscribe()
