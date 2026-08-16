@@ -30,6 +30,7 @@ function App() {
   const [timelineSearch, setTimelineSearch] = useState<string>('')
   const [isSyncing, setIsSyncing] = useState(false)
   const [lastSyncTime, setLastSyncTime] = useState<string>('Never')
+  const [nextRunCountdown, setNextRunCountdown] = useState<string>('')
 
   const fetchDashboardData = async () => {
     try {
@@ -86,7 +87,7 @@ function App() {
       // 4. Fetch last sync time
       const { data: appState } = await supabase.from('app_state').select('value').eq('key', 'last_reply_check').single()
       if (appState && appState.value?.timestamp) {
-        setLastSyncTime(new Date(appState.value.timestamp).toLocaleString())
+        setLastSyncTime(new Date(appState.value.timestamp).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata', hour12: true }))
       }
 
       // 5. Fetch Recent Opportunities
@@ -161,7 +162,28 @@ function App() {
       setAuthLoading(false)
     })
 
-    return () => subscription.unsubscribe()
+    const updateCountdown = () => {
+      const now = new Date();
+      const next = new Date(now);
+      if (now.getMinutes() < 30) {
+        next.setMinutes(30, 0, 0);
+      } else {
+        next.setHours(now.getHours() + 1, 0, 0, 0);
+      }
+      
+      const diff = next.getTime() - now.getTime();
+      const minutes = Math.floor(diff / 60000);
+      const seconds = Math.floor((diff % 60000) / 1000);
+      setNextRunCountdown(`${minutes}m ${seconds}s`);
+    };
+    
+    updateCountdown();
+    const timerInterval = setInterval(updateCountdown, 1000);
+
+    return () => {
+      subscription.unsubscribe();
+      clearInterval(timerInterval);
+    }
   }, [])
 
   const handleSyncReplies = async () => {
@@ -220,7 +242,10 @@ function App() {
       <header className="dashboard-header">
         <h1>AI Outreach Dashboard</h1>
         <div className="sync-controls">
-          <span className="last-sync">Last check: {lastSyncTime}</span>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', fontSize: '0.85rem', color: 'var(--text-muted)', marginRight: '1rem' }}>
+            <span>Last check: {lastSyncTime}</span>
+            <span>Next auto-run in: {nextRunCountdown}</span>
+          </div>
           <button 
             className="sync-button" 
             onClick={handleSyncReplies} 
