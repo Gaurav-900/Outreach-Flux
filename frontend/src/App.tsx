@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react'
+import type { Session } from '@supabase/supabase-js'
 import { supabase } from './lib/supabase'
+import Login from './components/Login'
 import './App.css'
 
 function App() {
+  const [session, setSession] = useState<Session | null>(null)
+  const [authLoading, setAuthLoading] = useState(true)
   const [metrics, setMetrics] = useState({
     companies: 0,
     opportunities: 0,
@@ -129,14 +133,38 @@ function App() {
   });
 
   useEffect(() => {
-    fetchDashboardData()
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setSession(session)
+      setAuthLoading(false)
+      if (session) {
+        fetchDashboardData()
+      }
+    })
+
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      setSession(session)
+      if (session) {
+        fetchDashboardData()
+      }
+    })
+
+    return () => subscription.unsubscribe()
   }, [])
 
   const handleSyncReplies = async () => {
     setIsSyncing(true)
     try {
+      if (!session) throw new Error('Not authenticated');
+      
       const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000'
-      const res = await fetch(`${apiUrl}/api/replies/sync`, { method: 'POST' })
+      const res = await fetch(`${apiUrl}/api/replies/sync`, { 
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${session.access_token}`
+        }
+      })
       const data = await res.json()
       console.log('Sync result:', data)
       await fetchDashboardData()
@@ -164,6 +192,18 @@ function App() {
     }
   }
 
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
+  }
+
+  if (authLoading) {
+    return <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', color: 'var(--text)' }}>Loading OutreachFlow...</div>;
+  }
+
+  if (!session) {
+    return <Login />;
+  }
+
   return (
     <div className="dashboard-container">
       <header className="dashboard-header">
@@ -176,6 +216,12 @@ function App() {
             disabled={isSyncing}
           >
             {isSyncing ? 'Checking Gmail...' : 'Refresh Replies'}
+          </button>
+          <button 
+            onClick={handleLogout} 
+            style={{ padding: '0.6rem 1rem', background: 'transparent', border: '1px solid var(--border)', borderRadius: '6px', color: 'var(--text)', cursor: 'pointer' }}
+          >
+            Logout
           </button>
         </div>
       </header>
