@@ -20,6 +20,10 @@ function App() {
   const [recentOpps, setRecentOpps] = useState<any[]>([])
   const [allCompanies, setAllCompanies] = useState<any[]>([])
   const [selectedDraft, setSelectedDraft] = useState<{id: string, subject: string, body: string, to: string} | null>(null)
+  const [oppStatusFilter, setOppStatusFilter] = useState<string>('ALL')
+  const [oppSearch, setOppSearch] = useState<string>('')
+  const [timelineStatusFilter, setTimelineStatusFilter] = useState<string>('ALL')
+  const [timelineSearch, setTimelineSearch] = useState<string>('')
   const [isSyncing, setIsSyncing] = useState(false)
   const [lastSyncTime, setLastSyncTime] = useState<string>('Never')
 
@@ -71,7 +75,7 @@ function App() {
           contacts ( email )
         `)
         .order('updated_at', { ascending: false })
-        .limit(20)
+        .limit(100)
 
       if (timelineData) setTimeline(timelineData)
 
@@ -89,7 +93,7 @@ function App() {
           companies ( name )
         `)
         .order('created_at', { ascending: false })
-        .limit(10)
+        .limit(100)
         
       if (recentData) setRecentOpps(recentData)
 
@@ -106,6 +110,23 @@ function App() {
       console.error('Error fetching dashboard data:', error)
     }
   }
+
+  const filteredOpps = recentOpps.filter(opp => {
+    const matchesStatus = oppStatusFilter === 'ALL' || opp.status === oppStatusFilter;
+    const matchesSearch = oppSearch === '' || 
+      opp.title.toLowerCase().includes(oppSearch.toLowerCase()) || 
+      (opp.companies?.name || '').toLowerCase().includes(oppSearch.toLowerCase());
+    return matchesStatus && matchesSearch;
+  });
+
+  const filteredTimeline = timeline.filter(row => {
+    const matchesStatus = timelineStatusFilter === 'ALL' || row.status === timelineStatusFilter;
+    const matchesSearch = timelineSearch === '' || 
+      (row.opportunities?.title || '').toLowerCase().includes(timelineSearch.toLowerCase()) || 
+      (row.companies?.name || '').toLowerCase().includes(timelineSearch.toLowerCase()) ||
+      (row.contacts?.email || '').toLowerCase().includes(timelineSearch.toLowerCase());
+    return matchesStatus && matchesSearch;
+  });
 
   useEffect(() => {
     fetchDashboardData()
@@ -190,7 +211,28 @@ function App() {
       </section>
 
       <section className="recent-section">
-        <h2>Recent Discoveries</h2>
+        <div className="section-header-row" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.2rem' }}>
+          <h2 style={{ margin: 0 }}>Recent Discoveries</h2>
+          <div className="table-filter-bar" style={{ display: 'flex', gap: '0.8rem' }}>
+            <input 
+              type="text" 
+              placeholder="Search company or title..." 
+              value={oppSearch}
+              onChange={e => setOppSearch(e.target.value)}
+              className="filter-input"
+            />
+            <select 
+              value={oppStatusFilter} 
+              onChange={e => setOppStatusFilter(e.target.value)}
+              className="filter-select"
+            >
+              <option value="ALL">All Statuses</option>
+              <option value="MATCHED">Matched</option>
+              <option value="REJECTED">Rejected</option>
+              <option value="DRAFTED">Drafted</option>
+            </select>
+          </div>
+        </div>
         <div className="table-container">
           <table className="recent-table">
             <thead>
@@ -203,10 +245,10 @@ function App() {
               </tr>
             </thead>
             <tbody>
-              {recentOpps.length === 0 ? (
-                <tr><td colSpan={5} style={{textAlign: 'center'}}>No jobs discovered yet.</td></tr>
+              {filteredOpps.length === 0 ? (
+                <tr><td colSpan={5} style={{textAlign: 'center'}}>No matching jobs found.</td></tr>
               ) : (
-                recentOpps.map((opp) => (
+                filteredOpps.map((opp) => (
                   <tr key={opp.id}>
                     <td>{new Date(opp.created_at).toLocaleDateString()}</td>
                     <td>{opp.companies?.name || 'Unknown'}</td>
@@ -230,7 +272,29 @@ function App() {
       </section>
 
       <section className="timeline-section">
-        <h2>Outreach Timeline</h2>
+        <div className="section-header-row" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.2rem' }}>
+          <h2 style={{ margin: 0 }}>Outreach Timeline</h2>
+          <div className="table-filter-bar" style={{ display: 'flex', gap: '0.8rem' }}>
+            <input 
+              type="text" 
+              placeholder="Search email, company, title..." 
+              value={timelineSearch}
+              onChange={e => setTimelineSearch(e.target.value)}
+              className="filter-input"
+            />
+            <select 
+              value={timelineStatusFilter} 
+              onChange={e => setTimelineStatusFilter(e.target.value)}
+              className="filter-select"
+            >
+              <option value="ALL">All Statuses</option>
+              <option value="DRAFT">Draft</option>
+              <option value="APPROVED">Approved</option>
+              <option value="SENT">Sent</option>
+              <option value="FAILED">Failed</option>
+            </select>
+          </div>
+        </div>
         <div className="table-container">
           <table className="timeline-table">
             <thead>
@@ -246,10 +310,10 @@ function App() {
               </tr>
             </thead>
             <tbody>
-              {timeline.length === 0 ? (
-                <tr><td colSpan={8} style={{textAlign: 'center'}}>No outreach records found.</td></tr>
+              {filteredTimeline.length === 0 ? (
+                <tr><td colSpan={8} style={{textAlign: 'center'}}>No matching outreach records found.</td></tr>
               ) : (
-                timeline.map((row) => (
+                filteredTimeline.map((row) => (
                   <tr key={row.id}>
                     <td>{new Date(row.updated_at).toLocaleDateString()}</td>
                     <td>{row.companies?.name || 'Unknown'}</td>
