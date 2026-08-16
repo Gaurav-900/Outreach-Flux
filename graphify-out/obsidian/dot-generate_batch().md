@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/services/outreach_generator.py"
 type: "code"
-community: "Backend Application & Config Services"
+community: "Project Architecture & Implementation Phases"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # .generate_batch()
@@ -14,6 +14,5 @@ tags:
 ## Connections
 - [[OpportunityContext]] - `calls` [EXTRACTED]
 - [[OutreachGeneratorService]] - `method` [EXTRACTED]
-- [[get_candidate_profile()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

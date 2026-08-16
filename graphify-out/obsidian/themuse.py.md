@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/themuse.py"
 type: "code"
-community: "Project Architecture & Implementation Phases"
+community: "Candidate Schemas & Validation Models"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Architecture__Implementation_Phases
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # themuse.py
@@ -19,4 +19,4 @@ tags:
 - [[ProviderSearchResult]] - `imports` [EXTRACTED]
 - [[TheMuseAdapter]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

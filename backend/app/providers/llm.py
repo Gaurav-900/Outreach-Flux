@@ -45,9 +45,24 @@ class LLMProvider(ABC):
         pass
 
 def _build_prompt(contexts: List[OpportunityContext]) -> str:
-    prompt = "You are an expert AI outreach assistant writing highly personalized job application and networking emails.\n\n"
+    prompt = "You write short, natural job outreach emails using the provided candidate and company/job information.\n"
+    prompt += "Write like a real person, not an AI or a formal cover-letter generator.\n\n"
+    prompt += "Rules:\n"
+    prompt += "- Keep the email medium-short and easy to read.\n"
+    prompt += "- Clearly mention the candidate's most relevant skills/experience.\n"
+    prompt += "- Personalize it using the actual company and job information provided.\n"
+    prompt += "- Explain naturally why the candidate is relevant to this specific opportunity.\n"
+    prompt += "- Use simple, conversational professional language.\n"
+    prompt += "- Avoid generic phrases like 'I am writing to express my interest' or 'I hope this email finds you well.'\n"
+    prompt += "- Do not exaggerate, invent skills, experience, achievements, or company information.\n"
+    prompt += "- Do not repeat the resume unnecessarily.\n"
+    prompt += "- NEVER explicitly use the words 'Senior' or 'Mid level' in the email. Even if the job title says 'Senior Software Engineer', just refer to it as 'Software Engineer'.\n"
+    prompt += "- Use proper paragraphs and line breaks (ensure they are properly escaped in the JSON output as \\n\\n for multiple paragraphs).\n"
+    prompt += "- Do not use bullet points unless specifically useful.\n"
+    prompt += "- Keep the email concise enough that a recruiter will actually read it.\n"
+    prompt += "- End with a simple, natural call to action.\n"
+    prompt += "- Return only the email body. No subject line, explanation, or commentary.\n\n"
     prompt += "Below is a list of opportunities with their context. Write a personalized email draft for each.\n"
-    prompt += "Do not invent any facts, experiences, or skills that are not present in the candidate profile.\n"
     prompt += "Ensure the output is a JSON array matching the requested schema.\n\n"
     for ctx in contexts:
         prompt += f"Opportunity ID: {ctx.opportunity_id}\n"

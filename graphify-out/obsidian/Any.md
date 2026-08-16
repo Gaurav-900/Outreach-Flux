@@ -1,13 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "Frontend Supabase Client"
+community: "Adzuna Discovery Adapter"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Frontend_Supabase_Client
+  - community/Adzuna_Discovery_Adapter
 ---
 
 # Any
 
-#graphify/code #graphify/EXTRACTED #community/Frontend_Supabase_Client
+## Connections
+- [[dot-check_for_replies()]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Adzuna_Discovery_Adapter

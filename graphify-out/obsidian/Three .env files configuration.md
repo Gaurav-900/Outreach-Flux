@@ -1,11 +1,11 @@
 ---
 source_file: "graphify-out/memory/query_20260815_154958_how_many__env_files_we_have.md"
 type: "concept"
-community: "Free Hire Discovery Adapter"
+community: "Playbook Execution & Knowledge Layer Rules"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Free_Hire_Discovery_Adapter
+  - community/Playbook_Execution__Knowledge_Layer_Rules
 ---
 
 # Three .env files configuration
@@ -16,4 +16,4 @@ tags:
 - [[frontend .env]] - `includes_env_file` [EXTRACTED]
 - [[root .env]] - `includes_env_file` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Free_Hire_Discovery_Adapter
+#graphify/concept #graphify/EXTRACTED #community/Playbook_Execution__Knowledge_Layer_Rules

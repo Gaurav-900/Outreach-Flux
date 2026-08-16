@@ -1,17 +1,17 @@
 ---
-source_file: "backend/app/providers/llm.py"
+source_file: "backend/app/providers/contact.py"
 type: "rationale"
-community: "Backend Application & Config Services"
-location: "L34"
+community: "Discovery Base Interfaces & Normalized Models"
+location: "L9"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Discovery_Base_Interfaces__Normalized_Models
 ---
 
 # The unique identifier for this provider.
 
 ## Connections
-- [[dot-name()_9]] - `rationale_for` [EXTRACTED]
+- [[dot-name()_6]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/rationale #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models

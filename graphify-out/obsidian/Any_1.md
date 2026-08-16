@@ -1,16 +1,13 @@
 ---
 source_file: ""
 type: "code"
-community: "Discovery Base Interfaces & Normalized Models"
+community: "Community 21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Discovery_Base_Interfaces__Normalized_Models
+  - community/Community_21
 ---
 
 # Any
 
-## Connections
-- [[dot-evaluate_opportunity()]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models
+#graphify/code #graphify/EXTRACTED #community/Community_21

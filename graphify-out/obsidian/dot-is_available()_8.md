@@ -1,18 +1,17 @@
 ---
 source_file: "backend/app/providers/llm.py"
 type: "code"
-community: "Backend Application & Config Services"
-location: "L38"
+community: "Project Architecture & Implementation Phases"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # .is_available()
 
 ## Connections
-- [[Determines if the provider is currently available.]] - `rationale_for` [EXTRACTED]
-- [[LLMProvider]] - `method` [EXTRACTED]
+- [[GeminiAdapter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

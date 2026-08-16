@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Research Service & Intelligence Layer"
+community: "The Muse Provider & Discovery Orchestration"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Research_Service__Intelligence_Layer
+  - community/The_Muse_Provider__Discovery_Orchestration
 ---
 
 # BaseModel
@@ -25,4 +25,4 @@ tags:
 - [[Project]] - `inherits` [EXTRACTED]
 - [[Skills]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Research_Service__Intelligence_Layer
+#graphify/code #graphify/EXTRACTED #community/The_Muse_Provider__Discovery_Orchestration

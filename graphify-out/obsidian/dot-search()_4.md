@@ -1,22 +1,21 @@
 ---
-source_file: "backend/app/providers/signalbase.py"
+source_file: "backend/app/providers/themuse.py"
 type: "code"
-community: "Project Architecture & Implementation Phases"
+community: "Candidate Schemas & Validation Models"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Architecture__Implementation_Phases
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # .search()
 
 ## Connections
-- [[dot-is_available()_4]] - `calls` [EXTRACTED]
 - [[DiscoveryProfile]] - `references` [EXTRACTED]
 - [[NormalizedCompany]] - `calls` [EXTRACTED]
 - [[NormalizedOpportunity]] - `calls` [EXTRACTED]
 - [[ProviderSearchResult]] - `references` [EXTRACTED]
-- [[SignalbaseAdapter]] - `method` [EXTRACTED]
+- [[TheMuseAdapter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

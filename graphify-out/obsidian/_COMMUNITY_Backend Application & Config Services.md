@@ -1,39 +1,41 @@
 ---
 type: community
-members: 26
+members: 28
 ---
 
 # Backend Application & Config Services
 
-**Members:** 26 nodes
+**Members:** 28 nodes
 
 ## Members
-- [[dot-__init__()_2]] - code - backend/app/services/outreach_generator.py
-- [[dot-generate_batch()]] - code - backend/app/services/outreach_generator.py
-- [[dot-generate_drafts()]] - code - backend/app/providers/llm.py
-- [[dot-generate_drafts()_1]] - code - backend/app/providers/llm.py
-- [[dot-generate_drafts()_2]] - code - backend/app/providers/llm.py
-- [[dot-is_available()_6]] - code - backend/app/providers/llm.py
-- [[dot-is_available()_7]] - code - backend/app/providers/llm.py
-- [[dot-is_available()_8]] - code - backend/app/providers/llm.py
-- [[dot-name()_7]] - code - backend/app/providers/llm.py
-- [[dot-name()_8]] - code - backend/app/providers/llm.py
-- [[dot-name()_9]] - code - backend/app/providers/llm.py
-- [[ABC_1]] - code
-- [[BaseModel_2]] - code
-- [[DeepSeekAdapter]] - code - backend/app/providers/llm.py
-- [[Determines if the provider is currently available.]] - rationale - backend/app/providers/llm.py
-- [[EmailBatchResponse]] - code - backend/app/providers/llm.py
-- [[EmailDraft]] - code - backend/app/providers/llm.py
-- [[GeminiAdapter]] - code - backend/app/providers/llm.py
-- [[Generate personalized email drafts for a batch of opportunities.]] - rationale - backend/app/providers/llm.py
-- [[LLMProvider]] - code - backend/app/providers/llm.py
-- [[OpportunityContext]] - code - backend/app/providers/llm.py
-- [[OutreachGeneratorService]] - code - backend/app/services/outreach_generator.py
-- [[The unique identifier for this provider._1]] - rationale - backend/app/providers/llm.py
-- [[_build_prompt()]] - code - backend/app/providers/llm.py
-- [[llm.py]] - code - backend/app/providers/llm.py
-- [[outreach_generator.py]] - code - backend/app/services/outreach_generator.py
+- [[9001069527]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[AI Agents Training Program — Coplur]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[Automation & Integrations Engineering]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[Express.js]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[Firebase (Firestore, Cloud Functions)]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[Forex Calculator Suite]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[Full-Stack Developer]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[Full-Stack Developer — Advance Control Systems]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[GS Paint]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[Gaurav Sharma]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[Gaurav Sharma Resume PDF (Backend Config)]] - document - backend/config/Gaurav_Sharma_resume.pdf
+- [[Gaurav Sharma Resume PDF (Config)]] - document - config/Gaurav_Sharma_resume.pdf
+- [[JavaScript]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[Node.js]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[Poddar International College — Bachelor of Computer Applications]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[Python]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[REST APIs]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[React.js]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[SQL  Postgres]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[Serverless Project Admin Dashboard]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[St. Anselm's Sr. Sec. School — 12th Grade]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[Supabase_1]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[Webhook Lead Receiver]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[Webhooks]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[gauravsharmaa.netlify.app]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[github.comGaurav-900]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[linkedin.comingaurav-sharma-gs900]] - concept - config/Gaurav_Sharma_resume.pdf
+- [[worksforgauravsharma@gmail.com]] - concept - config/Gaurav_Sharma_resume.pdf
 
 ## Live Query (requires Dataview plugin)
 
@@ -41,10 +43,3 @@ members: 26
 TABLE source_file, type FROM #community/Backend_Application__Config_Services
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Discovery Base Interfaces & Normalized Models]]
-
-## Top bridge nodes
-- [[outreach_generator.py]] - degree 6, connects to 1 community
-- [[dot-generate_batch()]] - degree 3, connects to 1 community

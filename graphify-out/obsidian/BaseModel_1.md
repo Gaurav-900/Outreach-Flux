@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "Discovery Base Interfaces & Normalized Models"
+community: "Project Architecture & Implementation Phases"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Discovery_Base_Interfaces__Normalized_Models
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # BaseModel
 
 ## Connections
-- [[MatchResult]] - `inherits` [EXTRACTED]
+- [[EmailBatchResponse]] - `inherits` [EXTRACTED]
+- [[EmailDraft]] - `inherits` [EXTRACTED]
+- [[OpportunityContext]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models
+#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

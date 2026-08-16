@@ -1,17 +1,18 @@
 ---
-source_file: "backend/app/providers/themuse.py"
+source_file: "backend/app/providers/contact.py"
 type: "code"
-community: "Project Architecture & Implementation Phases"
-location: "L9"
+community: "Discovery Base Interfaces & Normalized Models"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Architecture__Implementation_Phases
+  - community/Discovery_Base_Interfaces__Normalized_Models
 ---
 
 # .name()
 
 ## Connections
-- [[TheMuseAdapter]] - `method` [EXTRACTED]
+- [[ContactProvider]] - `method` [EXTRACTED]
+- [[The unique identifier for this provider._1]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases
+#graphify/code #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models

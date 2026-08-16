@@ -23,7 +23,7 @@ class OutreachGeneratorService:
         
         # 1. Fetch READY_FOR_OUTREACH opportunities that don't have drafts yet
         # We fetch opportunities matching 'READY_FOR_OUTREACH'
-        res = supabase.table('opportunities').select('*, companies(*), contacts(*)').eq('status', 'READY_FOR_OUTREACH').limit(self.batch_size).execute()
+        res = supabase.table('opportunities').select('*, companies(*)').eq('status', 'READY_FOR_OUTREACH').limit(self.batch_size).execute()
         opportunities = res.data
         
         if not opportunities:
@@ -55,9 +55,9 @@ class OutreachGeneratorService:
             research_res = supabase.table('company_research').select('content').eq('company_id', company['id']).execute()
             research_content = research_res.data[0]['content'] if research_res.data else None
 
-            # Look for contact
-            contacts = opp.get('contacts', [])
-            contact = contacts[0] if contacts else None
+            # Look for contact separately
+            contact_res = supabase.table('contacts').select('*').eq('company_id', company['id']).limit(1).execute()
+            contact = contact_res.data[0] if contact_res.data else None
             
             ctx = OpportunityContext(
                 opportunity_id=opp['id'],

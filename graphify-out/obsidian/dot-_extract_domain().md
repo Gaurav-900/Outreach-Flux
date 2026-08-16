@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/services/contact.py"
 type: "code"
-community: "AI Dev Jobs Discovery Provider"
-location: "L141"
+community: "Free Hire Discovery Adapter"
+location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AI_Dev_Jobs_Discovery_Provider
+  - community/Free_Hire_Discovery_Adapter
 ---
 
 # ._extract_domain()
@@ -15,4 +15,4 @@ tags:
 - [[dot-discover_contacts()]] - `calls` [EXTRACTED]
 - [[ContactService]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider
+#graphify/code #graphify/EXTRACTED #community/Free_Hire_Discovery_Adapter

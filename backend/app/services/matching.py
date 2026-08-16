@@ -65,15 +65,24 @@ class MatchingService:
 
         # 3. Location Filter
         location = opportunity.get('location')
-        if hard_filters.get('reject_if_location_explicitly_incompatible') and location:
-            loc_lower = location.lower()
+        loc_lower = (location or '').lower()
+        desc_lower = (opportunity.get('description') or '').lower()
+        
+        if hard_filters.get('reject_if_location_explicitly_incompatible'):
             pref_locs = [l.lower() for l in (discovery_prefs.get('preferred_locations') or [])]
-            work_modes = [m.lower() for m in (discovery_prefs.get('preferred_work_modes') or [])]
             
             # Basic heuristic
             if 'us only' in loc_lower or 'united states only' in loc_lower:
                 if not any('us' in l or 'united states' in l for l in pref_locs):
                     return MatchResult(isMatch=False, score=0, reasons=['Location is explicitly incompatible (e.g. US Only).'])
+                    
+            # Outside Rajasthan MUST be remote
+            if loc_lower and 'rajasthan' not in loc_lower and 'jaipur' not in loc_lower:
+                remote_keywords = ['remote', 'wfh', 'work from home', 'anywhere', 'telecommute']
+                is_remote = any(kw in loc_lower or kw in desc_lower for kw in remote_keywords)
+                
+                if not is_remote:
+                    return MatchResult(isMatch=False, score=0, reasons=['Location is outside Rajasthan and does not indicate Remote work.'])
 
         # 4. Scoring
         score = 50
@@ -104,5 +113,10 @@ class MatchingService:
                     reasons.append(f'Matched candidate skill: {skill}')
                     
         score = min(score, 100)
+        
+        threshold = matching_rules.get('minimum_suitability_score', 0)
+        if score < threshold:
+            reasons.append(f'Suitability score ({score}) is below the configured threshold ({threshold}).')
+            return MatchResult(isMatch=False, score=score, reasons=reasons)
         
         return MatchResult(isMatch=True, score=score, reasons=reasons)

@@ -1,53 +1,49 @@
 ---
 type: community
-members: 40
+members: 36
 ---
 
 # Project Architecture & Implementation Phases
 
-**Members:** 40 nodes
+**Members:** 36 nodes
 
 ## Members
-- [[dot-is_available()]] - code - backend/app/providers/adzuna.py
-- [[dot-is_available()_1]] - code - backend/app/providers/aidevjobs.py
-- [[dot-is_available()_2]] - code - backend/app/providers/base.py
-- [[dot-is_available()_3]] - code - backend/app/providers/freehire.py
-- [[dot-is_available()_4]] - code - backend/app/providers/signalbase.py
-- [[dot-is_available()_5]] - code - backend/app/providers/themuse.py
-- [[dot-keywords()]] - code - backend/app/models/candidate.py
-- [[dot-name()]] - code - backend/app/models/candidate.py
-- [[dot-name()_1]] - code - backend/app/providers/adzuna.py
-- [[dot-name()_2]] - code - backend/app/providers/aidevjobs.py
-- [[dot-name()_4]] - code - backend/app/providers/freehire.py
-- [[dot-name()_5]] - code - backend/app/providers/signalbase.py
-- [[dot-name()_6]] - code - backend/app/providers/themuse.py
-- [[dot-search()]] - code - backend/app/providers/adzuna.py
-- [[dot-search()_1]] - code - backend/app/providers/aidevjobs.py
-- [[dot-search()_2]] - code - backend/app/providers/base.py
-- [[dot-search()_3]] - code - backend/app/providers/freehire.py
-- [[dot-search()_4]] - code - backend/app/providers/signalbase.py
-- [[dot-search()_5]] - code - backend/app/providers/themuse.py
-- [[ABC]] - code
-- [[AIDevJobsAdapter]] - code - backend/app/providers/aidevjobs.py
-- [[AdzunaAdapter]] - code - backend/app/providers/adzuna.py
-- [[BaseModel]] - code
-- [[Determines if the provider is currently available (e.g., API keys are present).]] - rationale - backend/app/providers/base.py
-- [[DiscoveryProfile]] - code - backend/app/models/candidate.py
-- [[Execute a search against the provider.]] - rationale - backend/app/providers/base.py
-- [[FreeHireAdapter]] - code - backend/app/providers/freehire.py
-- [[IDiscoveryProvider]] - code - backend/app/providers/base.py
-- [[NormalizedCompany]] - code - backend/app/providers/base.py
-- [[NormalizedOpportunity]] - code - backend/app/providers/base.py
-- [[ProviderSearchResult]] - code - backend/app/providers/base.py
-- [[SignalbaseAdapter]] - code - backend/app/providers/signalbase.py
-- [[TheMuseAdapter]] - code - backend/app/providers/themuse.py
-- [[adzuna.py]] - code - backend/app/providers/adzuna.py
-- [[aidevjobs.py]] - code - backend/app/providers/aidevjobs.py
-- [[base.py]] - code - backend/app/providers/base.py
-- [[freehire.py]] - code - backend/app/providers/freehire.py
-- [[orchestrator.py]] - code - backend/app/services/orchestrator.py
-- [[signalbase.py]] - code - backend/app/providers/signalbase.py
-- [[themuse.py]] - code - backend/app/providers/themuse.py
+- [[dot-__init__()_4]] - code - backend/app/services/automation.py
+- [[dot-__init__()_7]] - code - backend/app/services/outreach_generator.py
+- [[dot-_process_follow_ups()]] - code - backend/app/services/automation.py
+- [[dot-_run_discovery()]] - code - backend/app/services/automation.py
+- [[dot-generate_batch()]] - code - backend/app/services/outreach_generator.py
+- [[dot-generate_drafts()_2]] - code - backend/app/providers/llm.py
+- [[dot-generate_drafts()_1]] - code - backend/app/providers/llm.py
+- [[dot-generate_drafts()]] - code - backend/app/providers/llm.py
+- [[dot-is_available()_9]] - code - backend/app/providers/llm.py
+- [[dot-is_available()_8]] - code - backend/app/providers/llm.py
+- [[dot-is_available()_7]] - code - backend/app/providers/llm.py
+- [[dot-name()_10]] - code - backend/app/providers/llm.py
+- [[dot-name()_9]] - code - backend/app/providers/llm.py
+- [[dot-name()_8]] - code - backend/app/providers/llm.py
+- [[dot-run_automation_tick()]] - code - backend/app/services/automation.py
+- [[ABC_3]] - code
+- [[AutomationOrchestrator]] - code - backend/app/services/automation.py
+- [[BaseModel_1]] - code
+- [[DeepSeekAdapter]] - code - backend/app/providers/llm.py
+- [[Determines if the provider is currently available.]] - rationale - backend/app/providers/llm.py
+- [[EmailBatchResponse]] - code - backend/app/providers/llm.py
+- [[EmailDraft]] - code - backend/app/providers/llm.py
+- [[GeminiAdapter]] - code - backend/app/providers/llm.py
+- [[Generate personalized email drafts for a batch of opportunities.]] - rationale - backend/app/providers/llm.py
+- [[LLMProvider]] - code - backend/app/providers/llm.py
+- [[OpportunityContext]] - code - backend/app/providers/llm.py
+- [[OutreachGeneratorService]] - code - backend/app/services/outreach_generator.py
+- [[The unique identifier for this provider._2]] - rationale - backend/app/providers/llm.py
+- [[_build_prompt()]] - code - backend/app/providers/llm.py
+- [[automation.py]] - code - backend/app/services/automation.py
+- [[llm.py]] - code - backend/app/providers/llm.py
+- [[main()_1]] - code - backend/test_full_pipeline.py
+- [[main()_2]] - code - backend/test_gen.py
+- [[outreach_generator.py]] - code - backend/app/services/outreach_generator.py
+- [[test_full_pipeline.py]] - code - backend/test_full_pipeline.py
+- [[test_gen.py]] - code - backend/test_gen.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,14 +53,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_Discovery Base Interfaces & Normalized Models]]
-- 3 edges to [[_COMMUNITY_AI Dev Jobs Discovery Provider]]
-- 2 edges to [[_COMMUNITY_Research Service & Intelligence Layer]]
-- 1 edge to [[_COMMUNITY_Frontend React Entrypoint & UI]]
+- 1 edge to [[_COMMUNITY_AI Dev Jobs Discovery Provider]]
 
 ## Top bridge nodes
-- [[DiscoveryProfile]] - degree 25, connects to 2 communities
-- [[orchestrator.py]] - degree 11, connects to 2 communities
-- [[IDiscoveryProvider]] - degree 17, connects to 1 community
-- [[FreeHireAdapter]] - degree 12, connects to 1 community
-- [[TheMuseAdapter]] - degree 12, connects to 1 community
+- [[AutomationOrchestrator]] - degree 7, connects to 1 community

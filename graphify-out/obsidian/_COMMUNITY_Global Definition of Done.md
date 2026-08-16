@@ -1,14 +1,15 @@
 ---
 type: community
-members: 1
+members: 2
 ---
 
 # Global Definition of Done
 
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[vite.config.ts]] - code - frontend/vite.config.ts
+- [[main()]] - code - backend/test_discovery.py
+- [[test_discovery.py]] - code - backend/test_discovery.py
 
 ## Live Query (requires Dataview plugin)
 

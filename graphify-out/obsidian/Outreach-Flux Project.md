@@ -1,11 +1,11 @@
 ---
 source_file: "README.md"
 type: "concept"
-community: "Playbook Execution & Knowledge Layer Rules"
+community: "System Core Purpose & Goals"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Playbook_Execution__Knowledge_Layer_Rules
+  - community/System_Core_Purpose__Goals
 ---
 
 # Outreach-Flux Project
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[README]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Playbook_Execution__Knowledge_Layer_Rules
+#graphify/concept #graphify/EXTRACTED #community/System_Core_Purpose__Goals

@@ -1,19 +1,18 @@
 ---
 source_file: "backend/app/services/automation.py"
 type: "code"
-community: "Candidate Schemas & Validation Models"
+community: "Project Architecture & Implementation Phases"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Candidate_Schemas__Validation_Models
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # automation.py
 
 ## Connections
 - [[AutomationOrchestrator]] - `contains` [EXTRACTED]
-- [[GmailService]] - `imports` [EXTRACTED]
-- [[ReplyTrackerService]] - `imports` [EXTRACTED]
+- [[OutreachGeneratorService]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models
+#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

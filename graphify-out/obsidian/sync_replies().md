@@ -1,19 +1,19 @@
 ---
 source_file: "backend/app/main.py"
 type: "code"
-community: "Candidate Schemas & Validation Models"
+community: "AI Dev Jobs Discovery Provider"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Candidate_Schemas__Validation_Models
+  - community/AI_Dev_Jobs_Discovery_Provider
 ---
 
 # sync_replies()
 
 ## Connections
-- [[ReplyTrackerService]] - `calls` [EXTRACTED]
+- [[ReplyTrackerService]] - `uses` [INFERRED]
 - [[main.py]] - `contains` [EXTRACTED]
 - [[post]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models
+#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider

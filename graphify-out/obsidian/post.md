@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Candidate Schemas & Validation Models"
+community: "AI Dev Jobs Discovery Provider"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Candidate_Schemas__Validation_Models
+  - community/AI_Dev_Jobs_Discovery_Provider
 ---
 
 # post
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[sync_replies()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models
+#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider

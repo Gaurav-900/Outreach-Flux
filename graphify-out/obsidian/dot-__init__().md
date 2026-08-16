@@ -1,18 +1,17 @@
 ---
-source_file: "backend/app/services/matching.py"
+source_file: "backend/app/services/reply_tracker.py"
 type: "code"
-community: "Discovery Base Interfaces & Normalized Models"
-location: "L12"
+community: "Adzuna Discovery Adapter"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Discovery_Base_Interfaces__Normalized_Models
+  - community/Adzuna_Discovery_Adapter
 ---
 
 # .__init__()
 
 ## Connections
-- [[CandidateFile]] - `references` [EXTRACTED]
-- [[MatchingService]] - `method` [EXTRACTED]
+- [[ReplyTrackerService]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models
+#graphify/code #graphify/EXTRACTED #community/Adzuna_Discovery_Adapter

@@ -1,17 +1,21 @@
 ---
 type: community
-members: 4
+members: 8
 ---
 
 # Signalbase Discovery Adapter
 
-**Members:** 4 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Answer]] - document - graphify-out/memory/query_20260815_154958_how_many__env_files_we_have.md
-- [[Outcome]] - document - graphify-out/memory/query_20260815_154958_how_many__env_files_we_have.md
-- [[Q how many .env files we have]] - document - graphify-out/memory/query_20260815_154958_how_many__env_files_we_have.md
-- [[query_20260815_154958_how_many__env_files_we_have]] - document - graphify-out/memory/query_20260815_154958_how_many__env_files_we_have.md
+- [[@vitejsplugin-react]] - concept - frontend/README.md
+- [[@vitejsplugin-react-swc]] - concept - frontend/README.md
+- [[Oxlint]] - concept - frontend/README.md
+- [[React]] - concept - frontend/README.md
+- [[React Compiler]] - concept - frontend/README.md
+- [[TypeScript]] - concept - frontend/README.md
+- [[Vite]] - concept - frontend/README.md
+- [[frontendREADME]] - document - frontend/README.md
 
 ## Live Query (requires Dataview plugin)
 

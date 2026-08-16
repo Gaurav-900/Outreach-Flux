@@ -1,18 +1,17 @@
 ---
 source_file: "backend/app/providers/llm.py"
 type: "code"
-community: "Backend Application & Config Services"
-location: "L33"
+community: "Project Architecture & Implementation Phases"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # .name()
 
 ## Connections
-- [[LLMProvider]] - `method` [EXTRACTED]
-- [[The unique identifier for this provider._1]] - `rationale_for` [EXTRACTED]
+- [[GeminiAdapter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

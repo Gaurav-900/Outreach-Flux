@@ -1,21 +1,18 @@
 ---
-source_file: "backend/app/services/orchestrator.py"
+source_file: "backend/app/services/gmail.py"
 type: "code"
-community: "Discovery Base Interfaces & Normalized Models"
-location: "L27"
+community: "Research Service & Intelligence Layer"
+location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Discovery_Base_Interfaces__Normalized_Models
+  - community/Research_Service__Intelligence_Layer
 ---
 
 # .__init__()
 
 ## Connections
-- [[ContactService]] - `calls` [EXTRACTED]
-- [[DiscoveryOrchestrator]] - `method` [EXTRACTED]
-- [[MatchingService]] - `calls` [EXTRACTED]
-- [[ResearchService]] - `calls` [EXTRACTED]
-- [[get_candidate_profile()]] - `calls` [EXTRACTED]
+- [[dot-_authenticate()]] - `calls` [EXTRACTED]
+- [[GmailService]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models
+#graphify/code #graphify/EXTRACTED #community/Research_Service__Intelligence_Layer

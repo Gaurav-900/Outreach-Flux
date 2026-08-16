@@ -1,24 +1,23 @@
 ---
 source_file: "backend/app/services/automation.py"
 type: "code"
-community: "Candidate Schemas & Validation Models"
+community: "Project Architecture & Implementation Phases"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Candidate_Schemas__Validation_Models
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # AutomationOrchestrator
 
 ## Connections
-- [[dot-__init__()_5]] - `method` [EXTRACTED]
+- [[dot-__init__()_4]] - `method` [EXTRACTED]
 - [[dot-_process_follow_ups()]] - `method` [EXTRACTED]
 - [[dot-_run_discovery()]] - `method` [EXTRACTED]
 - [[dot-run_automation_tick()]] - `method` [EXTRACTED]
-- [[GmailService]] - `uses` [INFERRED]
-- [[ReplyTrackerService]] - `uses` [INFERRED]
+- [[OutreachGeneratorService]] - `uses` [INFERRED]
 - [[automation.py]] - `contains` [EXTRACTED]
 - [[scheduler.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models
+#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

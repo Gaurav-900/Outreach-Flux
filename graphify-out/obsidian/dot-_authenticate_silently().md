@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/services/reply_tracker.py"
 type: "code"
-community: "Candidate Schemas & Validation Models"
+community: "Adzuna Discovery Adapter"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Candidate_Schemas__Validation_Models
+  - community/Adzuna_Discovery_Adapter
 ---
 
 # ._authenticate_silently()
@@ -15,4 +15,4 @@ tags:
 - [[dot-check_for_replies()]] - `calls` [EXTRACTED]
 - [[ReplyTrackerService]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models
+#graphify/code #graphify/EXTRACTED #community/Adzuna_Discovery_Adapter

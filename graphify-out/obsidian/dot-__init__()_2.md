@@ -1,19 +1,17 @@
 ---
-source_file: "backend/app/services/outreach_generator.py"
+source_file: "backend/app/services/sending_policy.py"
 type: "code"
-community: "Backend Application & Config Services"
-location: "L12"
+community: "Research Service & Intelligence Layer"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Research_Service__Intelligence_Layer
 ---
 
 # .__init__()
 
 ## Connections
-- [[DeepSeekAdapter]] - `calls` [EXTRACTED]
-- [[GeminiAdapter]] - `calls` [EXTRACTED]
-- [[OutreachGeneratorService]] - `method` [EXTRACTED]
+- [[SendingOrchestrator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Research_Service__Intelligence_Layer

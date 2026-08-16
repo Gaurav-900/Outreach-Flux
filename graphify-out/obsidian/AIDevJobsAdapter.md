@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/aidevjobs.py"
 type: "code"
-community: "Project Architecture & Implementation Phases"
+community: "Candidate Schemas & Validation Models"
 location: "L7"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Project_Architecture__Implementation_Phases
+  - graphify/INFERRED
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # AIDevJobsAdapter
@@ -21,6 +21,5 @@ tags:
 - [[NormalizedOpportunity]] - `uses` [INFERRED]
 - [[ProviderSearchResult]] - `uses` [INFERRED]
 - [[aidevjobs.py]] - `contains` [EXTRACTED]
-- [[orchestrator.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases
+#graphify/code #graphify/INFERRED #community/Candidate_Schemas__Validation_Models

@@ -1,17 +1,17 @@
 ---
-source_file: "backend/app/providers/llm.py"
+source_file: "backend/app/providers/tomba.py"
 type: "code"
-community: "Backend Application & Config Services"
-location: "L104"
+community: "Discovery Base Interfaces & Normalized Models"
+location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Discovery_Base_Interfaces__Normalized_Models
 ---
 
 # .name()
 
 ## Connections
-- [[DeepSeekAdapter]] - `method` [EXTRACTED]
+- [[TombaAdapter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models

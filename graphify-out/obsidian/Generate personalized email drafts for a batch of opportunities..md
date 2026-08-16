@@ -1,17 +1,17 @@
 ---
 source_file: "backend/app/providers/llm.py"
 type: "rationale"
-community: "Backend Application & Config Services"
+community: "Project Architecture & Implementation Phases"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # Generate personalized email drafts for a batch of opportunities.
 
 ## Connections
-- [[dot-generate_drafts()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-generate_drafts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/rationale #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

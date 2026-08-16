@@ -1,14 +1,16 @@
 ---
 type: community
-members: 1
+members: 3
 ---
 
 # Frontend Supabase Client
 
-**Members:** 1 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[Any]] - code
+- [[dot-research_opportunity()]] - code - backend/app/services/research.py
+- [[ResearchService]] - code - backend/app/services/research.py
+- [[research.py]] - code - backend/app/services/research.py
 
 ## Live Query (requires Dataview plugin)
 

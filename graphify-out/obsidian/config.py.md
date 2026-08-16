@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/core/config.py"
 type: "code"
-community: "Discovery Base Interfaces & Normalized Models"
+community: "AI Dev Jobs Discovery Provider"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Discovery_Base_Interfaces__Normalized_Models
+  - community/AI_Dev_Jobs_Discovery_Provider
 ---
 
 # config.py
@@ -15,4 +15,4 @@ tags:
 - [[CandidateFile]] - `imports` [EXTRACTED]
 - [[get_candidate_profile()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models
+#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider

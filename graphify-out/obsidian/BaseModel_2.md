@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "Backend Application & Config Services"
+community: "Project Memory & Root Documentation"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Project_Memory__Root_Documentation
 ---
 
 # BaseModel
 
 ## Connections
-- [[EmailBatchResponse]] - `inherits` [EXTRACTED]
-- [[EmailDraft]] - `inherits` [EXTRACTED]
-- [[OpportunityContext]] - `inherits` [EXTRACTED]
+- [[MatchResult]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Project_Memory__Root_Documentation

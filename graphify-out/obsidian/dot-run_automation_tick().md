@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/services/automation.py"
 type: "code"
-community: "Candidate Schemas & Validation Models"
+community: "Project Architecture & Implementation Phases"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Candidate_Schemas__Validation_Models
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # .run_automation_tick()
@@ -16,4 +16,4 @@ tags:
 - [[dot-_run_discovery()]] - `calls` [EXTRACTED]
 - [[AutomationOrchestrator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models
+#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

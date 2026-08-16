@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/base.py"
 type: "rationale"
-community: "Project Architecture & Implementation Phases"
+community: "Candidate Schemas & Validation Models"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Project_Architecture__Implementation_Phases
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # Execute a search against the provider.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-search()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases
+#graphify/rationale #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

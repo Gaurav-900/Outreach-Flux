@@ -1,11 +1,11 @@
 ---
 source_file: "frontend/README.md"
 type: "document"
-community: "Project Memory & Root Documentation"
+community: "Signalbase Discovery Adapter"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Memory__Root_Documentation
+  - community/Signalbase_Discovery_Adapter
 ---
 
 # frontend/README.md
@@ -19,4 +19,4 @@ tags:
 - [[TypeScript]] - `documents_technology` [EXTRACTED]
 - [[Vite]] - `documents_technology` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Memory__Root_Documentation
+#graphify/document #graphify/EXTRACTED #community/Signalbase_Discovery_Adapter

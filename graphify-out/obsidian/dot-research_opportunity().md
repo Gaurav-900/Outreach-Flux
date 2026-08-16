@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/services/research.py"
 type: "code"
-community: "Discovery Base Interfaces & Normalized Models"
+community: "Frontend Supabase Client"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Discovery_Base_Interfaces__Normalized_Models
+  - community/Frontend_Supabase_Client
 ---
 
 # .research_opportunity()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ResearchService]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models
+#graphify/code #graphify/EXTRACTED #community/Frontend_Supabase_Client

@@ -17,6 +17,9 @@ function App() {
   })
 
   const [timeline, setTimeline] = useState<any[]>([])
+  const [recentOpps, setRecentOpps] = useState<any[]>([])
+  const [allCompanies, setAllCompanies] = useState<any[]>([])
+  const [selectedDraft, setSelectedDraft] = useState<{id: string, subject: string, body: string, to: string} | null>(null)
   const [isSyncing, setIsSyncing] = useState(false)
   const [lastSyncTime, setLastSyncTime] = useState<string>('Never')
 
@@ -62,7 +65,7 @@ function App() {
       const { data: timelineData } = await supabase
         .from('outreach')
         .select(`
-          id, subject, status, reply_status, updated_at, error_message,
+          id, subject, body, status, reply_status, updated_at, error_message,
           companies ( name ),
           opportunities ( title ),
           contacts ( email )
@@ -77,6 +80,27 @@ function App() {
       if (appState && appState.value?.timestamp) {
         setLastSyncTime(new Date(appState.value.timestamp).toLocaleString())
       }
+
+      // 5. Fetch Recent Opportunities
+      const { data: recentData } = await supabase
+        .from('opportunities')
+        .select(`
+          id, title, application_url, status, created_at,
+          companies ( name )
+        `)
+        .order('created_at', { ascending: false })
+        .limit(10)
+        
+      if (recentData) setRecentOpps(recentData)
+
+      // 6. Fetch Discovered Companies
+      const { data: companiesData } = await supabase
+        .from('companies')
+        .select('*')
+        .order('created_at', { ascending: false })
+        .limit(50)
+
+      if (companiesData) setAllCompanies(companiesData)
 
     } catch (error) {
       console.error('Error fetching dashboard data:', error)
@@ -100,6 +124,22 @@ function App() {
       alert('Failed to sync replies. Make sure backend is running.')
     } finally {
       setIsSyncing(false)
+    }
+  }
+
+  const handleApprove = async (id: string) => {
+    try {
+      const { error } = await supabase
+        .from('outreach')
+        .update({ status: 'APPROVED' })
+        .eq('id', id);
+        
+      if (error) throw error;
+      
+      await fetchDashboardData();
+    } catch (error) {
+      console.error('Failed to approve draft:', error);
+      alert('Failed to approve draft.');
     }
   }
 
@@ -149,6 +189,46 @@ function App() {
         </div>
       </section>
 
+      <section className="recent-section">
+        <h2>Recent Discoveries</h2>
+        <div className="table-container">
+          <table className="recent-table">
+            <thead>
+              <tr>
+                <th>Discovered</th>
+                <th>Company</th>
+                <th>Job Title</th>
+                <th>Status</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              {recentOpps.length === 0 ? (
+                <tr><td colSpan={5} style={{textAlign: 'center'}}>No jobs discovered yet.</td></tr>
+              ) : (
+                recentOpps.map((opp) => (
+                  <tr key={opp.id}>
+                    <td>{new Date(opp.created_at).toLocaleDateString()}</td>
+                    <td>{opp.companies?.name || 'Unknown'}</td>
+                    <td>{opp.title}</td>
+                    <td>
+                      <span className={`badge status-${opp.status.toLowerCase()}`}>
+                        {opp.status}
+                      </span>
+                    </td>
+                    <td>
+                      {opp.application_url ? (
+                        <a href={opp.application_url} target="_blank" rel="noopener noreferrer" style={{color: 'var(--accent)', textDecoration: 'none'}}>View Job</a>
+                      ) : '-'}
+                    </td>
+                  </tr>
+                ))
+              )}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       <section className="timeline-section">
         <h2>Outreach Timeline</h2>
         <div className="table-container">
@@ -162,11 +242,12 @@ function App() {
                 <th>Status</th>
                 <th>Reply Status</th>
                 <th>Notes</th>
+                <th>Actions</th>
               </tr>
             </thead>
             <tbody>
               {timeline.length === 0 ? (
-                <tr><td colSpan={7} style={{textAlign: 'center'}}>No outreach records found.</td></tr>
+                <tr><td colSpan={8} style={{textAlign: 'center'}}>No outreach records found.</td></tr>
               ) : (
                 timeline.map((row) => (
                   <tr key={row.id}>
@@ -187,6 +268,25 @@ function App() {
                       ) : '-'}
                     </td>
                     <td className="error-text">{row.error_message || ''}</td>
+                    <td>
+                      {row.status === 'DRAFT' && (
+                        <div style={{ display: 'flex', gap: '8px' }}>
+                          <button 
+                            className="btn-approve"
+                            style={{ background: 'linear-gradient(135deg, #3b82f6, #2563eb)', boxShadow: '0 2px 4px rgba(37, 99, 235, 0.2)' }}
+                            onClick={() => setSelectedDraft({id: row.id, subject: row.subject, body: row.body, to: row.contacts?.email || 'Hiring Team'})}
+                          >
+                            View
+                          </button>
+                          <button 
+                            className="btn-approve"
+                            onClick={() => handleApprove(row.id)}
+                          >
+                            Approve
+                          </button>
+                        </div>
+                      )}
+                    </td>
                   </tr>
                 ))
               )}
@@ -194,6 +294,81 @@ function App() {
           </table>
         </div>
       </section>
+
+      <section className="companies-section" style={{ marginBottom: '3rem' }}>
+        <h2>Discovered Companies Directory</h2>
+        <div className="table-container">
+          <table className="recent-table">
+            <thead>
+              <tr>
+                <th>Discovered</th>
+                <th>Company</th>
+                <th>Industry</th>
+                <th>Location</th>
+                <th>Website</th>
+              </tr>
+            </thead>
+            <tbody>
+              {allCompanies.length === 0 ? (
+                <tr><td colSpan={5} style={{textAlign: 'center'}}>No companies discovered yet.</td></tr>
+              ) : (
+                allCompanies.map((company) => (
+                  <tr key={company.id}>
+                    <td>{new Date(company.created_at).toLocaleDateString()}</td>
+                    <td><strong>{company.name}</strong></td>
+                    <td>{company.industry || '-'}</td>
+                    <td>{company.location || '-'}</td>
+                    <td>
+                      {company.website ? (
+                        <a href={company.website} target="_blank" rel="noopener noreferrer" style={{color: 'var(--accent)', textDecoration: 'none'}}>Visit Site</a>
+                      ) : '-'}
+                    </td>
+                  </tr>
+                ))
+              )}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {selectedDraft && (
+        <div className="modal-overlay" onClick={() => setSelectedDraft(null)}>
+          <div className="email-client-modal" onClick={e => e.stopPropagation()}>
+            <div className="email-header">
+              <div className="email-header-top">
+                <h3>New Message</h3>
+                <button className="modal-close" onClick={() => setSelectedDraft(null)}>×</button>
+              </div>
+              <div className="email-meta">
+                <div className="email-meta-row">
+                  <span className="meta-label">To</span>
+                  <span className="meta-value">{selectedDraft.to}</span>
+                </div>
+                <div className="email-meta-row">
+                  <span className="meta-label">From</span>
+                  <span className="meta-value">Gaurav Sharma &lt;worksforgauravsharma@gmail.com&gt;</span>
+                </div>
+                <div className="email-meta-row subject-row">
+                  <span className="meta-label">Subject</span>
+                  <span className="meta-value subject-value">{selectedDraft.subject}</span>
+                </div>
+              </div>
+            </div>
+            <div className="email-body">
+              {selectedDraft.body}
+            </div>
+            <div className="email-footer">
+              <button className="btn-send-email" onClick={() => {
+                handleApprove(selectedDraft.id);
+                setSelectedDraft(null);
+              }}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: '8px'}}><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                Approve & Send
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

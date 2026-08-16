@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/services/orchestrator.py"
 type: "code"
-community: "Discovery Base Interfaces & Normalized Models"
-location: "L88"
+community: "AI Dev Jobs Discovery Provider"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Discovery_Base_Interfaces__Normalized_Models
+  - community/AI_Dev_Jobs_Discovery_Provider
 ---
 
 # .process_opportunity()
@@ -15,4 +15,4 @@ tags:
 - [[dot-run_discovery_for_profile()]] - `calls` [EXTRACTED]
 - [[DiscoveryOrchestrator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models
+#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider

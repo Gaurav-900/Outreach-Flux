@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Project Architecture & Implementation Phases"
+community: "Candidate Schemas & Validation Models"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Project_Architecture__Implementation_Phases
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # BaseModel
@@ -16,4 +16,4 @@ tags:
 - [[NormalizedOpportunity]] - `inherits` [EXTRACTED]
 - [[ProviderSearchResult]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

@@ -1,19 +1,17 @@
 ---
 source_file: "backend/app/services/contact.py"
 type: "code"
-community: "AI Dev Jobs Discovery Provider"
+community: "Free Hire Discovery Adapter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AI_Dev_Jobs_Discovery_Provider
+  - community/Free_Hire_Discovery_Adapter
 ---
 
 # services/contact.py
 
 ## Connections
 - [[ContactService]] - `contains` [EXTRACTED]
-- [[NormalizedContact]] - `imports` [EXTRACTED]
-- [[TombaAdapter]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider
+#graphify/code #graphify/EXTRACTED #community/Free_Hire_Discovery_Adapter

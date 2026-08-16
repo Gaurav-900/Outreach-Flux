@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "Candidate Schemas & Validation Models"
+community: "Project Memory & Root Documentation"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Candidate_Schemas__Validation_Models
+  - community/Project_Memory__Root_Documentation
 ---
 
 # Any
 
 ## Connections
-- [[dot-check_for_replies()]] - `references` [EXTRACTED]
+- [[dot-evaluate_opportunity()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models
+#graphify/code #graphify/EXTRACTED #community/Project_Memory__Root_Documentation

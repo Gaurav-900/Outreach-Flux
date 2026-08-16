@@ -1,18 +1,18 @@
 ---
 source_file: "backend/app/providers/llm.py"
 type: "code"
-community: "Backend Application & Config Services"
+community: "Project Architecture & Implementation Phases"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # EmailBatchResponse
 
 ## Connections
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[BaseModel_1]] - `inherits` [EXTRACTED]
 - [[llm.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

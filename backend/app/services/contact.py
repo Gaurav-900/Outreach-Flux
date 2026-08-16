@@ -79,6 +79,14 @@ class ContactService:
                     'last_run_at': datetime.now(timezone.utc).isoformat()
                 }).execute()
                 print(f"[ContactService] Contact discovery completed for {company_id}. Found {len(contacts_found)} contacts.")
+                
+                # If we found contacts, update MATCHED opportunities to READY_FOR_OUTREACH
+                if contacts_found:
+                    supabase.table('opportunities').update({
+                        'status': 'READY_FOR_OUTREACH',
+                        'updated_at': datetime.now(timezone.utc).isoformat()
+                    }).eq('company_id', company_id).eq('status', 'MATCHED').execute()
+                    print(f"[ContactService] Updated MATCHED opportunities to READY_FOR_OUTREACH for company {company_id}.")
             except Exception as e:
                 print(f"[ContactService] Error setting COMPLETED state: {e}")
 

@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/services/reply_tracker.py"
 type: "rationale"
-community: "Candidate Schemas & Validation Models"
+community: "Adzuna Discovery Adapter"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Candidate_Schemas__Validation_Models
+  - community/Adzuna_Discovery_Adapter
 ---
 
 # Deterministic heuristic classifier for auto vs human replies.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_classify_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models
+#graphify/rationale #graphify/EXTRACTED #community/Adzuna_Discovery_Adapter

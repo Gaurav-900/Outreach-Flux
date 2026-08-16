@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/base.py"
 type: "code"
-community: "Frontend React Entrypoint & UI"
+community: "Candidate Schemas & Validation Models"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Frontend_React_Entrypoint__UI
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # .name()
@@ -15,4 +15,4 @@ tags:
 - [[IDiscoveryProvider]] - `method` [EXTRACTED]
 - [[The unique identifier for this provider.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Frontend_React_Entrypoint__UI
+#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

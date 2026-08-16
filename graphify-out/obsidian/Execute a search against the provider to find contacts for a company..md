@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/contact.py"
 type: "rationale"
-community: "AI Dev Jobs Discovery Provider"
+community: "Discovery Base Interfaces & Normalized Models"
 location: "L19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AI_Dev_Jobs_Discovery_Provider
+  - community/Discovery_Base_Interfaces__Normalized_Models
 ---
 
 # Execute a search against the provider to find contacts for a company.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-find_contacts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider
+#graphify/rationale #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models

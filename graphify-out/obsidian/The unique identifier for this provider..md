@@ -1,12 +1,12 @@
 ---
 source_file: "backend/app/providers/base.py"
 type: "rationale"
-community: "Frontend React Entrypoint & UI"
+community: "Candidate Schemas & Validation Models"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Frontend_React_Entrypoint__UI
+  - community/Candidate_Schemas__Validation_Models
 ---
 
 # The unique identifier for this provider.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-name()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Frontend_React_Entrypoint__UI
+#graphify/rationale #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models

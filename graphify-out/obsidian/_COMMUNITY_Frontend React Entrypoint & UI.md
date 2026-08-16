@@ -1,15 +1,18 @@
 ---
 type: community
-members: 2
+members: 5
 ---
 
 # Frontend React Entrypoint & UI
 
-**Members:** 2 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[dot-name()_3]] - code - backend/app/providers/base.py
-- [[The unique identifier for this provider.]] - rationale - backend/app/providers/base.py
+- [[App()]] - code - frontend/src/App.tsx
+- [[App.tsx]] - code - frontend/src/App.tsx
+- [[main.tsx]] - code - frontend/src/main.tsx
+- [[supabase]] - code - frontend/src/lib/supabase.ts
+- [[supabase.ts]] - code - frontend/src/lib/supabase.ts
 
 ## Live Query (requires Dataview plugin)
 
@@ -17,9 +20,3 @@ members: 2
 TABLE source_file, type FROM #community/Frontend_React_Entrypoint__UI
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Project Architecture & Implementation Phases]]
-
-## Top bridge nodes
-- [[dot-name()_3]] - degree 2, connects to 1 community

@@ -1,17 +1,17 @@
 ---
 source_file: "backend/app/providers/llm.py"
 type: "rationale"
-community: "Backend Application & Config Services"
+community: "Project Architecture & Implementation Phases"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Backend_Application__Config_Services
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # Determines if the provider is currently available.
 
 ## Connections
-- [[dot-is_available()_8]] - `rationale_for` [EXTRACTED]
+- [[dot-is_available()_7]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Backend_Application__Config_Services
+#graphify/rationale #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

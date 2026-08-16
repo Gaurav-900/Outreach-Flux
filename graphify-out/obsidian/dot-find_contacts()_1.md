@@ -1,19 +1,19 @@
 ---
 source_file: "backend/app/providers/tomba.py"
 type: "code"
-community: "AI Dev Jobs Discovery Provider"
+community: "Discovery Base Interfaces & Normalized Models"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AI_Dev_Jobs_Discovery_Provider
+  - community/Discovery_Base_Interfaces__Normalized_Models
 ---
 
 # .find_contacts()
 
 ## Connections
-- [[dot-is_available()_10]] - `calls` [EXTRACTED]
+- [[dot-is_available()_6]] - `calls` [EXTRACTED]
 - [[NormalizedContact]] - `references` [EXTRACTED]
 - [[TombaAdapter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider
+#graphify/code #graphify/EXTRACTED #community/Discovery_Base_Interfaces__Normalized_Models

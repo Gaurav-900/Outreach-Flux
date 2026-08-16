@@ -1,17 +1,19 @@
 ---
-source_file: "backend/app/services/reply_tracker.py"
+source_file: "backend/app/services/outreach_generator.py"
 type: "code"
-community: "Candidate Schemas & Validation Models"
-location: "L15"
+community: "Project Architecture & Implementation Phases"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Candidate_Schemas__Validation_Models
+  - community/Project_Architecture__Implementation_Phases
 ---
 
 # .__init__()
 
 ## Connections
-- [[ReplyTrackerService]] - `method` [EXTRACTED]
+- [[DeepSeekAdapter]] - `calls` [EXTRACTED]
+- [[GeminiAdapter]] - `calls` [EXTRACTED]
+- [[OutreachGeneratorService]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models
+#graphify/code #graphify/EXTRACTED #community/Project_Architecture__Implementation_Phases

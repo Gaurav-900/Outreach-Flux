@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Candidate Schemas & Validation Models"
+community: "AI Dev Jobs Discovery Provider"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Candidate_Schemas__Validation_Models
+  - community/AI_Dev_Jobs_Discovery_Provider
 ---
 
 # FastAPI
@@ -14,4 +14,4 @@ tags:
 - [[lifespan()]] - `references` [EXTRACTED]
 - [[main.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Candidate_Schemas__Validation_Models
+#graphify/code #graphify/EXTRACTED #community/AI_Dev_Jobs_Discovery_Provider
