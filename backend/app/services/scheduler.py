@@ -30,7 +30,8 @@ def start_scheduler():
     scheduler = AsyncIOScheduler(timezone='UTC')
     
     # "*/30 * * * *" = Every 30 minutes
-    scheduler.add_job(run_discovery_tick, CronTrigger.from_crontab('*/30 * * * *'))
+    # misfire_grace_time=None ensures it runs even if the event loop was busy and delayed the trigger
+    scheduler.add_job(run_discovery_tick, CronTrigger.from_crontab('*/30 * * * *'), misfire_grace_time=None, coalesce=True)
     scheduler.start()
     
     if os.environ.get('RUN_DISCOVERY_ON_STARTUP') == 'true':
