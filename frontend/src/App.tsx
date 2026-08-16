@@ -88,8 +88,8 @@ function App() {
       const { data: appState } = await supabase.from('app_state').select('value').eq('key', 'last_reply_check').single()
       if (appState && appState.value?.timestamp) {
         const d = new Date(appState.value.timestamp);
-        const timeString = d.toLocaleString('en-IN', { 
-          timeZone: 'Asia/Kolkata', 
+        const timeString = d.toLocaleString('en-US', { 
+          timeZone: 'UTC', 
           month: 'short', 
           day: 'numeric', 
           hour: '2-digit', 
@@ -97,7 +97,7 @@ function App() {
           second: '2-digit',
           hour12: true 
         });
-        setLastSyncTime(`${timeString} IST`);
+        setLastSyncTime(`${timeString} UTC`);
       }
 
       // 5. Fetch Recent Opportunities
