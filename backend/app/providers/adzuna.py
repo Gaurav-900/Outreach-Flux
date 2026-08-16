@@ -1,7 +1,7 @@
 import os
 import httpx
 from typing import Optional
-from app.providers.base import IDiscoveryProvider, NormalizedOpportunity, ProviderSearchResult, NormalizedCompany
+from app.providers.base import IDiscoveryProvider, CompanyTarget, ProviderSearchResult, NormalizedCompany
 from app.models.candidate import DiscoveryProfile
 
 class AdzunaAdapter(IDiscoveryProvider):
@@ -41,34 +41,36 @@ class AdzunaAdapter(IDiscoveryProvider):
                 
             results = data.get('results', [])
             
-            opportunities = []
+            companies = []
+            seen_companies = set()
             for job in results:
                 company_data = job.get('company') or {}
+                company_name = company_data.get('display_name', 'Unknown Company')
+                
+                if company_name in seen_companies or company_name == 'Unknown Company':
+                    continue
+                seen_companies.add(company_name)
+                    
                 location_data = job.get('location') or {}
                 location_name = location_data.get('display_name')
                 
                 company = NormalizedCompany(
-                    name=company_data.get('display_name', 'Unknown Company'),
+                    name=company_name,
                     location=location_name
                 )
                 
-                opportunities.append(NormalizedOpportunity(
+                companies.append(CompanyTarget(
                     provider=self.name,
-                    external_id=str(job.get('id')),
+                    external_id=f"{self.name}_{company_name.lower().replace(' ', '_')}",
                     source_url=job.get('redirect_url'),
                     source_metadata=job,
-                    company=company,
-                    title=job.get('title'),
-                    description=job.get('description'),
-                    location=location_name,
-                    application_url=job.get('redirect_url'),
-                    published_at=job.get('created')
+                    company=company
                 ))
                 
             has_next_page = (page * limit) < data.get('count', 0)
             
             return ProviderSearchResult(
-                opportunities=opportunities,
+                companies=companies,
                 nextCursor=str(page + 1) if has_next_page else None
             )
             

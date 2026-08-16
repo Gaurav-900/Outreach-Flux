@@ -64,9 +64,9 @@ class ContactService:
                         'name': contact.name,
                         'role': contact.role,
                         'email': contact.email.lower().strip(),
-                        'phone': contact.phone,
                         'source_url': contact.source_url,
-                        'discovery_method': contact.discovery_method
+                        'discovery_method': contact.discovery_method,
+                        'verification_status': 'PENDING'
                     }, on_conflict='company_id,email').execute()
                 except Exception as e:
                     print(f"[ContactService] Failed to insert contact {contact.email}: {e}")
@@ -80,13 +80,12 @@ class ContactService:
                 }).execute()
                 print(f"[ContactService] Contact discovery completed for {company_id}. Found {len(contacts_found)} contacts.")
                 
-                # If we found contacts, update MATCHED opportunities to READY_FOR_OUTREACH
+                # If we found contacts, update company outreach status
                 if contacts_found:
-                    supabase.table('opportunities').update({
-                        'status': 'READY_FOR_OUTREACH',
-                        'updated_at': datetime.now(timezone.utc).isoformat()
-                    }).eq('company_id', company_id).eq('status', 'MATCHED').execute()
-                    print(f"[ContactService] Updated MATCHED opportunities to READY_FOR_OUTREACH for company {company_id}.")
+                    supabase.table('companies').update({
+                        'outreach_status': 'READY_FOR_OUTREACH'
+                    }).eq('id', company_id).execute()
+                    print(f"[ContactService] Marked company {company_id} as READY_FOR_OUTREACH.")
             except Exception as e:
                 print(f"[ContactService] Error setting COMPLETED state: {e}")
 

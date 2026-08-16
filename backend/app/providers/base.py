@@ -11,29 +11,23 @@ class NormalizedCompany(BaseModel):
     description: Optional[str] = None
     careers_url: Optional[str] = None
 
-class NormalizedOpportunity(BaseModel):
+class CompanyTarget(BaseModel):
     provider: str
     external_id: str
     source_url: Optional[str] = None
     source_metadata: Any
     company: NormalizedCompany
-    title: str
-    description: Optional[str] = None
-    location: Optional[str] = None
-    application_url: Optional[str] = None
-    published_at: Optional[str] = None
 
 class NormalizedContact(BaseModel):
     name: Optional[str] = None
     role: Optional[str] = None
     email: str
-    phone: Optional[str] = None
     source_url: Optional[str] = None
     discovery_method: str
 
 
 class ProviderSearchResult(BaseModel):
-    opportunities: List[NormalizedOpportunity]
+    companies: List[CompanyTarget]
     nextCursor: Optional[str] = None
 
 class IDiscoveryProvider(ABC):

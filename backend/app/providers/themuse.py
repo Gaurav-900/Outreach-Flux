@@ -1,7 +1,7 @@
 import os
 import httpx
 from typing import Optional
-from app.providers.base import IDiscoveryProvider, NormalizedOpportunity, ProviderSearchResult, NormalizedCompany
+from app.providers.base import IDiscoveryProvider, CompanyTarget, ProviderSearchResult, NormalizedCompany
 from app.models.candidate import DiscoveryProfile
 
 class TheMuseAdapter(IDiscoveryProvider):
@@ -34,36 +34,38 @@ class TheMuseAdapter(IDiscoveryProvider):
                 
             results = data.get('results', [])
             
-            opportunities = []
+            companies = []
+            seen_companies = set()
             for job in results:
                 company_data = job.get('company') or {}
+                company_name = company_data.get('name', 'Unknown Company')
+                
+                if company_name in seen_companies or company_name == 'Unknown Company':
+                    continue
+                seen_companies.add(company_name)
+                    
                 locations = job.get('locations') or []
                 location_name = locations[0].get('name') if locations else None
                 
                 company = NormalizedCompany(
-                    name=company_data.get('name', 'Unknown Company'),
+                    name=company_name,
                     location=location_name
                 )
                 
                 refs = job.get('refs') or {}
                 
-                opportunities.append(NormalizedOpportunity(
+                companies.append(CompanyTarget(
                     provider=self.name,
-                    external_id=str(job.get('id')),
+                    external_id=f"{self.name}_{company_name.lower().replace(' ', '_')}",
                     source_url=refs.get('landing_page'),
                     source_metadata=job,
-                    company=company,
-                    title=job.get('name'),
-                    description=job.get('contents'),
-                    location=location_name,
-                    application_url=refs.get('landing_page'),
-                    published_at=job.get('publication_date')
+                    company=company
                 ))
                 
             has_next_page = page < data.get('page_count', 0)
             
             return ProviderSearchResult(
-                opportunities=opportunities,
+                companies=companies,
                 nextCursor=str(page + 1) if has_next_page else None
             )
             

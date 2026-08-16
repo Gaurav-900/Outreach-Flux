@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 
 from app.core.supabase import supabase
 from app.core.config import get_candidate_profile
-from app.providers.llm import OpportunityContext, GeminiAdapter, DeepSeekAdapter, EmailDraft
+from app.providers.llm import CompanyContext, GeminiAdapter, DeepSeekAdapter, EmailDraft
 
 class OutreachGeneratorService:
     def __init__(self):
@@ -21,34 +21,34 @@ class OutreachGeneratorService:
     async def generate_batch(self):
         print(f"[OutreachGenerator] Starting generation batch. Max size: {self.batch_size}")
         
-        # 1. Fetch READY_FOR_OUTREACH opportunities that don't have drafts yet
-        # We fetch opportunities matching 'READY_FOR_OUTREACH'
-        res = supabase.table('opportunities').select('*, companies(*)').eq('status', 'READY_FOR_OUTREACH').limit(self.batch_size).execute()
-        opportunities = res.data
+        # 1. Fetch READY_FOR_OUTREACH companies that don't have drafts yet
+        res = supabase.table('companies').select('*').eq('outreach_status', 'READY_FOR_OUTREACH').limit(self.batch_size).execute()
+        companies = res.data
         
-        if not opportunities:
-            print("[OutreachGenerator] No opportunities ready for outreach.")
+        if not companies:
+            print("[OutreachGenerator] No companies ready for outreach.")
             return
 
-        print(f"[OutreachGenerator] Found {len(opportunities)} opportunities ready for outreach.")
+        print(f"[OutreachGenerator] Found {len(companies)} companies ready for outreach.")
         
         # 2. Prepare Contexts
         candidate_profile = get_candidate_profile()
-        # Create a simplified text representation of the profile
         candidate_text = candidate_profile.model_dump_json(exclude_none=True)
 
-        contexts: List[OpportunityContext] = []
-        valid_opps = []
+        # Assuming DiscoveryPreferences holds target location
+        profile_data = candidate_profile.model_dump(exclude_unset=True)
+        prefs = profile_data.get('discovery_preferences') or {}
+        locations = prefs.get('preferred_locations') or []
+        location_pref_str = ", ".join(locations) if locations else None
 
-        for opp in opportunities:
+        contexts: List[CompanyContext] = []
+        valid_companies = []
+
+        for company in companies:
             # Check if outreach already exists to prevent duplicate generation
-            existing = supabase.table('outreach').select('id').eq('opportunity_id', opp['id']).execute()
+            existing = supabase.table('outreach').select('id').eq('company_id', company['id']).execute()
             if existing.data:
-                print(f"[OutreachGenerator] Draft already exists for opportunity {opp['id']}. Skipping.")
-                continue
-
-            company = opp.get('companies')
-            if not company:
+                print(f"[OutreachGenerator] Draft already exists for company {company['id']}. Skipping.")
                 continue
             
             # Fetch research content
@@ -59,19 +59,17 @@ class OutreachGeneratorService:
             contact_res = supabase.table('contacts').select('*').eq('company_id', company['id']).limit(1).execute()
             contact = contact_res.data[0] if contact_res.data else None
             
-            ctx = OpportunityContext(
-                opportunity_id=opp['id'],
+            ctx = CompanyContext(
+                company_id=company['id'],
                 company_name=company.get('name', 'Unknown Company'),
-                job_title=opp.get('title', 'Open Role'),
-                job_description=opp.get('description'),
                 research_content=research_content,
                 contact_name=contact.get('name') if contact else None,
                 contact_role=contact.get('role') if contact else None,
-                candidate_profile=candidate_text
+                candidate_profile=candidate_text,
+                location_preference=location_pref_str
             )
             contexts.append(ctx)
-            valid_opps.append({
-                'opportunity_id': opp['id'],
+            valid_companies.append({
                 'company_id': company['id'],
                 'contact_id': contact['id'] if contact else None
             })
@@ -104,31 +102,29 @@ class OutreachGeneratorService:
         print(f"[OutreachGenerator] Successfully generated {len(drafts)} drafts.")
 
         # 4. Save Drafts & Update Status
-        draft_dict = {d.opportunity_id: d for d in drafts}
+        draft_dict = {d.company_id: d for d in drafts}
 
-        for opp_meta in valid_opps:
-            opp_id = opp_meta['opportunity_id']
-            draft = draft_dict.get(opp_id)
+        for comp_meta in valid_companies:
+            comp_id = comp_meta['company_id']
+            draft = draft_dict.get(comp_id)
             if not draft:
-                print(f"[OutreachGenerator] Missing draft for opportunity {opp_id}.")
+                print(f"[OutreachGenerator] Missing draft for company {comp_id}.")
                 continue
 
             try:
                 # Insert draft
                 supabase.table('outreach').insert({
-                    'company_id': opp_meta['company_id'],
-                    'opportunity_id': opp_id,
-                    'contact_id': opp_meta['contact_id'],
+                    'company_id': comp_id,
+                    'contact_id': comp_meta['contact_id'],
                     'subject': draft.subject,
                     'body': draft.body,
                     'status': 'DRAFT'
                 }).execute()
                 
-                # Update opportunity status
-                supabase.table('opportunities').update({
-                    'status': 'DRAFTED',
-                    'updated_at': datetime.now(timezone.utc).isoformat()
-                }).eq('id', opp_id).execute()
+                # Update company status
+                supabase.table('companies').update({
+                    'outreach_status': 'DRAFTED'
+                }).eq('id', comp_id).execute()
                 
             except Exception as e:
-                print(f"[OutreachGenerator] Failed to save draft for opportunity {opp_id}: {e}")
+                print(f"[OutreachGenerator] Failed to save draft for company {comp_id}: {e}")

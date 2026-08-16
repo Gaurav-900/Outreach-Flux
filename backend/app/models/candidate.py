@@ -56,12 +56,10 @@ class Skills(BaseModel, extra="allow"):
     automation_and_infrastructure: Optional[List[str]] = None
 
 class DiscoveryPreferences(BaseModel, extra="allow"):
-    target_roles: List[str]
-    preferred_locations: List[str]
-    target_seniority: List[str]
-    target_employment_types: List[str]
-    preferred_work_modes: List[str]
+    target_companies: Optional[List[str]] = None
     target_industries: List[str]
+    preferred_locations: List[str]
+    preferred_work_modes: List[str]
     priority_skills: List[str]
 
 class DiscoveryProfile(BaseModel, extra="allow"):

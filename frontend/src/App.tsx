@@ -9,7 +9,6 @@ function App() {
   const [authLoading, setAuthLoading] = useState(true)
   const [metrics, setMetrics] = useState({
     companies: 0,
-    opportunities: 0,
     relevant: 0,
     contacts: 0,
     drafts: 0,
@@ -21,11 +20,10 @@ function App() {
   })
 
   const [timeline, setTimeline] = useState<any[]>([])
-  const [recentOpps, setRecentOpps] = useState<any[]>([])
-  const [allCompanies, setAllCompanies] = useState<any[]>([])
+  const [targetCompanies, setTargetCompanies] = useState<any[]>([])
   const [selectedDraft, setSelectedDraft] = useState<{id: string, subject: string, body: string, to: string} | null>(null)
-  const [oppStatusFilter, setOppStatusFilter] = useState<string>('ALL')
-  const [oppSearch, setOppSearch] = useState<string>('')
+  const [companyStatusFilter, setCompanyStatusFilter] = useState<string>('ALL')
+  const [companySearch, setCompanySearch] = useState<string>('')
   const [timelineStatusFilter, setTimelineStatusFilter] = useState<string>('ALL')
   const [timelineSearch, setTimelineSearch] = useState<string>('')
   const [isSyncing, setIsSyncing] = useState(false)
@@ -35,10 +33,9 @@ function App() {
   const fetchDashboardData = async () => {
     try {
       // 1. Fetch generic counts
-      const [{ count: companiesCount }, { count: oppsCount }, { count: relevantCount }, { count: contactsCount }] = await Promise.all([
+      const [{ count: companiesCount }, { count: relevantCount }, { count: contactsCount }] = await Promise.all([
         supabase.from('companies').select('*', { count: 'exact', head: true }),
-        supabase.from('opportunities').select('*', { count: 'exact', head: true }),
-        supabase.from('opportunities').select('*', { count: 'exact', head: true }).in('status', ['READY_FOR_OUTREACH', 'DRAFTED']),
+        supabase.from('companies').select('*', { count: 'exact', head: true }).in('outreach_status', ['READY_FOR_OUTREACH', 'DRAFTED', 'APPROVED', 'SENT']),
         supabase.from('contacts').select('*', { count: 'exact', head: true })
       ])
 
@@ -61,7 +58,6 @@ function App() {
 
       setMetrics({
         companies: companiesCount || 0,
-        opportunities: oppsCount || 0,
         relevant: relevantCount || 0,
         contacts: contactsCount || 0,
         drafts, sent, failed,
@@ -76,7 +72,6 @@ function App() {
         .select(`
           id, subject, body, status, reply_status, updated_at, error_message,
           companies ( name ),
-          opportunities ( title ),
           contacts ( email )
         `)
         .order('updated_at', { ascending: false })
@@ -100,44 +95,32 @@ function App() {
         setLastSyncTime(`${timeString} UTC`);
       }
 
-      // 5. Fetch Recent Opportunities
+      // 5. Fetch Target Companies
       const { data: recentData } = await supabase
-        .from('opportunities')
-        .select(`
-          id, title, application_url, status, created_at,
-          companies ( name )
-        `)
+        .from('companies')
+        .select(`*`)
         .order('created_at', { ascending: false })
         .limit(100)
         
-      if (recentData) setRecentOpps(recentData)
-
-      // 6. Fetch Discovered Companies
-      const { data: companiesData } = await supabase
-        .from('companies')
-        .select('*')
-        .order('created_at', { ascending: false })
-        .limit(50)
-
-      if (companiesData) setAllCompanies(companiesData)
+      if (recentData) setTargetCompanies(recentData)
 
     } catch (error) {
       console.error('Error fetching dashboard data:', error)
     }
   }
 
-  const filteredOpps = recentOpps.filter(opp => {
-    const matchesStatus = oppStatusFilter === 'ALL' || opp.status === oppStatusFilter;
-    const matchesSearch = oppSearch === '' || 
-      opp.title.toLowerCase().includes(oppSearch.toLowerCase()) || 
-      (opp.companies?.name || '').toLowerCase().includes(oppSearch.toLowerCase());
+  const filteredCompanies = targetCompanies.filter(comp => {
+    const status = comp.outreach_status || 'NONE';
+    const matchesStatus = companyStatusFilter === 'ALL' || status === companyStatusFilter;
+    const matchesSearch = companySearch === '' || 
+      (comp.name || '').toLowerCase().includes(companySearch.toLowerCase()) || 
+      (comp.industry || '').toLowerCase().includes(companySearch.toLowerCase());
     return matchesStatus && matchesSearch;
   });
 
   const filteredTimeline = timeline.filter(row => {
     const matchesStatus = timelineStatusFilter === 'ALL' || row.status === timelineStatusFilter;
     const matchesSearch = timelineSearch === '' || 
-      (row.opportunities?.title || '').toLowerCase().includes(timelineSearch.toLowerCase()) || 
       (row.companies?.name || '').toLowerCase().includes(timelineSearch.toLowerCase()) ||
       (row.contacts?.email || '').toLowerCase().includes(timelineSearch.toLowerCase());
     return matchesStatus && matchesSearch;
@@ -201,7 +184,7 @@ function App() {
     try {
       if (!session) throw new Error('Not authenticated');
       
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000'
       const res = await fetch(`${apiUrl}/api/replies/sync`, { 
         method: 'POST',
         headers: {
@@ -227,6 +210,15 @@ function App() {
         .eq('id', id);
         
       if (error) throw error;
+      
+      // Trigger the backend to process the sending queue immediately
+      if (session) {
+        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000'
+        await fetch(`${apiUrl}/api/outreach/trigger-sending`, { 
+          method: 'POST',
+          headers: { 'Authorization': `Bearer ${session.access_token}` }
+        }).catch(err => console.error('Failed to trigger sending:', err));
+      }
       
       await fetchDashboardData();
     } catch (error) {
@@ -277,8 +269,7 @@ function App() {
           <h3>Discovery</h3>
           <ul>
             <li>Companies Found: <strong>{metrics.companies}</strong></li>
-            <li>Jobs Found: <strong>{metrics.opportunities}</strong></li>
-            <li>Relevant Opportunities: <strong>{metrics.relevant}</strong></li>
+            <li>Targeted for Outreach: <strong>{metrics.relevant}</strong></li>
             <li>Contacts Discovered: <strong>{metrics.contacts}</strong></li>
           </ul>
         </div>
@@ -302,68 +293,7 @@ function App() {
         </div>
       </section>
 
-      <section className="recent-section">
-        <div className="section-header-row" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.2rem' }}>
-          <h2 style={{ margin: 0 }}>Recent Discoveries</h2>
-          <div className="table-filter-bar" style={{ display: 'flex', gap: '0.8rem' }}>
-            <input 
-              type="text" 
-              placeholder="Search company or title..." 
-              value={oppSearch}
-              onChange={e => setOppSearch(e.target.value)}
-              className="filter-input"
-            />
-            <select 
-              value={oppStatusFilter} 
-              onChange={e => setOppStatusFilter(e.target.value)}
-              className="filter-select"
-            >
-              <option value="ALL">All Statuses</option>
-              <option value="MATCHED">Matched</option>
-              <option value="REJECTED">Rejected</option>
-              <option value="DRAFTED">Drafted</option>
-            </select>
-          </div>
-        </div>
-        <div className="table-container">
-          <table className="recent-table">
-            <thead>
-              <tr>
-                <th>Discovered</th>
-                <th>Company</th>
-                <th>Job Title</th>
-                <th>Status</th>
-                <th>Link</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredOpps.length === 0 ? (
-                <tr><td colSpan={5} style={{textAlign: 'center'}}>No matching jobs found.</td></tr>
-              ) : (
-                filteredOpps.map((opp) => (
-                  <tr key={opp.id}>
-                    <td>{new Date(opp.created_at).toLocaleDateString()}</td>
-                    <td>{opp.companies?.name || 'Unknown'}</td>
-                    <td>{opp.title}</td>
-                    <td>
-                      <span className={`badge status-${opp.status.toLowerCase()}`}>
-                        {opp.status}
-                      </span>
-                    </td>
-                    <td>
-                      {opp.application_url ? (
-                        <a href={opp.application_url} target="_blank" rel="noopener noreferrer" style={{color: 'var(--accent)', textDecoration: 'none'}}>View Job</a>
-                      ) : '-'}
-                    </td>
-                  </tr>
-                ))
-              )}
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section className="timeline-section">
+      <section className="timeline-section" style={{ marginBottom: '3rem' }}>
         <div className="section-header-row" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.2rem' }}>
           <h2 style={{ margin: 0 }}>Outreach Timeline</h2>
           <div className="table-filter-bar" style={{ display: 'flex', gap: '0.8rem' }}>
@@ -393,7 +323,6 @@ function App() {
               <tr>
                 <th>Date</th>
                 <th>Company</th>
-                <th>Job Title</th>
                 <th>Contact</th>
                 <th>Status</th>
                 <th>Reply Status</th>
@@ -403,13 +332,12 @@ function App() {
             </thead>
             <tbody>
               {filteredTimeline.length === 0 ? (
-                <tr><td colSpan={8} style={{textAlign: 'center'}}>No matching outreach records found.</td></tr>
+                <tr><td colSpan={7} style={{textAlign: 'center'}}>No matching outreach records found.</td></tr>
               ) : (
                 filteredTimeline.map((row) => (
                   <tr key={row.id}>
                     <td>{new Date(row.updated_at).toLocaleDateString()}</td>
                     <td>{row.companies?.name || 'Unknown'}</td>
-                    <td>{row.opportunities?.title || 'Unknown'}</td>
                     <td>{row.contacts?.email || 'N/A'}</td>
                     <td>
                       <span className={`badge status-${row.status.toLowerCase()}`}>
@@ -451,8 +379,30 @@ function App() {
         </div>
       </section>
 
-      <section className="companies-section" style={{ marginBottom: '3rem' }}>
-        <h2>Discovered Companies Directory</h2>
+      <section className="recent-section">
+        <div className="section-header-row" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.2rem' }}>
+          <h2 style={{ margin: 0 }}>Target Companies</h2>
+          <div className="table-filter-bar" style={{ display: 'flex', gap: '0.8rem' }}>
+            <input 
+              type="text" 
+              placeholder="Search company or industry..." 
+              value={companySearch}
+              onChange={e => setCompanySearch(e.target.value)}
+              className="filter-input"
+            />
+            <select 
+              value={companyStatusFilter} 
+              onChange={e => setCompanyStatusFilter(e.target.value)}
+              className="filter-select"
+            >
+              <option value="ALL">All Statuses</option>
+              <option value="NONE">None</option>
+              <option value="READY_FOR_OUTREACH">Ready</option>
+              <option value="DRAFTED">Drafted</option>
+              <option value="APPROVED">Approved</option>
+            </select>
+          </div>
+        </div>
         <div className="table-container">
           <table className="recent-table">
             <thead>
@@ -460,32 +410,41 @@ function App() {
                 <th>Discovered</th>
                 <th>Company</th>
                 <th>Industry</th>
-                <th>Location</th>
-                <th>Website</th>
+                <th>Status</th>
+                <th>Link</th>
               </tr>
             </thead>
             <tbody>
-              {allCompanies.length === 0 ? (
-                <tr><td colSpan={5} style={{textAlign: 'center'}}>No companies discovered yet.</td></tr>
+              {filteredCompanies.length === 0 ? (
+                <tr><td colSpan={5} style={{textAlign: 'center'}}>No matching companies found.</td></tr>
               ) : (
-                allCompanies.map((company) => (
-                  <tr key={company.id}>
-                    <td>{new Date(company.created_at).toLocaleDateString()}</td>
-                    <td><strong>{company.name}</strong></td>
-                    <td>{company.industry || '-'}</td>
-                    <td>{company.location || '-'}</td>
-                    <td>
-                      {company.website ? (
-                        <a href={company.website} target="_blank" rel="noopener noreferrer" style={{color: 'var(--accent)', textDecoration: 'none'}}>Visit Site</a>
-                      ) : '-'}
-                    </td>
-                  </tr>
-                ))
+                filteredCompanies.map((comp) => {
+                  const status = comp.outreach_status || 'NONE';
+                  return (
+                    <tr key={comp.id}>
+                      <td>{new Date(comp.created_at).toLocaleDateString()}</td>
+                      <td><strong>{comp.name}</strong></td>
+                      <td>{comp.industry || '-'}</td>
+                      <td>
+                        <span className={`badge status-${status.toLowerCase()}`}>
+                          {status}
+                        </span>
+                      </td>
+                      <td>
+                        {comp.website ? (
+                          <a href={comp.website} target="_blank" rel="noopener noreferrer" style={{color: 'var(--accent)', textDecoration: 'none'}}>Visit Site</a>
+                        ) : '-'}
+                      </td>
+                    </tr>
+                  )
+                })
               )}
             </tbody>
           </table>
         </div>
       </section>
+
+
 
       {selectedDraft && (
         <div className="modal-overlay" onClick={() => setSelectedDraft(null)}>

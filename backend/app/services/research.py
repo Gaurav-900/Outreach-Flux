@@ -33,11 +33,11 @@ class ResearchService:
             
             # Insert into Supabase
             # Using execute() as per supabase-py
-            supabase.table('company_research').insert({
+            supabase.table('company_research').upsert({
                 'company_id': company_id,
                 'source_url': url,
                 'content': content
-            }).execute()
+            }, on_conflict='company_id,source_url').execute()
             
             print(f"[ResearchService] Successfully researched {url}")
             

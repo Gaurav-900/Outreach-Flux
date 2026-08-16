@@ -1,6 +1,6 @@
 import httpx
 from typing import Optional
-from app.providers.base import IDiscoveryProvider, NormalizedOpportunity, ProviderSearchResult, NormalizedCompany
+from app.providers.base import IDiscoveryProvider, CompanyTarget, ProviderSearchResult, NormalizedCompany
 from app.models.candidate import DiscoveryProfile
 
 class FreeHireAdapter(IDiscoveryProvider):
@@ -37,7 +37,8 @@ class FreeHireAdapter(IDiscoveryProvider):
                 
             results = data.get('data', [])
             
-            opportunities = []
+            companies = []
+            seen_companies = set()
             for job in results:
                 company_data = job.get('company')
                 
@@ -52,23 +53,23 @@ class FreeHireAdapter(IDiscoveryProvider):
                 else:
                     company = NormalizedCompany(name='Unknown Company')
                     
-                opportunities.append(NormalizedOpportunity(
+                company_name = company.name
+                if company_name in seen_companies or company_name == 'Unknown Company':
+                    continue
+                seen_companies.add(company_name)
+                    
+                companies.append(CompanyTarget(
                     provider=self.name,
-                    external_id=str(job.get('id') or job.get('slug')),
+                    external_id=f"{self.name}_{company_name.lower().replace(' ', '_')}",
                     source_url=job.get('url'),
                     source_metadata=job,
-                    company=company,
-                    title=job.get('title'),
-                    description=job.get('description'),
-                    location=job.get('location'),
-                    application_url=job.get('application_url') or job.get('url'),
-                    published_at=job.get('published_at') or job.get('created_at')
+                    company=company
                 ))
                 
             has_next_page = len(results) == limit
             
             return ProviderSearchResult(
-                opportunities=opportunities,
+                companies=companies,
                 nextCursor=str(offset + limit) if has_next_page else None
             )
             

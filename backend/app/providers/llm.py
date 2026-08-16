@@ -10,22 +10,21 @@ except ImportError:
     genai = None
 
 class EmailDraft(BaseModel):
-    opportunity_id: str
+    company_id: str
     subject: str
     body: str
 
 class EmailBatchResponse(BaseModel):
     drafts: List[EmailDraft]
 
-class OpportunityContext(BaseModel):
-    opportunity_id: str
+class CompanyContext(BaseModel):
+    company_id: str
     company_name: str
-    job_title: str
-    job_description: Optional[str] = None
     research_content: Optional[str] = None
     contact_name: Optional[str] = None
     contact_role: Optional[str] = None
     candidate_profile: str
+    location_preference: Optional[str] = None
 
 class LLMProvider(ABC):
     @property
@@ -40,40 +39,38 @@ class LLMProvider(ABC):
         pass
 
     @abstractmethod
-    async def generate_drafts(self, contexts: List[OpportunityContext]) -> List[EmailDraft]:
-        """Generate personalized email drafts for a batch of opportunities."""
+    async def generate_drafts(self, contexts: List[CompanyContext]) -> List[EmailDraft]:
+        """Generate personalized email drafts for a batch of companies."""
         pass
 
-def _build_prompt(contexts: List[OpportunityContext]) -> str:
-    prompt = "You write short, natural job outreach emails using the provided candidate and company/job information.\n"
-    prompt += "Write like a real person, not an AI or a formal cover-letter generator.\n\n"
+def _build_prompt(contexts: List[CompanyContext]) -> str:
+    prompt = "You write short, natural speculative outreach emails for an engineer looking for a role at the provided company.\n"
+    prompt += "Write like a real person reaching out directly to a hiring manager or founder, not an AI.\n\n"
     prompt += "Rules:\n"
     prompt += "- Keep the email medium-short and easy to read.\n"
     prompt += "- Clearly mention the candidate's most relevant skills/experience.\n"
-    prompt += "- Personalize it using the actual company and job information provided.\n"
-    prompt += "- Explain naturally why the candidate is relevant to this specific opportunity.\n"
+    prompt += "- Explicitly state the candidate's location preference (e.g., remote, specific city) if provided.\n"
+    prompt += "- Explain naturally why the candidate would be a great fit for the company's domain or tech stack.\n"
     prompt += "- Use simple, conversational professional language.\n"
     prompt += "- Avoid generic phrases like 'I am writing to express my interest' or 'I hope this email finds you well.'\n"
     prompt += "- Do not exaggerate, invent skills, experience, achievements, or company information.\n"
     prompt += "- Do not repeat the resume unnecessarily.\n"
-    prompt += "- NEVER explicitly use the words 'Senior' or 'Mid level' in the email. Even if the job title says 'Senior Software Engineer', just refer to it as 'Software Engineer'.\n"
     prompt += "- Use proper paragraphs and line breaks (ensure they are properly escaped in the JSON output as \\n\\n for multiple paragraphs).\n"
     prompt += "- Do not use bullet points unless specifically useful.\n"
-    prompt += "- Keep the email concise enough that a recruiter will actually read it.\n"
-    prompt += "- End with a simple, natural call to action.\n"
+    prompt += "- Keep the email concise enough that a busy person will actually read it.\n"
+    prompt += "- End with a simple, natural call to action (e.g. asking for a brief chat if they are hiring).\n"
     prompt += "- Return only the email body. No subject line, explanation, or commentary.\n\n"
-    prompt += "Below is a list of opportunities with their context. Write a personalized email draft for each.\n"
+    prompt += "Below is a list of companies with their context. Write a personalized email draft for each.\n"
     prompt += "Ensure the output is a JSON array matching the requested schema.\n\n"
     for ctx in contexts:
-        prompt += f"Opportunity ID: {ctx.opportunity_id}\n"
+        prompt += f"Company ID: {ctx.company_id}\n"
         prompt += f"Company: {ctx.company_name}\n"
-        prompt += f"Job Title: {ctx.job_title}\n"
-        if ctx.job_description:
-            prompt += f"Job Description Summary: {ctx.job_description[:1000]}...\n"
         if ctx.research_content:
             prompt += f"Company Research: {ctx.research_content[:1500]}...\n"
         if ctx.contact_name:
             prompt += f"Contact Name: {ctx.contact_name} ({ctx.contact_role or 'Unknown role'})\n"
+        if ctx.location_preference:
+            prompt += f"Location Preference: {ctx.location_preference}\n"
         prompt += f"Candidate Profile Context: {ctx.candidate_profile[:2000]}...\n"
         prompt += "-" * 40 + "\n"
     return prompt
@@ -86,7 +83,7 @@ class GeminiAdapter(LLMProvider):
     def is_available(self) -> bool:
         return bool(os.getenv("GEMINI_API_KEY")) and genai is not None
 
-    async def generate_drafts(self, contexts: List[OpportunityContext]) -> List[EmailDraft]:
+    async def generate_drafts(self, contexts: List[CompanyContext]) -> List[EmailDraft]:
         if not self.is_available() or not contexts:
             return []
             
@@ -122,7 +119,7 @@ class DeepSeekAdapter(LLMProvider):
     def is_available(self) -> bool:
         return bool(os.getenv("DEEPSEEK_API_KEY"))
 
-    async def generate_drafts(self, contexts: List[OpportunityContext]) -> List[EmailDraft]:
+    async def generate_drafts(self, contexts: List[CompanyContext]) -> List[EmailDraft]:
         if not self.is_available() or not contexts:
             return []
             

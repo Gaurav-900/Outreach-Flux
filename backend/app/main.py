@@ -1,8 +1,10 @@
-from fastapi import FastAPI, HTTPException
+import os
+from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from app.services.scheduler import start_scheduler
 from app.services.reply_tracker import ReplyTrackerService
+from app.api.dependencies import get_current_user
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -12,9 +14,11 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="AI Job Outreach API", lifespan=lifespan)
 
+frontend_url = os.environ.get("FRONTEND_URL", "http://localhost:5173")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # Same as Express default config
+    allow_origins=[frontend_url], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -26,7 +30,7 @@ from app.core.config import get_candidate_profile
 async def health_check():
     return {"status": "ok", "message": "Backend is healthy (Python)"}
 
-@app.post("/api/replies/sync")
+@app.post("/api/replies/sync", dependencies=[Depends(get_current_user)])
 async def sync_replies():
     try:
         tracker = ReplyTrackerService()
@@ -35,7 +39,18 @@ async def sync_replies():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/api/candidate-profile")
+from app.services.sending_policy import SendingOrchestrator
+
+@app.post("/api/outreach/trigger-sending", dependencies=[Depends(get_current_user)])
+async def trigger_sending():
+    try:
+        sender = SendingOrchestrator()
+        sender.process_queue()
+        return {"status": "success", "message": "Queue processed."}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/api/candidate-profile", dependencies=[Depends(get_current_user)])
 async def get_candidate_profile_endpoint():
     profile = get_candidate_profile()
     

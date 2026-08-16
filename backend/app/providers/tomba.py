@@ -59,7 +59,6 @@ class TombaAdapter(ContactProvider):
                         name=full_name,
                         role=e.get("position") or e.get("department"),
                         email=email_addr,
-                        phone=e.get("phone_number"),
                         source_url=source_url,
                         discovery_method="Tomba"
                     ))

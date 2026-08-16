@@ -1,0 +1,16 @@
+{
+  "0": "DiscoveryProfile",
+  "1": "ReplyTrackerService",
+  "2": "OutreachGeneratorService",
+  "3": "NormalizedContact",
+  "4": "get_candidate_profile",
+  "5": "AutomationOrchestrator",
+  "6": "candidate.py",
+  "7": "frontend/README.md",
+  "8": "App.tsx",
+  "9": "Query: how many .env files we have?",
+  "10": "Q: how many .env files we have?",
+  "12": "README.md",
+  "13": "supabase.py",
+  "15": "vite.config.ts"
+}
