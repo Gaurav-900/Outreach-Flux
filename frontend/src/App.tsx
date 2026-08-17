@@ -257,7 +257,7 @@ function App() {
           </button>
           <button 
             onClick={handleLogout} 
-            style={{ padding: '0.6rem 1rem', background: 'transparent', border: '1px solid var(--border)', borderRadius: '6px', color: 'var(--text)', cursor: 'pointer' }}
+            className="btn-logout"
           >
             Logout
           </button>
@@ -356,8 +356,7 @@ function App() {
                       {row.status === 'DRAFT' && (
                         <div style={{ display: 'flex', gap: '8px' }}>
                           <button 
-                            className="btn-approve"
-                            style={{ background: 'linear-gradient(135deg, #3b82f6, #2563eb)', boxShadow: '0 2px 4px rgba(37, 99, 235, 0.2)' }}
+                            className="btn-view"
                             onClick={() => setSelectedDraft({id: row.id, subject: row.subject, body: row.body, to: row.contacts?.email || 'Hiring Team'})}
                           >
                             View
