@@ -45,6 +45,8 @@ config/resume.pdf
 config/resume.docx
 config/Gaurav_Sharma_resume.pdf
 backend/config/Gaurav_Sharma_resume.pdf
+config/Gaurav_Sharma_Resume.pdf
+backend/config/Gaurav_Sharma_Resume.pdf
 
 # OAuth / credentials
 credentials.json
