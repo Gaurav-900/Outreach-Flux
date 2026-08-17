@@ -27,12 +27,8 @@ class AutomationOrchestrator:
         except Exception as e:
             print(f"[AutomationOrchestrator] Discovery failed: {e}")
 
-        # 2. Draft Generation
-        try:
-            print("[AutomationOrchestrator] Generating drafts for READY_FOR_OUTREACH opportunities...")
-            await self.generator.generate_batch()
-        except Exception as e:
-            print(f"[AutomationOrchestrator] Draft generation failed: {e}")
+        # 2. Draft Generation is now handled by a continuous background loop
+        # (OutreachGeneratorService.start_continuous_loop) in main.py.
 
         # 3. Reply Tracking
         try:

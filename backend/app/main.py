@@ -6,11 +6,17 @@ from app.services.scheduler import start_scheduler
 from app.services.reply_tracker import ReplyTrackerService
 from app.api.dependencies import get_current_user
 
+import asyncio
+from app.services.outreach_generator import OutreachGeneratorService
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     scheduler = start_scheduler()
+    generator = OutreachGeneratorService()
+    generator_task = asyncio.create_task(generator.start_continuous_loop())
     yield
     scheduler.shutdown()
+    generator_task.cancel()
 
 app = FastAPI(title="AI Job Outreach API", lifespan=lifespan)
 

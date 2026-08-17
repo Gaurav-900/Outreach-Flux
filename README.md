@@ -14,9 +14,7 @@ The system operates on an automated, rotating scheduler that handles everything 
 4. **AI Generation**: Uses **Gemini** (or DeepSeek) to ingest your `candidate.json` profile, the company research, and location preferences to write a highly tailored speculative pitch.
 5. **Review & Triage**: Drafts are populated in your React dashboard. You can manually **Approve** and send them via the Gmail API, **Reject** them (which deletes the draft so a new one is regenerated next batch), or **Blacklist** the company/domain to prevent future outreach entirely. You can also enable Auto-Send for full automation.
 6. **Reply Tracking**: Automatically tracks Gmail threads to detect if the response was a genuine human reply or an automated rejection/bounce.
-
-The orchestrator runs on a **1.5-hour interval** to stagger discovery and generation, avoiding rate limits while keeping your pipeline full.
-
+The orchestrator runs on a **1.5-hour interval** for discovery and sending, while **AI Draft Generation** runs continuously in a background loop, fetching batches of 4 and pausing for 10 seconds to avoid rate limits while keeping your pipeline full.
 ## 💻 Tech Stack
 
 * **Frontend**: React + Vite (TypeScript, Tailwind CSS)

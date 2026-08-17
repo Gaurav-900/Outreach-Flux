@@ -18,7 +18,7 @@ class OutreachGeneratorService:
         except ValueError:
             self.batch_size = 4
 
-    async def generate_batch(self):
+    async def generate_batch(self) -> int:
         print(f"[OutreachGenerator] Starting generation batch. Max size: {self.batch_size}")
         
         # 1. Fetch READY_FOR_OUTREACH companies that don't have drafts yet
@@ -26,8 +26,7 @@ class OutreachGeneratorService:
         companies = res.data
         
         if not companies:
-            print("[OutreachGenerator] No companies ready for outreach.")
-            return
+            return 0
 
         print(f"[OutreachGenerator] Found {len(companies)} companies ready for outreach.")
         
@@ -75,7 +74,7 @@ class OutreachGeneratorService:
             })
 
         if not contexts:
-            return
+            return 0
 
         # 3. Call LLM Provider with retry & fallback logic
         drafts: List[EmailDraft] = []
@@ -96,8 +95,15 @@ class OutreachGeneratorService:
             drafts = await self.deepseek.generate_drafts(contexts)
 
         if not drafts:
-            print("[OutreachGenerator] All LLM generation attempts failed.")
-            return
+            print("[OutreachGenerator] All LLM generation attempts failed. Marking batch as GENERATION_FAILED.")
+            for comp_meta in valid_companies:
+                try:
+                    supabase.table('companies').update({
+                        'outreach_status': 'GENERATION_FAILED'
+                    }).eq('id', comp_meta['company_id']).execute()
+                except Exception as e:
+                    print(f"Failed to update status for {comp_meta['company_id']}: {e}")
+            return 0
 
         print(f"[OutreachGenerator] Successfully generated {len(drafts)} drafts.")
 
@@ -108,7 +114,13 @@ class OutreachGeneratorService:
             comp_id = comp_meta['company_id']
             draft = draft_dict.get(comp_id)
             if not draft:
-                print(f"[OutreachGenerator] Missing draft for company {comp_id}.")
+                print(f"[OutreachGenerator] Missing draft for company {comp_id}. Marking GENERATION_FAILED.")
+                try:
+                    supabase.table('companies').update({
+                        'outreach_status': 'GENERATION_FAILED'
+                    }).eq('id', comp_id).execute()
+                except Exception as e:
+                    print(f"Failed to update status for {comp_id}: {e}")
                 continue
 
             try:
@@ -128,3 +140,20 @@ class OutreachGeneratorService:
                 
             except Exception as e:
                 print(f"[OutreachGenerator] Failed to save draft for company {comp_id}: {e}")
+                
+        return len(drafts)
+
+    async def start_continuous_loop(self):
+        print("[OutreachGenerator] Starting continuous generation loop...")
+        while True:
+            try:
+                processed_count = await self.generate_batch()
+                if processed_count > 0:
+                    print(f"[OutreachGenerator] Batch of {processed_count} processed. Waiting 10 seconds before next batch...")
+                    await asyncio.sleep(10)
+                else:
+                    # No pending companies or no generation happened, wait longer before checking again
+                    await asyncio.sleep(60)
+            except Exception as e:
+                print(f"[OutreachGenerator] Error in generation loop: {e}")
+                await asyncio.sleep(60)
