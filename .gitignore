@@ -43,6 +43,8 @@ temp/
 config/candidate.json
 config/resume.pdf
 config/resume.docx
+config/Gaurav_Sharma_resume.pdf
+backend/config/Gaurav_Sharma_resume.pdf
 
 # OAuth / credentials
 credentials.json
