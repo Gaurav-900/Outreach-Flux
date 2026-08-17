@@ -12,8 +12,10 @@ The system operates on an automated, rotating scheduler that handles everything 
    * **Public Extraction**: Scans the company's public HTML for recruiter or founder emails.
    * **Tomba Fallback**: If no public contacts exist, it uses the Tomba API to find verified employee email addresses based on the company's domain.
 4. **AI Generation**: Uses **Gemini** (or DeepSeek) to ingest your `candidate.json` profile, the company research, and location preferences to write a highly tailored speculative pitch.
-5. **Review & Send**: Drafts are populated in your React dashboard. You can manually approve and send them via the Gmail API, or enable Auto-Send for full automation.
+5. **Review & Triage**: Drafts are populated in your React dashboard. You can manually **Approve** and send them via the Gmail API, **Reject** them (which deletes the draft so a new one is regenerated next batch), or **Blacklist** the company/domain to prevent future outreach entirely. You can also enable Auto-Send for full automation.
 6. **Reply Tracking**: Automatically tracks Gmail threads to detect if the response was a genuine human reply or an automated rejection/bounce.
+
+The orchestrator runs on a **1.5-hour interval** to stagger discovery and generation, avoiding rate limits while keeping your pipeline full.
 
 ## 💻 Tech Stack
 

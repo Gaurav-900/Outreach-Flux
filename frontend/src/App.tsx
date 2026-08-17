@@ -70,7 +70,7 @@ function App() {
       const { data: timelineData } = await supabase
         .from('outreach')
         .select(`
-          id, subject, body, status, reply_status, updated_at, error_message,
+          id, subject, body, status, reply_status, updated_at, error_message, company_id,
           companies ( name ),
           contacts ( email )
         `)
@@ -157,17 +157,25 @@ function App() {
 
     const updateCountdown = () => {
       const now = new Date();
+      // UTC minutes since midnight
+      const minutesSinceMidnight = now.getUTCHours() * 60 + now.getUTCMinutes();
+      // Next 90-minute boundary
+      const nextBoundaryMinutes = Math.ceil((minutesSinceMidnight + 1) / 90) * 90;
+      
       const next = new Date(now);
-      if (now.getMinutes() < 30) {
-        next.setMinutes(30, 0, 0);
-      } else {
-        next.setHours(now.getHours() + 1, 0, 0, 0);
-      }
+      next.setUTCHours(0, 0, 0, 0);
+      next.setUTCMinutes(nextBoundaryMinutes);
       
       const diff = next.getTime() - now.getTime();
-      const minutes = Math.floor(diff / 60000);
+      const hours = Math.floor(diff / 3600000);
+      const minutes = Math.floor((diff % 3600000) / 60000);
       const seconds = Math.floor((diff % 60000) / 1000);
-      setNextRunCountdown(`${minutes}m ${seconds}s`);
+      
+      if (hours > 0) {
+        setNextRunCountdown(`${hours}h ${minutes}m ${seconds}s`);
+      } else {
+        setNextRunCountdown(`${minutes}m ${seconds}s`);
+      }
     };
     
     updateCountdown();
@@ -199,6 +207,40 @@ function App() {
       alert('Failed to sync replies. Make sure backend is running.')
     } finally {
       setIsSyncing(false)
+    }
+  }
+
+  const handleReject = async (id: string, company_id: string) => {
+    try {
+      if (!confirm('Are you sure you want to reject this draft? It will be regenerated in the next batch.')) return;
+      
+      const { error: outreachError } = await supabase.from('outreach').delete().eq('id', id);
+      if (outreachError) throw outreachError;
+
+      const { error: companyError } = await supabase.from('companies').update({ outreach_status: 'READY_FOR_OUTREACH' }).eq('id', company_id);
+      if (companyError) throw companyError;
+
+      await fetchDashboardData();
+    } catch (error) {
+      console.error('Failed to reject draft:', error);
+      alert('Failed to reject draft.');
+    }
+  }
+
+  const handleBlacklist = async (id: string, company_id: string) => {
+    try {
+      if (!confirm('Are you sure you want to blacklist this company? They will not be contacted again.')) return;
+      
+      const { error: outreachError } = await supabase.from('outreach').update({ status: 'BLACKLISTED' }).eq('id', id);
+      if (outreachError) throw outreachError;
+
+      const { error: companyError } = await supabase.from('companies').update({ outreach_status: 'BLACKLISTED' }).eq('id', company_id);
+      if (companyError) throw companyError;
+
+      await fetchDashboardData();
+    } catch (error) {
+      console.error('Failed to blacklist:', error);
+      alert('Failed to blacklist.');
     }
   }
 
@@ -314,6 +356,7 @@ function App() {
               <option value="APPROVED">Approved</option>
               <option value="SENT">Sent</option>
               <option value="FAILED">Failed</option>
+              <option value="BLACKLISTED">Blacklisted</option>
             </select>
           </div>
         </div>
@@ -354,7 +397,7 @@ function App() {
                     <td className="error-text">{row.error_message || ''}</td>
                     <td>
                       {row.status === 'DRAFT' && (
-                        <div style={{ display: 'flex', gap: '8px' }}>
+                        <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
                           <button 
                             className="btn-view"
                             onClick={() => setSelectedDraft({id: row.id, subject: row.subject, body: row.body, to: row.contacts?.email || 'Hiring Team'})}
@@ -366,6 +409,18 @@ function App() {
                             onClick={() => handleApprove(row.id)}
                           >
                             Approve
+                          </button>
+                          <button 
+                            className="btn-reject"
+                            onClick={() => handleReject(row.id, row.company_id)}
+                          >
+                            Reject
+                          </button>
+                          <button 
+                            className="btn-blacklist"
+                            onClick={() => handleBlacklist(row.id, row.company_id)}
+                          >
+                            Blacklist
                           </button>
                         </div>
                       )}
@@ -399,6 +454,7 @@ function App() {
               <option value="READY_FOR_OUTREACH">Ready</option>
               <option value="DRAFTED">Drafted</option>
               <option value="APPROVED">Approved</option>
+              <option value="BLACKLISTED">Blacklisted</option>
             </select>
           </div>
         </div>

@@ -93,7 +93,7 @@ class DiscoveryOrchestrator:
                 parsed_uri = urllib.parse.urlparse(company_data['website'])
                 canonical_domain = parsed_uri.hostname.replace('www.', '') if parsed_uri.hostname else None
                 
-            query = supabase.table('companies').select('id')
+            query = supabase.table('companies').select('id, outreach_status')
             if canonical_domain:
                 query = query.eq('canonical_domain', canonical_domain)
             else:
@@ -103,6 +103,9 @@ class DiscoveryOrchestrator:
             existing_company = existing_company_res.data[0] if existing_company_res.data else None
             
             if existing_company:
+                if existing_company.get('outreach_status') == 'BLACKLISTED':
+                    print(f"[DiscoveryOrchestrator] Skipping blacklisted company: {company_data.get('name')}")
+                    return
                 company_id = existing_company['id']
             else:
                 # Insert company

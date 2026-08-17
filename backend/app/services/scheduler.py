@@ -26,12 +26,13 @@ async def run_discovery_tick():
         _is_running = False
 
 def start_scheduler():
-    print('[Scheduler] Starting discovery scheduler (every 30 minutes)...')
+    print('[Scheduler] Starting discovery scheduler (every 1.5 hours)...')
     scheduler = AsyncIOScheduler(timezone='UTC')
     
-    # "*/30 * * * *" = Every 30 minutes
-    # misfire_grace_time=None ensures it runs even if the event loop was busy and delayed the trigger
-    scheduler.add_job(run_discovery_tick, CronTrigger.from_crontab('*/30 * * * *'), misfire_grace_time=None, coalesce=True)
+    # 00:00, 03:00, 06:00, 09:00, 12:00, 15:00, 18:00, 21:00
+    scheduler.add_job(run_discovery_tick, CronTrigger(hour='0,3,6,9,12,15,18,21', minute='0'), misfire_grace_time=None, coalesce=True)
+    # 01:30, 04:30, 07:30, 10:30, 13:30, 16:30, 19:30, 22:30
+    scheduler.add_job(run_discovery_tick, CronTrigger(hour='1,4,7,10,13,16,19,22', minute='30'), misfire_grace_time=None, coalesce=True)
     scheduler.start()
     
     if os.environ.get('RUN_DISCOVERY_ON_STARTUP') == 'true':
